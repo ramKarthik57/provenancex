@@ -1,0 +1,37 @@
+version: "1.0"
+name: "default-supply-chain-policy"
+description: "Standard baseline supply-chain integrity policy for software builds"
+
+repository:
+  require_clean_state: true
+  allowed_branches:
+    - main
+    - master
+    - release/*
+
+dependencies:
+  require_lockfile: true
+  disallow_wildcards: true
+  allowed_registries:
+    - "https://registry.npmjs.org"
+    - "https://pypi.org/simple"
+    - "https://proxy.golang.org"
+
+provenance:
+  required: true
+  enforce_slsa_level: 1
+
+signature:
+  required: false
+
+network:
+  enforce_allowlist: true
+  allowed_destinations:
+    - "registry.npmjs.org"
+    - "pypi.org"
+    - "files.pythonhosted.org"
+    - "proxy.golang.org"
+    - "github.com"
+
+reproducibility:
+  required: false

@@ -1,0 +1,21 @@
+# Controlled build sandbox container for untrusted builds & security experiments
+FROM alpine:3.20
+
+RUN apk add --no-cache \
+    bash \
+    git \
+    curl \
+    python3 \
+    py3-pip \
+    nodejs \
+    npm \
+    coreutils \
+    shadow
+
+# Create unprivileged build user
+RUN useradd -m -s /bin/bash sandboxuser
+
+WORKDIR /workspace
+USER sandboxuser
+
+ENTRYPOINT ["/bin/bash"]

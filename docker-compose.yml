@@ -1,0 +1,24 @@
+services:
+  provenancex-backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "8080:8080"
+    environment:
+      - PROVENANCEX_ENV=development
+      - PROVENANCEX_LOG_LEVEL=info
+      - PROVENANCEX_DB_PATH=/data/provenancex.db
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+  provenancex-dashboard:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - provenancex-backend
+    restart: unless-stopped
