@@ -1,0 +1,3 @@
+# ProvenanceX Sample Binary Build Artifact
+This is a deterministic sample artifact fixture used for integrity, hashing, and Merkle tree verification experiments.
+ProvenanceX: Cross-Layer Supply Chain Integrity.
