@@ -2,6 +2,7 @@ package execution
 
 import (
 	"context"
+	"runtime"
 	"strings"
 	"testing"
 	"time"
@@ -14,13 +15,19 @@ func TestExecuteStageWithRedaction(t *testing.T) {
 
 	tmpDir := t.TempDir()
 
-	// Execute an echo command with sensitive token in args
+	command := "cmd.exe"
+	args := []string{"/c", "echo", "deploying", "--token=super_secret_auth_token_xyz"}
+	if runtime.GOOS != "windows" {
+		command = "sh"
+		args = []string{"-c", "echo deploying --token=super_secret_auth_token_xyz"}
+	}
+
 	stage, err := runner.ExecuteStage(
 		ctx,
 		"build-step",
 		tmpDir,
-		"cmd.exe",
-		[]string{"/c", "echo", "deploying", "--token=super_secret_auth_token_xyz"},
+		command,
+		args,
 		nil,
 	)
 	if err != nil {
