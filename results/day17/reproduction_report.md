@@ -2,7 +2,7 @@
 
 **Audit Date:** 2026-09-20<br>
 **Environment:** windows / amd64 (16 Logical Cores, Go go1.23.6)<br>
-**Git Commit:** \x6017d014db3e8285ab27a8cf30a55c4cef96ac41a7\x60 (Branch: \x60research-validation\x60, Clean Tree: false)<br>
+**Git Commit:** \x606333707a5d67c6377911aa3729cf60dbce2067d7\x60 (Branch: \x60research-validation\x60, Clean Tree: false)<br>
 **Historical Baselines Verified:** 76 Frozen Files
 
 ---

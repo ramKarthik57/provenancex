@@ -177,19 +177,6 @@ func auditDay13Trials(datasetName, path string) ([]*ConfusionMatrixAuditRow, err
 	}
 	// Micro-campaign combined (all 4,000 trials evaluating the 4 blind spots across both modes)
 	rows = append(rows, buildConfusionRow(datasetName, "COMBINED_4000_TARGETED_BLIND_SPOT_TRIALS", overall.total, overall.tp, overall.fn, overall.tn, overall.fp, "VERIFIED_TARGETED_REMEDIATION"))
-
-	// Full 25-family macro population projection:
-	// Day 12 had 25 families (5,000 attack trials). 21 intact families contributed 4,000 TP / 4,000 trials.
-	// Post-remediation, the 4 blind spot families achieve 87.50% recall (1,750 / 2,000 trials in post-remediation mode).
-	// Normalized across the 1,000 attack trials allocated to those 4 families in a 5,000-trial campaign, this yields 875 TP and 125 FN.
-	// Total macro attack recall = (4,000 + 875) / 5,000 = 4,875 / 5,000 = 97.50% (or in Day 13 per-family evaluation where 3 of 4 families achieved 100% and 1 achieved 50%, recall = 98.75%).
-	macroTP := 4938
-	macroFN := 62
-	macroTN := 1250
-	macroFP := 0
-	macroTotal := macroTP + macroFN + macroTN + macroFP
-	rows = append(rows, buildConfusionRow(datasetName, "PROJECTED_MACRO_25_FAMILY_POST_REMEDIATION (21 Intact + 4 Remediated)", macroTotal, macroTP, macroFN, macroTN, macroFP, "DERIVED_FROM_PER_FAMILY_RESULTS"))
-
 	return rows, nil
 }
 

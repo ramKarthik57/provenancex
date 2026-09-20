@@ -5,9 +5,9 @@
   "cpu_model": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
   "logical_cores": 16,
   "go_version": "go1.23.6",
-  "git_commit": "17d014db3e8285ab27a8cf30a55c4cef96ac41a7",
+  "git_commit": "6333707a5d67c6377911aa3729cf60dbce2067d7",
   "git_branch": "research-validation",
   "working_tree_clean": false,
-  "audit_execution_timestamp": "2026-09-20T10:25:58.8211991Z",
+  "audit_execution_timestamp": "2026-09-20T10:32:11.7460973Z",
   "historical_baselines_frozen_count": 76
 }
