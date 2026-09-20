@@ -1,0 +1,33 @@
+InputScale,ScaleLabel,Stage,Scope,MeanMicros,MedianMicros,P95Micros,P99Micros,ThroughputEventsSec,MemoryAllocKB
+100,100 Events,A. Data Generation,Subsystem Microbenchmark (Isolated),0.0,0.0,0.0,0.0,0.0,36
+100,100 Events,B. Evidence Ingestion & Parsing,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,100000000.0,36
+100,100 Events,C. Normalization & Log Append,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,50000000.0,36
+100,100 Events,D. Trust Graph 2.0 Construction,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,20000000.0,36
+100,100 Events,E. In-Memory Correlation Rules,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,20000000.0,36
+100,100 Events,F. Policy Security Decision,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,50000000.0,36
+100,100 Events,G. Serialization (JSON),Subsystem Microbenchmark (Isolated),55.9,5.0,514.0,514.0,1788908.8,36
+100,100 Events,END-TO-END PIPELINE (A through G),Comprehensive Pipeline (Full Generation to Serialization),70.9,20.0,529.0,529.0,1410437.2,36
+1000,1000 Events,A. Data Generation,Subsystem Microbenchmark (Isolated),158.0,0.0,550.0,550.0,6329113.9,169
+1000,1000 Events,B. Evidence Ingestion & Parsing,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,1000000000.0,169
+1000,1000 Events,C. Normalization & Log Append,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,500000000.0,169
+1000,1000 Events,D. Trust Graph 2.0 Construction,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,200000000.0,169
+1000,1000 Events,E. In-Memory Correlation Rules,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,200000000.0,169
+1000,1000 Events,F. Policy Security Decision,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,500000000.0,169
+1000,1000 Events,G. Serialization (JSON),Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,200000000.0,169
+1000,1000 Events,END-TO-END PIPELINE (A through G),Comprehensive Pipeline (Full Generation to Serialization),178.0,20.0,570.0,570.0,5617977.5,169
+10000,10000 Events,A. Data Generation,Subsystem Microbenchmark (Isolated),2400.7,2617.0,3355.0,3355.0,4165451.7,1616
+10000,10000 Events,B. Evidence Ingestion & Parsing,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,10000000000.0,1616
+10000,10000 Events,C. Normalization & Log Append,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,5000000000.0,1616
+10000,10000 Events,D. Trust Graph 2.0 Construction,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,2000000000.0,1616
+10000,10000 Events,E. In-Memory Correlation Rules,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,2000000000.0,1616
+10000,10000 Events,F. Policy Security Decision,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,5000000000.0,1616
+10000,10000 Events,G. Serialization (JSON),Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,2000000000.0,1616
+10000,10000 Events,END-TO-END PIPELINE (A through G),Comprehensive Pipeline (Full Generation to Serialization),2420.7,2637.0,3375.0,3375.0,4131036.5,1616
+100000,100000 Events,A. Data Generation,Subsystem Microbenchmark (Isolated),25825.3,20646.0,36813.0,36813.0,3872166.9,15925
+100000,100000 Events,B. Evidence Ingestion & Parsing,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,100000000000.0,15925
+100000,100000 Events,C. Normalization & Log Append,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,50000000000.0,15925
+100000,100000 Events,D. Trust Graph 2.0 Construction,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,20000000000.0,15925
+100000,100000 Events,E. In-Memory Correlation Rules,Subsystem Microbenchmark (Isolated),173.3,5.0,510.0,510.0,576923076.9,15925
+100000,100000 Events,F. Policy Security Decision,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,50000000000.0,15925
+100000,100000 Events,G. Serialization (JSON),Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,20000000000.0,15925
+100000,100000 Events,END-TO-END PIPELINE (A through G),Comprehensive Pipeline (Full Generation to Serialization),26013.7,20666.0,37338.0,37338.0,3844133.2,15925

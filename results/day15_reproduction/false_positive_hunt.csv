@@ -1,0 +1,6 @@
+VariationID,Category,OperationalScenario,ObservedVerdict,ExpectedVerdict,IsFalsePositive,TriggeredRule,Analysis
+BENIGN-HUNT-01,ENVIRONMENT,Compiler patch upgrade (Go 1.23.5 -> 1.23.6),TRUSTED,TRUSTED,false,,Minor runtime patch bump without hash contradiction accepted
+BENIGN-HUNT-02,DEPENDENCY,Lockfile pretty-printing / formatting whitespace change,TRUSTED,TRUSTED,false,,Semantic dependency graph remains identical; accepted
+BENIGN-HUNT-03,EXECUTION,Build cache hit resulting in sub-100ms compilation time,TRUSTED,TRUSTED,false,,Fast execution duration does not trigger anomaly without bad exit code
+BENIGN-HUNT-04,SOURCE,Compiler/generator creates in-tree untracked mock file during test phase,REJECTED,TRUSTED (with .gitignore exemption),true,repository.require_clean_working_tree: true,Strict clean working tree policy flags in-tree generated artifacts unless excluded by .gitignore or declared in build inputs
+BENIGN-HUNT-05,ENVIRONMENT,CI agent checks out repository on secondary NVMe drive (D:\),TRUSTED,TRUSTED,false,,Path relocation without unauthorized modifications accepted

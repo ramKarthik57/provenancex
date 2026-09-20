@@ -1,0 +1,98 @@
+Benchmark,InputSize,MeasurementScope,MeanMicros,MedianMicros,P95Micros,P99Micros,StdDevMicros,Throughput,CPU,MemoryKB,DiskIO,IsEndToEnd
+Evidence Pipeline Stage Breakdown (A. Data Generation),100 Events,Subsystem Microbenchmark (Isolated),0.0,0.0,0.0,0.0,0.0,0.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (B. Evidence Ingestion & Parsing),100 Events,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,0.0,100000000.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (C. Normalization & Log Append),100 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,50000000.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (D. Trust Graph 2.0 Construction),100 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,20000000.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (E. In-Memory Correlation Rules),100 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,20000000.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (F. Policy Security Decision),100 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,50000000.0 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (G. Serialization (JSON)),100 Events,Subsystem Microbenchmark (Isolated),55.9,5.0,514.0,514.0,152.7,1788908.8 events/s,1 core,36,In-Memory,false
+Evidence Pipeline Stage Breakdown (END-TO-END PIPELINE (A through G)),100 Events,Comprehensive Pipeline (Full Generation to Serialization),70.9,20.0,529.0,529.0,152.7,1410437.2 events/s,1 core,36,In-Memory,true
+Evidence Pipeline Stage Breakdown (A. Data Generation),1000 Events,Subsystem Microbenchmark (Isolated),158.0,0.0,550.0,550.0,241.5,6329113.9 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (B. Evidence Ingestion & Parsing),1000 Events,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,0.0,1000000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (C. Normalization & Log Append),1000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,500000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (D. Trust Graph 2.0 Construction),1000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,200000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (E. In-Memory Correlation Rules),1000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,200000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (F. Policy Security Decision),1000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,500000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (G. Serialization (JSON)),1000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,200000000.0 events/s,1 core,169,In-Memory,false
+Evidence Pipeline Stage Breakdown (END-TO-END PIPELINE (A through G)),1000 Events,Comprehensive Pipeline (Full Generation to Serialization),178.0,20.0,570.0,570.0,241.5,5617977.5 events/s,1 core,169,In-Memory,true
+Evidence Pipeline Stage Breakdown (A. Data Generation),10000 Events,Subsystem Microbenchmark (Isolated),2400.7,2617.0,3355.0,3355.0,533.5,4165451.7 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (B. Evidence Ingestion & Parsing),10000 Events,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,0.0,10000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (C. Normalization & Log Append),10000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,5000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (D. Trust Graph 2.0 Construction),10000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,2000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (E. In-Memory Correlation Rules),10000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,2000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (F. Policy Security Decision),10000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,5000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (G. Serialization (JSON)),10000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,2000000000.0 events/s,1 core,1616,In-Memory,false
+Evidence Pipeline Stage Breakdown (END-TO-END PIPELINE (A through G)),10000 Events,Comprehensive Pipeline (Full Generation to Serialization),2420.7,2637.0,3375.0,3375.0,533.5,4131036.5 events/s,1 core,1616,In-Memory,true
+Evidence Pipeline Stage Breakdown (A. Data Generation),100000 Events,Subsystem Microbenchmark (Isolated),25825.3,20646.0,36813.0,36813.0,7773.7,3872166.9 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (B. Evidence Ingestion & Parsing),100000 Events,Subsystem Microbenchmark (Isolated),1.0,1.0,1.0,1.0,0.0,100000000000.0 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (C. Normalization & Log Append),100000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,50000000000.0 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (D. Trust Graph 2.0 Construction),100000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,20000000000.0 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (E. In-Memory Correlation Rules),100000 Events,Subsystem Microbenchmark (Isolated),173.3,5.0,510.0,510.0,238.1,576923076.9 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (F. Policy Security Decision),100000 Events,Subsystem Microbenchmark (Isolated),2.0,2.0,2.0,2.0,0.0,50000000000.0 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (G. Serialization (JSON)),100000 Events,Subsystem Microbenchmark (Isolated),5.0,5.0,5.0,5.0,0.0,20000000000.0 events/s,1 core,15925,In-Memory,false
+Evidence Pipeline Stage Breakdown (END-TO-END PIPELINE (A through G)),100000 Events,Comprehensive Pipeline (Full Generation to Serialization),26013.7,20666.0,37338.0,37338.0,8011.6,3844133.2 events/s,1 core,15925,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),10 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,10000000.0 pkgs/s,1 core,0,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),10 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,10000000.0 pkgs/s,1 core,0,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),10 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,10000000.0 pkgs/s,1 core,0,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),10 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,10000000.0 pkgs/s,1 core,0,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),10 Dependencies,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,0.0,2500000.0 pkgs/s,1 core,0,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),50 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,50000000.0 pkgs/s,1 core,3,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),50 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,50000000.0 pkgs/s,1 core,3,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),50 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,50000000.0 pkgs/s,1 core,3,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),50 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,50000000.0 pkgs/s,1 core,3,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),50 Dependencies,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,0.0,12500000.0 pkgs/s,1 core,3,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),100 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 pkgs/s,1 core,6,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),100 Dependencies,In-Memory Subsystem Benchmark,101.6,1.0,1007.0,1007.0,301.8,984252.0 pkgs/s,1 core,6,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),100 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 pkgs/s,1 core,6,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),100 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 pkgs/s,1 core,6,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),100 Dependencies,Complete In-Memory Dependency Pipeline,104.6,4.0,1010.0,1010.0,301.8,956022.9 pkgs/s,1 core,6,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),500 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,500000000.0 pkgs/s,1 core,31,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),500 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,500000000.0 pkgs/s,1 core,31,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),500 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,500000000.0 pkgs/s,1 core,31,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),500 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,500000000.0 pkgs/s,1 core,31,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),500 Dependencies,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,0.0,125000000.0 pkgs/s,1 core,31,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),1000 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,1000000000.0 pkgs/s,1 core,62,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),1000 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,1000000000.0 pkgs/s,1 core,62,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),1000 Dependencies,In-Memory Subsystem Benchmark,100.7,1.0,998.0,998.0,299.1,9930486.6 pkgs/s,1 core,62,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),1000 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,1000000000.0 pkgs/s,1 core,62,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),1000 Dependencies,Complete In-Memory Dependency Pipeline,103.7,4.0,1001.0,1001.0,299.1,9643201.5 pkgs/s,1 core,62,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),5000 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,5000000000.0 pkgs/s,1 core,312,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),5000 Dependencies,In-Memory Subsystem Benchmark,306.8,1.0,1065.0,1065.0,467.4,16297262.1 pkgs/s,1 core,312,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),5000 Dependencies,In-Memory Subsystem Benchmark,101.0,1.0,1001.0,1001.0,300.0,49504950.5 pkgs/s,1 core,312,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),5000 Dependencies,In-Memory Subsystem Benchmark,76.5,1.0,756.0,756.0,226.5,65359477.1 pkgs/s,1 core,312,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),5000 Dependencies,Complete In-Memory Dependency Pipeline,485.3,381.5,1068.0,1068.0,487.2,10302905.4 pkgs/s,1 core,312,In-Memory,true
+Dependency Scaling Breakdown (1. Dependency Manifest/Lockfile Parsing),10000 Dependencies,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,10000000000.0 pkgs/s,1 core,625,In-Memory,false
+Dependency Scaling Breakdown (2. Dependency Graph Node Insertion & Indexing),10000 Dependencies,In-Memory Subsystem Benchmark,454.2,252.0,1027.0,1027.0,475.3,22016732.7 pkgs/s,1 core,625,In-Memory,false
+Dependency Scaling Breakdown (3. Graph Traversal & Version Pinning Verification),10000 Dependencies,In-Memory Subsystem Benchmark,300.3,1.0,999.0,999.0,457.2,33300033.3 pkgs/s,1 core,625,In-Memory,false
+Dependency Scaling Breakdown (4. Cycle Detection (DFS Traversal)),10000 Dependencies,In-Memory Subsystem Benchmark,250.9,1.0,1504.0,1504.0,512.5,39856516.5 pkgs/s,1 core,625,In-Memory,false
+Dependency Scaling Breakdown (FULL DEPENDENCY ANALYSIS PIPELINE),10000 Dependencies,Complete In-Memory Dependency Pipeline,1006.4,1002.5,2006.0,2006.0,500.6,9936407.0 pkgs/s,1 core,625,In-Memory,true
+Disk-Backed Streaming SHA-256 Hashing,10 KB,Physical Disk Read & Hashing,1.0,1.0,1.0,1.0,0.0,9765.62 MB/s,1 core,64,Streaming Disk I/O,true
+Disk-Backed Streaming SHA-256 Hashing,100 KB,Physical Disk Read & Hashing,1.0,1.0,1.0,1.0,0.0,97656.25 MB/s,1 core,64,Streaming Disk I/O,true
+Disk-Backed Streaming SHA-256 Hashing,1 MB,Physical Disk Read & Hashing,1005.0,1005.0,1005.0,1005.0,0.0,995.02 MB/s,1 core,64,Streaming Disk I/O,true
+Disk-Backed Streaming SHA-256 Hashing,10 MB,Physical Disk Read & Hashing,10792.0,10792.0,10792.0,10792.0,0.0,926.61 MB/s,1 core,64,Streaming Disk I/O,true
+Disk-Backed Streaming SHA-256 Hashing,100 MB,Physical Disk Read & Hashing,76959.0,76959.0,76959.0,76959.0,0.0,1299.39 MB/s,1 core,64,Streaming Disk I/O,true
+Trust Graph 2.0 Query Complexity (1. Node & Edge Insertion (O(1))),100 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 nodes/s,1 core,12,In-Memory,false
+Trust Graph 2.0 Query Complexity (2. Contradiction State Lookup (O(N))),100 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 nodes/s,1 core,12,In-Memory,false
+Trust Graph 2.0 Query Complexity (3. Single-Path Traversal (O(V+E))),100 Nodes,DAG Traversal Subsystem Benchmark,301.4,1.0,1503.0,1503.0,600.8,331785.0 nodes/s,1 core,12,In-Memory,false
+Trust Graph 2.0 Query Complexity (4. Full Reachability Analysis (DFS)),100 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,100000000.0 nodes/s,1 core,12,In-Memory,false
+Trust Graph 2.0 Query Complexity (5. Graph Serialization (JSON)),100 Nodes,DAG Traversal Subsystem Benchmark,5.0,5.0,5.0,5.0,0.0,20000000.0 nodes/s,1 core,12,In-Memory,false
+Trust Graph 2.0 Query Complexity (1. Node & Edge Insertion (O(1))),1000 Nodes,DAG Traversal Subsystem Benchmark,904.8,1001.0,1519.0,1519.0,494.4,1105216.6 nodes/s,1 core,125,In-Memory,false
+Trust Graph 2.0 Query Complexity (2. Contradiction State Lookup (O(N))),1000 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,1000000000.0 nodes/s,1 core,125,In-Memory,false
+Trust Graph 2.0 Query Complexity (3. Single-Path Traversal (O(V+E))),1000 Nodes,DAG Traversal Subsystem Benchmark,1250.2,1242.0,1510.0,1510.0,227.0,799872.0 nodes/s,1 core,125,In-Memory,false
+Trust Graph 2.0 Query Complexity (4. Full Reachability Analysis (DFS)),1000 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,1000000000.0 nodes/s,1 core,125,In-Memory,false
+Trust Graph 2.0 Query Complexity (5. Graph Serialization (JSON)),1000 Nodes,DAG Traversal Subsystem Benchmark,1555.0,1505.0,2002.0,2002.0,397.0,643086.8 nodes/s,1 core,125,In-Memory,false
+Trust Graph 2.0 Query Complexity (1. Node & Edge Insertion (O(1))),5000 Nodes,DAG Traversal Subsystem Benchmark,1628.0,1621.0,2510.0,2510.0,585.8,3071253.1 nodes/s,1 core,625,In-Memory,false
+Trust Graph 2.0 Query Complexity (2. Contradiction State Lookup (O(N))),5000 Nodes,DAG Traversal Subsystem Benchmark,202.0,1.0,1006.0,1006.0,402.0,24752475.2 nodes/s,1 core,625,In-Memory,false
+Trust Graph 2.0 Query Complexity (3. Single-Path Traversal (O(V+E))),5000 Nodes,DAG Traversal Subsystem Benchmark,34363.4,32812.0,40751.0,40751.0,3346.7,145503.6 nodes/s,1 core,625,In-Memory,false
+Trust Graph 2.0 Query Complexity (4. Full Reachability Analysis (DFS)),5000 Nodes,DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,0.0,5000000000.0 nodes/s,1 core,625,In-Memory,false
+Trust Graph 2.0 Query Complexity (5. Graph Serialization (JSON)),5000 Nodes,DAG Traversal Subsystem Benchmark,6662.8,6073.0,7718.0,7718.0,780.6,750435.3 nodes/s,1 core,625,In-Memory,false
+Trust Graph 2.0 Query Complexity (1. Node & Edge Insertion (O(1))),10000 Nodes,DAG Traversal Subsystem Benchmark,3566.6,3701.0,4125.0,4125.0,480.0,2803790.7 nodes/s,1 core,1250,In-Memory,false
+Trust Graph 2.0 Query Complexity (2. Contradiction State Lookup (O(N))),10000 Nodes,DAG Traversal Subsystem Benchmark,599.8,998.0,1000.0,1000.0,488.9,16672224.1 nodes/s,1 core,1250,In-Memory,false
+Trust Graph 2.0 Query Complexity (3. Single-Path Traversal (O(V+E))),10000 Nodes,DAG Traversal Subsystem Benchmark,153513.0,152234.0,158747.0,158747.0,2828.6,65141.1 nodes/s,1 core,1250,In-Memory,false
+Trust Graph 2.0 Query Complexity (4. Full Reachability Analysis (DFS)),10000 Nodes,DAG Traversal Subsystem Benchmark,414.6,1.0,1066.0,1066.0,506.9,24119633.4 nodes/s,1 core,1250,In-Memory,false
+Trust Graph 2.0 Query Complexity (5. Graph Serialization (JSON)),10000 Nodes,DAG Traversal Subsystem Benchmark,13909.8,13930.0,14726.0,14726.0,700.4,718917.6 nodes/s,1 core,1250,In-Memory,false
+Trust Graph 2.0 Query Complexity (1. Node & Edge Insertion (O(1))),50000 Nodes,DAG Traversal Subsystem Benchmark,18498.2,18438.0,24669.0,24669.0,4003.6,2702965.7 nodes/s,1 core,6250,In-Memory,false
+Trust Graph 2.0 Query Complexity (2. Contradiction State Lookup (O(N))),50000 Nodes,DAG Traversal Subsystem Benchmark,3122.6,3015.0,4499.0,4499.0,868.4,16012297.4 nodes/s,1 core,6250,In-Memory,false
+Trust Graph 2.0 Query Complexity (3. Single-Path Traversal (O(V+E))),50000 Nodes,DAG Traversal Subsystem Benchmark,4510203.6,4608470.0,4794342.0,4794342.0,281714.0,11086.0 nodes/s,1 core,6250,In-Memory,false
+Trust Graph 2.0 Query Complexity (4. Full Reachability Analysis (DFS)),50000 Nodes,DAG Traversal Subsystem Benchmark,3692.4,4080.0,4600.0,4600.0,951.5,13541328.1 nodes/s,1 core,6250,In-Memory,false
+Trust Graph 2.0 Query Complexity (5. Graph Serialization (JSON)),50000 Nodes,DAG Traversal Subsystem Benchmark,5.0,5.0,5.0,5.0,0.0,10000000000.0 nodes/s,1 core,6250,In-Memory,false

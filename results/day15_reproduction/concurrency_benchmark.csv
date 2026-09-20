@@ -1,0 +1,7 @@
+Workers,OperationsCompleted,TotalDurationMs,VerificationOpsSec,MeanLatencyMicros,P95LatencyMicros,P99LatencyMicros,CrossTalkDetected,ScopeLabel
+1,30,1.00,30000.00,5.0,5.0,5.0,false,In-Memory Verification Operations / Second
+2,60,1.00,60000.00,30.0,5.0,1504.0,false,In-Memory Verification Operations / Second
+4,120,1.00,120000.00,17.8,5.0,516.0,false,In-Memory Verification Operations / Second
+8,240,1.00,240000.00,41.8,517.0,880.0,false,In-Memory Verification Operations / Second
+16,480,3.00,160000.00,104.7,1345.0,1530.0,false,In-Memory Verification Operations / Second
+32,960,6.00,160000.00,118.7,1007.0,1956.0,false,In-Memory Verification Operations / Second
