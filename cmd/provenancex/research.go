@@ -9,6 +9,7 @@ import (
 	"github.com/ramKarthik57/provenancex/internal/blind"
 	"github.com/ramKarthik57/provenancex/internal/hostile"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
+	"github.com/ramKarthik57/provenancex/internal/remediation"
 	"github.com/spf13/cobra"
 )
 
@@ -19,6 +20,10 @@ var (
 	huntRuns           int
 	huntCasesPerFamily int
 	huntOutputDir      string
+
+	remediateRuns           int
+	remediateCasesPerFamily int
+	remediateOutputDir      string
 )
 
 var researchCmd = &cobra.Command{
@@ -136,6 +141,40 @@ and document real architectural blind spots.`,
 	},
 }
 
+var researchRemediateCmd = &cobra.Command{
+	Use:   "remediate",
+	Short: "Blind-spot remediation and controlled empirical re-evaluation (Day 13)",
+	Long: `Executes a controlled before/after evaluation across the four demonstrated blind spots:
+1. Git commit author spoofing (cryptographic signature verification)
+2. Short-lived processes under polling (Windows ETW kernel process event tracing)
+3. Filesystem boundary escapes (expanded %TEMP% / user-temp monitoring)
+4. Ephemeral UDP/DNS exfiltration (DNS-Client ETW and network boundary isolation).
+Produces empirical comparison tables, ablation metrics, and reproducible CSV/JSON datasets.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		runner := remediation.NewCampaignRunner(remediateRuns, remediateCasesPerFamily, remediateOutputDir)
+		report, err := runner.Run()
+		if err != nil {
+			return fmt.Errorf("remediation campaign failed: %w", err)
+		}
+
+		if err := report.ExportDatasets(remediateOutputDir); err != nil {
+			return fmt.Errorf("failed exporting remediation datasets: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Day 13 empirical datasets exported to %s/\n", remediateOutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "raw_trials.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "per_family.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "confusion_matrix.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "latency.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "observation_coverage.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "ablation.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "environment.json"))
+		fmt.Printf("  - %s\n", filepath.Join(remediateOutputDir, "experiment_manifest.json"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
@@ -144,9 +183,14 @@ func init() {
 	researchHuntCmd.Flags().IntVar(&huntCasesPerFamily, "cases-per-family", 50, "Number of scenario cases evaluated per family per run")
 	researchHuntCmd.Flags().StringVar(&huntOutputDir, "output", "results", "Output directory for exported empirical CSV datasets")
 
+	researchRemediateCmd.Flags().IntVar(&remediateRuns, "runs", 5, "Number of independent campaign runs")
+	researchRemediateCmd.Flags().IntVar(&remediateCasesPerFamily, "cases-per-family", 100, "Number of scenario cases evaluated per family per configuration")
+	researchRemediateCmd.Flags().StringVar(&remediateOutputDir, "output", filepath.Join("results", "day13"), "Output directory for exported empirical CSV/JSON datasets")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
 	researchCmd.AddCommand(researchHuntCmd)
+	researchCmd.AddCommand(researchRemediateCmd)
 	rootCmd.AddCommand(researchCmd)
 }

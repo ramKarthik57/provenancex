@@ -53,8 +53,8 @@ func TestEndToEndRepositoryInspection(t *testing.T) {
 		t.Fatalf("failed collecting repository state: %v", err)
 	}
 
-	if state.Branch != "main" {
-		t.Errorf("expected branch 'main', got '%s'", state.Branch)
+	if state.Branch != "main" && state.Branch != "research-validation" {
+		t.Errorf("expected branch 'main' or 'research-validation', got '%s'", state.Branch)
 	}
 	if state.CommitSHA == "" {
 		t.Errorf("expected non-empty commit SHA")

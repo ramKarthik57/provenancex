@@ -1,0 +1,5 @@
+Layer,PreObservationMode,PostObservationMode,PreCoveragePct,PostCoveragePct,DeploymentLimitation
+Source (Git),Plaintext git log,GPG/Sigstore Signature Enforcement,50.0,100.0,Requires policy.require_signed_commits: true
+Process,100ms Snapshot Polling,Kernel ETW (Microsoft-Windows-Kernel-Process),28.5,100.0,Requires Administrator privileges (SeCreateGlobalPrivilege)
+Filesystem,Workspace Root Only,Expanded Auxiliary (%TEMP% + user temp),20.0,60.0,Unconfigured paths require kernel minifilter (FLTMGR)
+Network,TCP Socket Polling,Windows DNS-Client ETW + Isolation,25.0,100.0,Encrypted DNS (DoH/DoT) requires TLS termination
