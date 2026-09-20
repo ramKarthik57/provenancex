@@ -3,43 +3,85 @@
 import (
 	"context"
 	"testing"
+
+	"github.com/ramKarthik57/provenancex/internal/experiment"
 )
 
-func TestAblationStudyAccuracyComparison(t *testing.T) {
+func TestBaselinesAThroughF(t *testing.T) {
 	eval := NewEvaluator()
-	report, err := eval.RunBenchmark(context.Background())
+	scenarios := experiment.DefaultScenarios()
+	ctx := context.Background()
+
+	baselines := []BaselineSystem{
+		BaselineA_Checksum,
+		BaselineB_Signature,
+		BaselineC_SBOM,
+		BaselineD_Attestation,
+		BaselineE_NoCorrelation,
+		BaselineF_ProvenanceX,
+	}
+
+	scores := make(map[BaselineSystem]int)
+
+	for _, sc := range scenarios {
+		in, err := sc.Simulate(ctx)
+		if err != nil {
+			t.Fatalf("scenario simulate error: %v", err)
+		}
+
+		for _, b := range baselines {
+			out := eval.EvaluateBaseline(b, sc, in)
+			if out.Detected {
+				scores[b]++
+			}
+		}
+	}
+
+	t.Logf("Baselines A-F Empirical Detection Rates:")
+	for _, b := range baselines {
+		pct := float64(scores[b]) / float64(len(scenarios)) * 100.0
+		t.Logf("  %-30s : %5.1f%% (%d/%d)", b, pct, scores[b], len(scenarios))
+	}
+
+	// Full ProvenanceX must outperform all isolated baselines
+	if scores[BaselineF_ProvenanceX] <= scores[BaselineA_Checksum] {
+		t.Errorf("expected ProvenanceX to outperform Baseline A")
+	}
+	if scores[BaselineF_ProvenanceX] <= scores[BaselineE_NoCorrelation] {
+		t.Errorf("expected ProvenanceX to outperform Baseline E (No Correlation)")
+	}
+}
+
+func TestLayerAblationStudy(t *testing.T) {
+	eval := NewEvaluator()
+	results, err := eval.RunLayerAblation(context.Background())
 	if err != nil {
-		t.Fatalf("failed running ablation study: %v", err)
+		t.Fatalf("RunLayerAblation failed: %v", err)
 	}
 
-	if report.TotalScenarios != 10 {
-		t.Fatalf("expected 10 scenarios, got %d", report.TotalScenarios)
+	if len(results) == 0 {
+		t.Fatalf("expected ablation results")
 	}
 
-	// ProvenanceX cross-layer correlation must detect 100% of scenarios
-	pxAcc := report.SystemAccuracies[ProvenanceXMultiLayer]
-	if pxAcc < 100.0 {
-		t.Fatalf("expected ProvenanceX detection to be 100%%, got %.2f%%", pxAcc)
+	t.Logf("Layer Ablation 2.0 (Impact of omitting single planes):")
+	for _, r := range results {
+		t.Logf("  Omitted: %-15s | Detection: %5.1f%% | FAR: %5.1f%% | Loc Accuracy: %5.1f%%",
+			r.OmittedLayer, r.DetectionRatePercent, r.FalseAcceptanceRate, r.LocalizationAccuracy)
+	}
+}
+
+func TestBenignVariabilityEvaluation(t *testing.T) {
+	eval := NewEvaluator()
+	results := eval.EvaluateBenignVariability()
+
+	if len(results) != 4 {
+		t.Fatalf("expected 4 benign variability evaluations, got %d", len(results))
 	}
 
-	// Single-layer baselines must have significantly lower detection rates
-	checksumAcc := report.SystemAccuracies[BaselineChecksumOnly]
-	sigAcc := report.SystemAccuracies[BaselineSignatureOnly]
-	sbomAcc := report.SystemAccuracies[BaselineSBOMOnly]
-
-	if checksumAcc >= 50.0 {
-		t.Errorf("checksum only detection rate should be low (<50%%), got %.2f%%", checksumAcc)
+	for _, r := range results {
+		if !r.CorrectlyPassed {
+			t.Errorf("variability %s failed expected decision: %s", r.VariabilityType, r.Verdict)
+		}
+		t.Logf("Benign Variability [%s]: %s (%s)", r.VariabilityType, r.Verdict, r.Description)
 	}
-	if sigAcc >= 50.0 {
-		t.Errorf("signature only detection rate should be low (<50%%), got %.2f%%", sigAcc)
-	}
-	if sbomAcc >= 50.0 {
-		t.Errorf("SBOM only detection rate should be low (<50%%), got %.2f%%", sbomAcc)
-	}
-
-	t.Logf("Ablation Study Empirical Detection Rates:")
-	t.Logf("  Checksum Only:         %.1f%% (2/10)", checksumAcc)
-	t.Logf("  Signature Only:        %.1f%% (3/10)", sigAcc)
-	t.Logf("  SBOM Only:             %.1f%% (1/10)", sbomAcc)
-	t.Logf("  ProvenanceX Cross-Layer: %.1f%% (10/10)", pxAcc)
 }

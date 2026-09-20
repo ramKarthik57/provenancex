@@ -1,0 +1,15 @@
+metric,value
+total_trials,1000
+attack_trials,900
+benign_trials,100
+true_positives,900
+true_negatives,100
+false_positives,0
+false_negatives,0
+precision_pct,100.00
+recall_pct,100.00
+f1_score,100.00
+false_acceptance_rate_pct,0.00
+false_rejection_rate_pct,0.00
+localization_accuracy_pct,100.00
+mean_latency_micros,22.42
