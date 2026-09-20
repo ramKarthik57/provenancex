@@ -1,4 +1,4 @@
-﻿# ProvenanceX Research Audit & Empirical Claim Classification
+# ProvenanceX Research Audit & Empirical Claim Classification
 
 **Audit Date**: 2026-09-20  
 **Audit Scope**: Codebase (`internal/`, `cmd/`, `pkg/`), Documentation (`docs/`), Experiments (`experiments/`, `tests/`)  

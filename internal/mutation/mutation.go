@@ -1,4 +1,4 @@
-﻿package mutation
+package mutation
 
 import (
 	"fmt"

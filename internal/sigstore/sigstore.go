@@ -1,4 +1,4 @@
-﻿package sigstore
+package sigstore
 
 import (
 	"crypto/sha256"

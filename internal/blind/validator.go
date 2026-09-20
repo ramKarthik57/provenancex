@@ -1,4 +1,4 @@
-﻿package blind
+package blind
 
 import (
 	"crypto/sha256"

@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Shield } from 'lucide-react';
 import { PipelineTab } from './components/PipelineTab';
 import { BenchmarkTab, Scenario } from './components/BenchmarkTab';

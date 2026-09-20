@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import {
   Activity, RefreshCw, AlertTriangle, Box, XCircle, Layers,
   GitCommit, Cpu, Lock

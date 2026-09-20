@@ -1,4 +1,4 @@
-﻿# ProvenanceX Data Leakage & Test Contamination Audit
+# ProvenanceX Data Leakage & Test Contamination Audit
 
 **Audit Date**: 2026-09-20  
 **Status**: COMPLETE  

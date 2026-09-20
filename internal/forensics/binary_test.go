@@ -1,4 +1,4 @@
-﻿package forensics
+package forensics
 
 import (
 	"archive/zip"

@@ -1,4 +1,4 @@
-﻿package temporal
+package temporal
 
 import (
 	"fmt"

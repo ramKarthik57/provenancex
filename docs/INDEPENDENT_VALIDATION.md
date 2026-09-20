@@ -1,4 +1,4 @@
-﻿# ProvenanceX Independent Research Validation Audit
+# ProvenanceX Independent Research Validation Audit
 
 **Audit Date**: 2026-09-20  
 **Branch**: `research-validation`  

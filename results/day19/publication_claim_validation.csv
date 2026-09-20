@@ -1,0 +1,11 @@
+claim_id,name,scope,target,actual,status,evidence
+C1,Macro Attack Recall,25 Attack Families (Post-Remediation),>=98.0%,98.75%,VERIFIED,results/day13/confusion_matrix.csv
+C2,Benign Specificity,"Dedicated Benign Campaign (N=1,000)",100.0%,100.00%,VERIFIED,results/day16/benign_campaign_raw.csv
+C3,Unseen Generalization,"11 Novel Attack Variants (N=5,500)",100.0%,100.00%,VERIFIED,results/day14/generalization_raw.csv
+C4,Causal Localization,3 Composed Multi-Stage Attacks (N=750),100.0%,100.00%,VERIFIED,results/day14/composed_attacks.csv
+C5,Decision Latency,In-Memory Graph Correlation,<20 µs,12.4 µs,VERIFIED,results/day17/standalone_verifier_audit.csv
+C6,Physical Build Tax,Production Go Compilation (N=30),<1.0%,0.24%,VERIFIED,results/day15/physical_build_tax.csv
+C7,Graph Scaling,Synthetic Trust Graphs (1k to 100k Nodes),O(V+E),Linear (48.2ms @ 100k),VERIFIED,results/day14/graph_scaling.csv
+C8,Air-Gapped Operation,Standalone Binary Release Gates,0 Sockets,0 Sockets (100% Offline),VERIFIED,cmd/provenancex-verifier/main.go
+C9,Boundary Characterization,Privilege & OS Scheduler Limits,Cataloged,4 Demonstrated Bounds,VERIFIED,docs/RESEARCH_PAPER.md
+C10,Zero Data Leakage,Feature Disjointness Audit,0 Leakage,0 Leakage Verified,VERIFIED,docs/DATA_LEAKAGE_AUDIT.md

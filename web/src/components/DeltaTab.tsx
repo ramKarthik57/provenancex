@@ -1,4 +1,4 @@
-﻿import { Box, CheckCircle } from 'lucide-react';
+import { Box, CheckCircle } from 'lucide-react';
 
 export function DeltaTab() {
   return (

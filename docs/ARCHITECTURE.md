@@ -1,4 +1,4 @@
-﻿# ProvenanceX Architecture Specification
+# ProvenanceX Architecture Specification
 
 ## 1. System Overview
 

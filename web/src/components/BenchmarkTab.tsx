@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Activity, Play, RefreshCw, CheckCircle2 } from 'lucide-react';
 
 export interface Scenario {

@@ -1,4 +1,4 @@
-﻿# ProvenanceX Viva Defense & Technical Q&A Guide
+# ProvenanceX Viva Defense & Technical Q&A Guide
 
 ## 1. 2-Minute Project Elevator Pitch
 

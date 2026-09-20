@@ -1,4 +1,4 @@
-﻿# ProvenanceX Academic Research Reproducibility Package
+# ProvenanceX Academic Research Reproducibility Package
 
 This directory provides everything necessary to reproduce all empirical findings, baseline evaluations, and adversarial mutation experiments published in the ProvenanceX research paper.
 

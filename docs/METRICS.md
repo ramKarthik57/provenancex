@@ -1,4 +1,4 @@
-﻿# ProvenanceX Formal Research Metrics & Statistical Definitions
+# ProvenanceX Formal Research Metrics & Statistical Definitions
 
 This document formally defines the mathematical models, statistical criteria, and evaluation metrics used throughout the ProvenanceX verification, adversarial mutation, and ablation benchmarks.
 

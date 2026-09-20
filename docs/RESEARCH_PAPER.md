@@ -349,8 +349,8 @@ We explicitly disentangle pure algorithmic in-memory speed from physical storage
 
 In accordance with scientific integrity, we catalog the 18 concrete operational boundaries of ProvenanceX:
 1. **Kernel Privilege Requirement**: 100% ephemeral process and file stream capture requires Windows Administrator elevation (`SeCreateGlobalPrivilege`).
-2. **User-Mode Timer Quantization**: Non-admin user-mode collectors cannot guarantee capture of subprocesses executing in $<10\text{ ms}$.
-3. **Transient File Coalescing**: Windows directory notification buffers can coalesce file operations executing in $<1\text{ ms}$.
+2. **User-Mode Timer Quantization**: Non-admin user-mode collectors cannot guarantee capture of subprocesses executing in < 10 ms.
+3. **Transient File Coalescing**: Windows directory notification buffers can coalesce file operations executing in < 1 ms.
 4. **Out-of-Workspace Writes**: Build steps writing to unconfigured external directories (e.g., `D:\Temp\`) evade monitoring without container sandbox enforcement (`ADV-HUNT-01`).
 5. **Lexical DNS Tunneling Evasion**: Dictionary-encoded data tunneling evades lexical entropy filters in isolation.
 6. **Encrypted DNS (DoH/DoT)**: DNS over HTTPS/TLS bypasses OS DNS-Client ETW, requiring network firewall egress controls.
@@ -379,6 +379,32 @@ In accordance with scientific integrity, we catalog the 18 concrete operational 
 
 ---
 
+## 17. Related Work & Comparative Positioning
+
+Software supply-chain security research spans attestation standards, runtime attestation, package ecosystem security, and graph-based metadata aggregation:
+
+### 17.1 Attestation Standards & Metadata Frameworks
+- **in-toto & SLSA**: in-toto defines layout policies and link metadata attesting to step execution in a software pipeline. SLSA specifies incremental security levels for build integrity. However, both frameworks accept build-runner self-attestations without independent kernel-level corroboration. A compromised runner can forge both link metadata and SLSA predicates. ProvenanceX bridges this gap by cross-checking assertions against direct kernel telemetry.
+- **Sigstore & Cosign**: Sigstore provides keyless digital signing, OpenID Connect identity binding, and public transparency logging via Rekor. While Sigstore guarantees non-repudiation of signer identity, it cannot verify whether the signed binary was built maliciously or legitimately. ProvenanceX integrates Sigstore verification as Plane $L_{12}$ while verifying underlying build causality across Planes $L_1-L_{11}$.
+
+### 17.2 Runtime Telemetry & Process Attribution
+- **TestifySec Witness**: Witness wraps individual build commands and captures basic process environment and file hashes. However, Witness relies on user-space ptrace/wrappers, cannot localize causal trust breaks across an explicit multi-layer DAG, and lacks formal bounded threat models for ephemeral processes and network exfiltration.
+- **Tetragon & eBPF Observers**: eBPF-based security monitors provide high-throughput Linux kernel tracing. However, eBPF is Linux-specific, requires elevated root privileges, and does not provide an integrated supply-chain policy engine linking declared provenance to observed builds. ProvenanceX provides a cross-platform architectural model with native Windows ETW and unprivileged fallback modes.
+
+### 17.3 Graph-Based Metadata Aggregation
+- **GUAC (Graph for Understanding Artifact Composition)**: GUAC ingests enterprise SBOMs and attestations into an enterprise knowledge graph to answer vulnerability queries. GUAC operates post-facto on metadata inventories, whereas ProvenanceX actively captures build-time execution traces and performs causal root-cause localization on physical build DAGs.
+- **Macaron**: Analyzes software supply-chain repositories against SLSA requirements via static analysis of CI/CD configurations. Macaron analyzes declared workflow definitions, while ProvenanceX captures physical host runtime reality.
+
+---
+
+## 18. Conclusion & Future Directions
+
+The prevailing paradigm of self-attested software provenance creates an inherent security contradiction: the build system is trusted to report on its own integrity. ProvenanceX demonstrates that cross-layer multi-plane verification—correlating source repository, lockfile, SBOM, environment, process hierarchy, filesystem, network, artifact, provenance, and signature evidence—effectively bridges this Attestation-Reality Divergence. Across 19,777 independently audited raw trials, ProvenanceX achieved 98.75% post-remediation macro attack recall with zero false positives observed in dedicated benign campaigns. By formally characterizing privilege tiers, scheduler limits, and observation boundaries, ProvenanceX provides an empirically grounded, mathematically defensible framework for zero-trust software distribution.
+
+Future research directions include formal hardware-enforced enclave attestations (Intel SGX / AMD SEV), cross-compilation deterministic graph normalization, and kernel eBPF modules for unified multi-OS verification.
+
+---
+
 ## References
 
 1. **SLSA Specification**: *Supply-chain Levels for Software Artifacts v1.0*. OpenSSF, 2023.
@@ -388,3 +414,8 @@ In accordance with scientific integrity, we catalog the 18 concrete operational 
 5. **Sigstore**: Newman, J., et al. *Sigstore: Software Signing for Everybody*. ACM CCS, 2022.
 6. **SolarWinds Post-Mortem**: Cybersecurity and Infrastructure Security Agency (CISA). *Alert AA20-352A: Advanced Persistent Threat Compromise of Government Agencies*, 2020.
 7. **RFC 6962**: Laurie, B., et al. *Certificate Transparency: RFC 6962*, IETF, 2013.
+8. **Witness**: TestifySec. *Witness: Pluggable Supply Chain Security Attestation Framework*, 2023.
+9. **GUAC**: OpenSSF. *Graph for Understanding Artifact Composition (GUAC) Architecture*, 2023.
+10. **Macaron**: Oracle Labs. *Macaron: Supply Chain Security Analysis of Software Builds*, 2024.
+11. **XZ Backdoor Post-Mortem**: Freund, A. *Backdoor in Upstream xz/liblzma Leading to SSH Server Compromise*, Openwall oss-security, 2024.
+12. **Sunburst Analysis**: FireEye Mandiant. *Highly Evasive Attacker Leverages SolarWinds Supply Chain to Compromise Multiple Global Victims With SUNBURST Backdoor*, 2020.
