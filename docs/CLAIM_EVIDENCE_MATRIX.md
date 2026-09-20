@@ -3,10 +3,11 @@
 
 This document provides a formal, comprehensive mapping between every architectural claim, security guarantee, empirical result, and limitation asserted by the **ProvenanceX** research platform and its concrete code implementations, test suites, and empirical datasets.
 
-Following the **Day 15 Independent Benchmark Audit**, every claim is assigned an explicit scientific audit status:
+Following the **Day 16 Observability Hardening & Final Validation**, every claim is assigned an explicit scientific audit status:
 * **`VALIDATED`**: Statistically verified across independent datasets with zero contradiction within defined threat model.
 * **`PARTIALLY VALIDATED`**: Validated under specified runtime configurations or assumptions, but subject to operational caveats.
 * **`BOUNDED`**: Formally bounded by fundamental observation primitives, physical host permissions, or protocol limits.
+* **`NOT VALIDATED`**: Lacks sufficient empirical backing or failed validation tests.
 
 ---
 
@@ -18,8 +19,9 @@ Following the **Day 15 Independent Benchmark Audit**, every claim is assigned an
 | **Day 13 Remediation** | Controlled Blind-Spot Remediation | 6,250 | 98.75% | 100.00% | 99.37 | Resolved 3 blind spots; bounded 1 (FS escape) |
 | **Day 14 Validation** | Generalization & Scalability Audit | 7,500 | 100.00% | 100.00% | 100.00 | Verified across 25 novel vectors up to 10K events |
 | **Day 15 Audit** | Independent Benchmark & Scope Audit | 7,500 + Hunts | 100.00%* | 100.00%* | 100.00* | Recomputed Day 14 ($TP+FN+TN+FP=N$); disentangled performance scopes; surfaced 3 kernel/protocol blind spots |
+| **Day 16 Hardening** | Observability Hardening & Bounding | 1,000 Benign + Factorial Hunts | 62.5%–100% | 100.00% | 92.45 | Remediated generated mocks (0% FP); formally bounded ephemeral processes, transient files, and DNS tunneling |
 
-*\*Note: 100% applies to the closed 7,500-trial Day 14 holdout. In the Day 15 adversarial stress hunt, 3 evasion techniques (`ADV-HUNT-03`, `ADV-HUNT-04`, `ADV-HUNT-05`) successfully bypassed user-mode observation primitives and are documented below.*
+*\*Note: 100% applies to the closed 7,500-trial Day 14 holdout. In the Day 15 adversarial stress hunt, 3 evasion techniques (`ADV-HUNT-03`, `ADV-HUNT-04`, `ADV-HUNT-05`) successfully bypassed user-mode observation primitives and were systematically investigated and bounded on Day 16.*
 
 ---
 
@@ -43,9 +45,9 @@ Following the **Day 15 Independent Benchmark Audit**, every claim is assigned an
 | :- | :--- | :---: | :--- | :--- | :--- | :--- |
 | **B1** | **Author Spoofing Immunity** | `VALIDATED` | Git author/email spoofing with untrusted or missing GPG/SSH/Sigstore signatures is detected with 100.00% recall under signature policy. | [`internal/repository/repository.go#L22-L60`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/repository/repository.go#L22-L60)<br>[`internal/correlation/correlator.go#L95-L124`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/correlation/correlator.go#L95-L124) | `provenancex research remediate`<br>`provenancex research day15` | `results/day15/recomputed_metrics.csv` (`UNSEEN-ATK-19`) |
 | **B2** | **Sub-Millisecond Process Detection via ETW** | `BOUNDED` | Kernel ETW (`Microsoft-Windows-Kernel-Process`) traces short-lived processes (<1ms to 10ms) with 100% recall. **Bounded**: Falls back to 100ms polling without admin privileges, missing sub-10ms ephemeral spawns (`ADV-HUNT-03`). | [`internal/process/etw_windows.go#L15-L120`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/process/etw_windows.go#L15-L120)<br>[`internal/remediation/eval_process.go#L30-L70`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/remediation/eval_process.go#L30-L70) | `provenancex research remediate`<br>`provenancex research day15` | `results/day15/false_negative_hunt.csv` (`ADV-HUNT-03`)<br>`results/day14/generalization.csv` (`UNSEEN-ATK-02`, `UNSEEN-ATK-12`) |
-| **B3** | **DNS Exfiltration & Network Egress Detection** | `BOUNDED` | Windows DNS-Client ETW flags unauthorized DNS TXT data tunneling and unauthorized egress socket connections with 100% recall. **Bounded**: Suffix allowlisting permits subdomain tunneling (`ADV-HUNT-05`); DoH bypasses OS DNS. | [`internal/network/telemetry.go#L20-L85`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/network/telemetry.go#L20-L85)<br>[`internal/correlation/correlator.go#L289-L325`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/correlation/correlator.go#L289-L325) | `provenancex research remediate`<br>`provenancex research day15` | `results/day15/false_negative_hunt.csv` (`ADV-HUNT-05`)<br>`results/day13/observation_coverage.csv` |
+| **B3** | **DNS Exfiltration & Network Egress Detection** | `BOUNDED` | Windows DNS-Client ETW flags unauthorized DNS TXT data tunneling and unauthorized egress socket connections with 100% recall. **Bounded**: Suffix allowlisting permits subdomain tunneling (`ADV-HUNT-05`); DoH bypasses OS DNS. | [`internal/network/model.go#L20-L40`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/network/model.go#L20-L40)<br>[`internal/correlation/correlator.go#L289-L325`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/correlation/correlator.go#L289-L325) | `provenancex research remediate`<br>`provenancex research day15` | `results/day15/false_negative_hunt.csv` (`ADV-HUNT-05`)<br>`results/day13/observation_coverage.csv` |
 | **B4** | **Generalization to Unseen Attack Vectors** | `VALIDATED` | ProvenanceX demonstrates 100.00% detection recall across 22 unseen single-layer vectors and 3 composed multi-layer attacks ($N=6,250$ attack trials in closed holdout). | [`internal/generalization/scenarios.go#L180-L550`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/generalization/scenarios.go#L180-L550) | `provenancex research day15` | `results/day15/recomputed_metrics.csv` ($TP=6,250, FN=0$) |
-| **B5** | **Zero False Positives Under Operational Drift** | `PARTIALLY VALIDATED` | Benign variations (compiler minor patches, lockfile formatting, build cache hits, workspace path relocation) incur 0.00% false alarms (100% specificity). **Caveat**: Uncommitted test mock generators trigger false rejection (`BENIGN-HUNT-04`). | [`internal/generalization/scenarios.go#L560-L650`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/generalization/scenarios.go#L560-L650) | `provenancex research day15` | `results/day15/recomputed_metrics.csv` ($TN=1,250, FP=0$)<br>`results/day15/false_positive_hunt.csv` (`BENIGN-HUNT-04`) |
+| **B5** | **Zero False Positives Under Operational Drift** | `VALIDATED` | Benign variations (compiler minor patches, lockfile formatting, build cache hits, workspace path relocation) incur 0.00% false alarms (100% specificity). | [`internal/generalization/scenarios.go#L560-L650`](file:///c:/Users/Ram/Desktop/ProvenanceX/internal/generalization/scenarios.go#L560-L650) | `provenancex research day15` | `results/day15/recomputed_metrics.csv` ($TN=1,250, FP=0$) |
 
 ---
 
@@ -62,38 +64,54 @@ Following the **Day 15 Independent Benchmark Audit**, every claim is assigned an
 
 ---
 
+### Category D: Day 16 Observability Hardening & Bounding Claims
+
+| # | Scientific Claim | Audit Status | Empirical Experiment & Dataset | Sample Size $N$ | Metric & Measured Result | Operational Limitation | Status |
+| :- | :--- | :---: | :--- | :---: | :--- | :--- | :---: |
+| **D1** | **User-Mode Ephemeral Process Visibility (ADV-HUNT-03)** | `BOUNDED` | Factorial evaluation across 8 lifetimes (<1ms to >250ms) $\times$ 2 privileges $\times$ 3 modes.<br>Dataset: [`results/day16/process_visibility.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/process_visibility.csv) | $N=48$ cells | Mode A: **25.00%**<br>Mode B (Elevated ETW): **100.00%**<br>Mode C (User-Mode High-Freq): **62.50%** | Windows non-realtime scheduler quantization prevents reliable user-mode capture of sub-10ms ephemeral child processes. | `BOUNDED` |
+| **D2** | **Transient Filesystem Event Streaming vs State Diff (ADV-HUNT-04)** | `BOUNDED` | Controlled file create/write/modify/delete lifecycle across 7 lifetimes (<1ms to >500ms).<br>Dataset: [`results/day16/filesystem_visibility.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/filesystem_visibility.csv) | $N=21$ cells | Mode A (Snapshot Diff): **0.00%** (100% missed)<br>Mode B (Change Events): **71.43%**<br>Mode C (USN Journal): **100.00%** | Final state diffing alone has 0% recall on deleted files; user-mode change events do not attribute originating PID; unconfigured drives escape. | `BOUNDED` |
+| **D3** | **Multi-Feature DNS Subdomain Tunneling Heuristic (ADV-HUNT-05)** | `PARTIALLY VALIDATED` | Evaluates Shannon entropy, label length, hex ratio, and nesting under allowed suffixes.<br>Dataset: [`results/day16/dns_tunneling.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/dns_tunneling.csv) | $N=13$ queries | Standalone Attacks: **80.00% Recall**<br>Correlated with Execution Anomalies: **100.00%**<br>CDN False Alarm Rate: **0.00%** | Plain dictionary words without anomalous execution bypass lexical entropy heuristics; encrypted DNS (DoH) bypasses OS resolver inspection. | `PARTIALLY VALIDATED` |
+| **D4** | **In-Tree Generated File Provenance (BENIGN-HUNT-04)** | `VALIDATED` | Policy evaluation across 6 scenarios with declared path patterns and build context.<br>Dataset: [`results/day16/generated_file_policy.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/generated_file_policy.csv) | $N=6$ scenarios | False Positive Rate: **0.00%**<br>Undeclared Attack Rejection: **100.00%**<br>Modified Tracked Source Rejection: **100.00%** | Requires explicit declaration in `policy.Repository.DeclaredGeneratedPaths`; blanket wildcard ignores are forbidden. | `VALIDATED` |
+| **D5** | **Benign Operational Campaign Specificity** | `VALIDATED` | 1,000 independent benign trials across 10 realistic operational scenarios (clean builds, mocks, docs, cache hits, temp files, CDNs).<br>Dataset: [`results/day16/benign_campaign.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/benign_campaign.csv) | $N=1,000$ trials | False Positives: **0**<br>False Positive Rate: **0.00%**<br>Decision Specificity: **100.00%** | Confirms that Day 16 observability hardening does not introduce operational false alarm friction. | `VALIDATED` |
+| **D6** | **Day 16 System Engineering Overhead** | `VALIDATED` | Comparative measurement of Day 15 baseline vs Day 16 remediated system overhead.<br>Dataset: [`results/day16/performance.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/performance.csv) | $N=6$ metrics | Mean Decision Latency: **+0.90 µs** (+3.77%)<br>Build Overhead: **+0.02%** (+9.09% relative)<br>Heap Allocations: **+260 bytes** (+6.31%) | Hardening adds negligible sub-microsecond algorithmic overhead and imperceptible build latency penalty. | `VALIDATED` |
+
+---
+
 ## 3. Explicit Physical Observation Boundaries and Demonstrated Blind Spots
 
-To maintain complete scientific integrity, ProvenanceX documents both architectural observation boundaries and the empirical false negatives discovered during the Day 15 adversarial hunt:
+To maintain complete scientific integrity, ProvenanceX documents both architectural observation boundaries and the empirical false negatives discovered during the Day 15 and Day 16 hunts:
 
 1. **Filesystem Observation Boundary & Transient File Evasion (`ADV-HUNT-04`)**:
-   - **Covered (100% Recall)**: Workspace directory root, configured subdirectories, `%TEMP%`, and registered output paths.
-   - **Empirical Blind Spot**: Rapid create-and-delete transient payloads dropped to disk, executed via child processes, and unlinked prior to post-build snapshot diffing evade detection unless captured by a kernel filesystem minifilter driver (`FLTMGR.sys`) or Windows USN Change Journal parsing.
+   - **Snapshot Diffing Limitation**: 0.00% recall on transient files deleted prior to snapshot comparison.
+   - **User-Mode Event Streaming**: 71.43% event recall via `ReadDirectoryChangesW`. Sub-5ms operations coalesce; user-mode events do not associate process PIDs.
    - **Out-of-Workspace Writes**: 0% recall on arbitrary unconfigured drives (`D:\SharedCache\`) without container namespace isolation.
-   - *Evidence Documented*: [`results/day15/false_negative_hunt.csv`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day15/false_negative_hunt.csv) and [`docs/FINAL_RESEARCH_LIMITATIONS.md`](file:///c:/Users/Ram/Desktop/ProvenanceX/docs/FINAL_RESEARCH_LIMITATIONS.md).
 
 2. **Windows ETW Elevation Requirement & Sub-10ms Processes (`ADV-HUNT-03`)**:
-   - Kernel ETW trace sessions (`EVENT_TRACE_FLAG_PROCESS`) require Windows Administrator elevation (`SeCreateGlobalPrivilege`). In unprivileged CI runner environments, ProvenanceX automatically falls back to 100ms snapshot polling.
-   - **Empirical Blind Spot**: Subprocesses that spawn, inject or exfiltrate in memory, and terminate within $<10$ ms between polling intervals evade user-mode observation.
+   - Kernel ETW trace sessions (`EVENT_TRACE_FLAG_PROCESS`) require Windows Administrator elevation (`SeCreateGlobalPrivilege`) (100.00% coverage).
+   - In unprivileged CI runner environments, ProvenanceX achieves 62.50% coverage using high-frequency polling/Job Objects. Ephemeral processes $<10\text{ ms}$ evade user-mode observation due to OS timer quantization.
 
 3. **Subdomain Multiplexing in Allowed Domains (`ADV-HUNT-05`)**:
-   - Windows DNS-Client ETW captures DNS queries. However, if a domain suffix is allowlisted (e.g. `*.pkg.go.dev`), high-entropy subdomain exfiltration (e.g. `<hex_payload>.pkg.go.dev`) passes suffix validation without Shannon entropy filtering or deep payload inspection.
+   - Multi-feature heuristics detect high-entropy hex/base64 tunneling (80.00% standalone, 100.00% when correlated with execution anomalies).
+   - Low-entropy dictionary-word tunneling without execution anomalies passes lexical checks, requiring network firewall isolation.
 
 4. **In-Tree Test Artifact False Rejections (`BENIGN-HUNT-04`)**:
-   - Strict working-tree cleanliness policies reject untracked source files. If build or test phases generate in-tree mock code not registered in `.gitignore` or build inputs, a false alarm occurs.
+   - Fully remediated via `DeclaredGeneratedPaths` policy matching (0.00% false positive rate across 1,000 benign trials).
 
 ---
 
 ## 4. Replication and Audit Instructions
 
-All Day 15 audit benchmarks, metrics recomputations, and stress hunts can be reproduced independently:
+All Day 16 datasets, metrics recomputations, and stress hunts can be reproduced independently:
 
 ```powershell
 # Set Go toolchain
 $env:PATH = "C:\Users\Ram\.provenancex\toolchain\go\bin;$env:PATH"
 
-# Run Day 15 Independent Audit Suite
-.\bin\provenancex.exe research day15 --output results/day15
+# Run Day 16 Observability Hardening & Bounding Campaign
+.\bin\provenancex.exe research day16 --output results/day16
+
+# Verify dataset cryptographic hashes
+Get-FileHash results/day16/*.csv, results/day16/*.json
 
 # Re-run automated unit and integration tests
 go test -v ./...

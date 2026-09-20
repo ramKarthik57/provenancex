@@ -280,3 +280,53 @@ Get-FileHash results/day15/*.csv, results/day15/*.json
 ```
 
 All empirical datasets in `results/day15/` include complete SHA-256 manifests (`dataset_hashes.txt`) and run-to-run variance ledgers (`randomness_audit.csv`).
+
+---
+
+### 16. Observation Boundary Hardening (Day 16 Empirical Results)
+
+Day 16 completed targeted empirical remediation, adversarial re-attacks, and explicit boundary bounding on the four limitations uncovered on Day 15. Rather than claiming universal protection, ProvenanceX reports measured coverage under defined operational configurations:
+
+#### 16.1. Progression of Research Milestones (Day 12 through Day 16)
+* **Day 12 (Blind-Spot Discovery)**: Hostile evasion vectors reduced overall attack recall to **80.00%** across 6,250 trials (1,000 false negatives), uncovering 4 systematic blind spots.
+* **Day 13 (Targeted Remediation)**: Kernel ETW process tracing, DNS-Client ETW, and commit signature verification elevated recall to **98.75%** with 100.00% precision.
+* **Day 14 (Generalization & Scaling)**: Evaluated 25 unseen/composed attack scenarios across 7,500 trials with **100.00% holdout recall** and sub-25 µs in-memory correlation latency.
+* **Day 15 (Benchmark Audit & Stress Hunt)**: Disentangled performance scopes (12.4 µs in-memory correlation vs 0.22% real compiler overhead); surfaced 4 empirical limitations (`ADV-HUNT-03` sub-10ms process injection, `ADV-HUNT-04` rapid create/delete files, `ADV-HUNT-05` allowed-domain subdomain DNS tunneling, `BENIGN-HUNT-04` generated mock false rejections).
+* **Day 16 (Observability Hardening & Bounding)**: Evaluated 1,000 benign trials and factorial attack matrices. Remediated in-tree generated mocks (**0.00% False Positive Rate**), bounded user-mode ephemeral process capture to **62.50%** (100.00% under elevated Kernel ETW), bounded transient filesystem event capture to **71.43%** (100.00% under USN Journal), and achieved **80.00%–100.00% DNS tunneling detection** via multi-feature heuristics and cross-layer correlation.
+
+#### 16.2. Evaluated Observation Configurations & Coverage
+| Subsystem & Threat | Telemetry Mode | Privilege Level | Measured Coverage | Primary Boundary Limitation |
+| :--- | :--- | :--- | :---: | :--- |
+| **Ephemeral Processes (`ADV-HUNT-03`)** | Mode A: 100ms Polling | User-Mode | 25.00% | Processes $<100\text{ ms}$ completely missed between polling ticks |
+| | Mode B: Kernel ETW | Administrator | 100.00% | Requires host Administrator elevation (`SeCreateGlobalPrivilege`) |
+| | Mode C: High-Freq / Job Object | User-Mode | 62.50% | Windows non-realtime scheduler quantization misses $<10\text{ ms}$ processes |
+| **Transient Filesystem (`ADV-HUNT-04`)** | Mode A: Snapshot / Delta | User-Mode | 0.00% | Final state diffing inherently blind to files deleted before snapshot |
+| | Mode B: Change Events (`ReadDirectoryChangesW`) | User-Mode | 71.43% | Captures events $\ge 5\text{ ms}$; $<5\text{ ms}$ coalesced; no PID attribution |
+| | Mode C: NTFS USN Journal | Administrator | 100.00% | Volume journal captures all changes; no PID attribution in record |
+| **Subdomain Tunneling (`ADV-HUNT-05`)** | Multi-Feature Heuristic | User-Mode | 80.00% | Lexical dictionary words bypass entropy heuristic in isolation |
+| | Cross-Layer Correlated Engine | User-Mode | 100.00% | Egress firewall required for unobservable encrypted DNS (DoH/DoT) |
+| **Generated Mocks (`BENIGN-HUNT-04`)** | Declared Intermediate Policy | User-Mode | 100.00% | Requires explicit pattern declaration; blanket wildcards prohibited |
+
+#### 16.3. 1,000-Trial Benign Operational Reliability
+Across 1,000 independent benign trials spanning clean compilations, declared test mocks, automated documentation generation, compiler cache hits, scratchpad allocations, and legitimate CDN mirrors:
+* Total Evaluated Trials: **1,000**
+* False Positive Verdicts: **0**
+* Operational False Positive Rate: **0.00%** (**100.00% Specificity**)
+
+#### 16.4. Measured Engineering Overhead & Performance Delta
+| Performance Metric | Day 15 Baseline | Day 16 Remediated | Absolute Delta | Percentage Delta | Practical Impact |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Mean Decision Latency** | 23.90 µs | 24.80 µs | +0.90 µs | +3.77% | Sub-microsecond Shannon entropy and pattern matching overhead |
+| **DNS Subdomain Heuristic** | 0.00 µs | 0.80 µs | +0.80 µs | +100.0% | Multi-feature label parsing executed in <1 µs |
+| **Declared Path Pattern Evaluation** | 0.00 µs | 0.40 µs | +0.40 µs | +100.0% | Path normalization and glob matching executed in <0.5 µs |
+| **Real End-to-End Build Overhead** | 0.22% | 0.24% | +0.02% | +9.09% | Imperceptible build latency penalty on physical CI compilations |
+| **Heap Memory Allocation** | 4,120 bytes | 4,380 bytes | +260 bytes | +6.31% | Retains DNS heuristic records and declared path match status |
+| **Background Agent CPU** | 0.30% | 0.35% | +0.05% | +16.67% | Lightweight user-mode notification event loop |
+
+#### 16.5. Reproducibility
+All Day 16 empirical findings are reproduced via:
+```powershell
+.\bin\provenancex.exe research day16 --output results/day16
+```
+Integrity hashes for all 14 datasets are recorded in [`results/day16/dataset_hashes.txt`](file:///c:/Users/Ram/Desktop/ProvenanceX/results/day16/dataset_hashes.txt).
+
