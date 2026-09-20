@@ -14,7 +14,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 13,MUT-0013,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 14,MUT-0014,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 15,MUT-0015,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-16,MUT-0016,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+16,MUT-0016,Hash,PROVENANCE,REJECTED,REJECTED,true,true,522,false
 17,MUT-0017,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 18,MUT-0018,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 19,MUT-0019,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
@@ -23,7 +23,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 22,MUT-0022,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 23,MUT-0023,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 24,MUT-0024,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
-25,MUT-0025,Process,PROCESS,REJECTED,REJECTED,true,true,524,false
+25,MUT-0025,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 26,MUT-0026,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 27,MUT-0027,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 28,MUT-0028,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -47,7 +47,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 46,MUT-0046,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 47,MUT-0047,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 48,MUT-0048,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
-49,MUT-0049,Commit,SOURCE,WARNING,REJECTED,true,true,527,false
+49,MUT-0049,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 50,MUT-0050,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 51,MUT-0051,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
 52,MUT-0052,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
@@ -69,13 +69,13 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 68,MUT-0068,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 69,MUT-0069,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 70,MUT-0070,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-71,MUT-0071,Artifact,,TRUSTED,TRUSTED,false,false,0,true
+71,MUT-0071,Artifact,,TRUSTED,TRUSTED,false,false,526,true
 72,MUT-0072,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 73,MUT-0073,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 74,MUT-0074,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 75,MUT-0075,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 76,MUT-0076,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
-77,MUT-0077,Commit,SOURCE,WARNING,REJECTED,true,true,538,false
+77,MUT-0077,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 78,MUT-0078,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 79,MUT-0079,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 80,MUT-0080,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
@@ -102,7 +102,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 101,MUT-0101,Signature,,TRUSTED,TRUSTED,false,false,0,true
 102,MUT-0102,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 103,MUT-0103,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
-104,MUT-0104,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
+104,MUT-0104,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,525,false
 105,MUT-0105,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 106,MUT-0106,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 107,MUT-0107,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
@@ -133,10 +133,10 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 132,MUT-0132,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 133,MUT-0133,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 134,MUT-0134,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-135,MUT-0135,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,540,false
+135,MUT-0135,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 136,MUT-0136,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 137,MUT-0137,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
-138,MUT-0138,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+138,MUT-0138,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,523,false
 139,MUT-0139,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 140,MUT-0140,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 141,MUT-0141,Artifact,,TRUSTED,TRUSTED,false,false,0,true
@@ -160,7 +160,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 159,MUT-0159,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 160,MUT-0160,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 161,MUT-0161,Commit,,TRUSTED,TRUSTED,false,false,0,true
-162,MUT-0162,Environment,BUILD,REJECTED,REJECTED,true,true,545,false
+162,MUT-0162,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 163,MUT-0163,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 164,MUT-0164,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 165,MUT-0165,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
@@ -169,7 +169,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 168,MUT-0168,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 169,MUT-0169,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 170,MUT-0170,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-171,MUT-0171,Signature,,TRUSTED,TRUSTED,false,false,0,true
+171,MUT-0171,Signature,,TRUSTED,TRUSTED,false,false,520,true
 172,MUT-0172,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 173,MUT-0173,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 174,MUT-0174,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
@@ -204,7 +204,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 203,MUT-0203,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 204,MUT-0204,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 205,MUT-0205,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
-206,MUT-0206,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
+206,MUT-0206,Network,NETWORK,REJECTED,REJECTED,true,true,522,false
 207,MUT-0207,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 208,MUT-0208,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 209,MUT-0209,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -217,7 +217,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 216,MUT-0216,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 217,MUT-0217,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 218,MUT-0218,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-219,MUT-0219,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,519,false
+219,MUT-0219,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 220,MUT-0220,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 221,MUT-0221,Process,,TRUSTED,TRUSTED,false,false,0,true
 222,MUT-0222,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -248,7 +248,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 247,MUT-0247,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 248,MUT-0248,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 249,MUT-0249,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
-250,MUT-0250,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,534,false
+250,MUT-0250,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 251,MUT-0251,Evidence Manifest,,TRUSTED,TRUSTED,false,false,0,true
 252,MUT-0252,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 253,MUT-0253,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -267,27 +267,27 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 266,MUT-0266,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 267,MUT-0267,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 268,MUT-0268,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-269,MUT-0269,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
+269,MUT-0269,Signature,SIGNATURE,REJECTED,REJECTED,true,true,526,false
 270,MUT-0270,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 271,MUT-0271,SBOM,,TRUSTED,TRUSTED,false,false,0,true
 272,MUT-0272,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 273,MUT-0273,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 274,MUT-0274,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 275,MUT-0275,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
-276,MUT-0276,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
+276,MUT-0276,Network,NETWORK,REJECTED,REJECTED,true,true,529,false
 277,MUT-0277,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 278,MUT-0278,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 279,MUT-0279,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 280,MUT-0280,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 281,MUT-0281,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 282,MUT-0282,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-283,MUT-0283,Signature,SIGNATURE,REJECTED,REJECTED,true,true,532,false
+283,MUT-0283,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 284,MUT-0284,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 285,MUT-0285,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 286,MUT-0286,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 287,MUT-0287,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
-288,MUT-0288,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-289,MUT-0289,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,531,false
+288,MUT-0288,Environment,BUILD,REJECTED,REJECTED,true,true,532,false
+289,MUT-0289,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 290,MUT-0290,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 291,MUT-0291,Process,,TRUSTED,TRUSTED,false,false,0,true
 292,MUT-0292,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -321,8 +321,8 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 320,MUT-0320,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 321,MUT-0321,Evidence Manifest,,TRUSTED,TRUSTED,false,false,0,true
 322,MUT-0322,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-323,MUT-0323,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-324,MUT-0324,Hash,PROVENANCE,REJECTED,REJECTED,true,true,541,false
+323,MUT-0323,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,545,false
+324,MUT-0324,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 325,MUT-0325,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 326,MUT-0326,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 327,MUT-0327,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
@@ -347,13 +347,13 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 346,MUT-0346,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 347,MUT-0347,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 348,MUT-0348,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-349,MUT-0349,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,535,false
+349,MUT-0349,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 350,MUT-0350,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 351,MUT-0351,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 352,MUT-0352,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 353,MUT-0353,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 354,MUT-0354,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-355,MUT-0355,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
+355,MUT-0355,SBOM,SBOM,REJECTED,REJECTED,true,true,523,false
 356,MUT-0356,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 357,MUT-0357,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 358,MUT-0358,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
@@ -400,7 +400,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 399,MUT-0399,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 400,MUT-0400,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 401,MUT-0401,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
-402,MUT-0402,Network,NETWORK,REJECTED,REJECTED,true,true,539,false
+402,MUT-0402,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 403,MUT-0403,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 404,MUT-0404,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 405,MUT-0405,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -425,7 +425,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 424,MUT-0424,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 425,MUT-0425,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 426,MUT-0426,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
-427,MUT-0427,Commit,SOURCE,WARNING,REJECTED,true,true,526,false
+427,MUT-0427,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 428,MUT-0428,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 429,MUT-0429,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 430,MUT-0430,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
@@ -436,12 +436,12 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 435,MUT-0435,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 436,MUT-0436,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 437,MUT-0437,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-438,MUT-0438,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+438,MUT-0438,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,528,false
 439,MUT-0439,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 440,MUT-0440,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 441,MUT-0441,Commit,,TRUSTED,TRUSTED,false,false,0,true
 442,MUT-0442,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-443,MUT-0443,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,515,false
+443,MUT-0443,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 444,MUT-0444,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 445,MUT-0445,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 446,MUT-0446,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -452,7 +452,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 451,MUT-0451,Signature,,TRUSTED,TRUSTED,false,false,0,true
 452,MUT-0452,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 453,MUT-0453,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
-454,MUT-0454,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,378,false
+454,MUT-0454,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 455,MUT-0455,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 456,MUT-0456,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 457,MUT-0457,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
@@ -465,7 +465,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 464,MUT-0464,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 465,MUT-0465,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 466,MUT-0466,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-467,MUT-0467,SBOM,SBOM,REJECTED,REJECTED,true,true,503,false
+467,MUT-0467,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 468,MUT-0468,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 469,MUT-0469,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 470,MUT-0470,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
@@ -476,11 +476,11 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 475,MUT-0475,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 476,MUT-0476,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 477,MUT-0477,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-478,MUT-0478,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+478,MUT-0478,Hash,PROVENANCE,REJECTED,REJECTED,true,true,524,false
 479,MUT-0479,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 480,MUT-0480,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 481,MUT-0481,SBOM,,TRUSTED,TRUSTED,false,false,0,true
-482,MUT-0482,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,527,false
+482,MUT-0482,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 483,MUT-0483,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 484,MUT-0484,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 485,MUT-0485,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
@@ -493,11 +493,11 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 492,MUT-0492,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 493,MUT-0493,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 494,MUT-0494,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-495,MUT-0495,SBOM,SBOM,REJECTED,REJECTED,true,true,516,false
+495,MUT-0495,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 496,MUT-0496,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 497,MUT-0497,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 498,MUT-0498,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-499,MUT-0499,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
+499,MUT-0499,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,609,false
 500,MUT-0500,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 501,MUT-0501,Process,,TRUSTED,TRUSTED,false,false,0,true
 502,MUT-0502,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -511,7 +511,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 510,MUT-0510,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 511,MUT-0511,Commit,,TRUSTED,TRUSTED,false,false,0,true
 512,MUT-0512,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
-513,MUT-0513,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,632,false
+513,MUT-0513,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 514,MUT-0514,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 515,MUT-0515,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 516,MUT-0516,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -526,7 +526,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 525,MUT-0525,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 526,MUT-0526,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 527,MUT-0527,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
-528,MUT-0528,Network,NETWORK,REJECTED,REJECTED,true,true,542,false
+528,MUT-0528,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 529,MUT-0529,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 530,MUT-0530,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 531,MUT-0531,Evidence Manifest,,TRUSTED,TRUSTED,false,false,0,true
@@ -556,7 +556,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 555,MUT-0555,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 556,MUT-0556,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 557,MUT-0557,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
-558,MUT-0558,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+558,MUT-0558,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,511,false
 559,MUT-0559,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 560,MUT-0560,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 561,MUT-0561,Artifact,,TRUSTED,TRUSTED,false,false,0,true
@@ -583,7 +583,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 582,MUT-0582,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 583,MUT-0583,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 584,MUT-0584,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
-585,MUT-0585,Process,PROCESS,REJECTED,REJECTED,true,true,522,false
+585,MUT-0585,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 586,MUT-0586,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 587,MUT-0587,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 588,MUT-0588,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -592,11 +592,11 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 591,MUT-0591,Signature,,TRUSTED,TRUSTED,false,false,0,true
 592,MUT-0592,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 593,MUT-0593,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
-594,MUT-0594,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,526,false
+594,MUT-0594,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,518,false
 595,MUT-0595,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 596,MUT-0596,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 597,MUT-0597,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
-598,MUT-0598,Network,NETWORK,REJECTED,REJECTED,true,true,537,false
+598,MUT-0598,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 599,MUT-0599,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 600,MUT-0600,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 601,MUT-0601,Evidence Manifest,,TRUSTED,TRUSTED,false,false,0,true
@@ -605,14 +605,14 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 604,MUT-0604,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 605,MUT-0605,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 606,MUT-0606,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-607,MUT-0607,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
+607,MUT-0607,SBOM,SBOM,REJECTED,REJECTED,true,true,516,false
 608,MUT-0608,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 609,MUT-0609,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 610,MUT-0610,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 611,MUT-0611,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
 612,MUT-0612,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 613,MUT-0613,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
-614,MUT-0614,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,537,false
+614,MUT-0614,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 615,MUT-0615,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 616,MUT-0616,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 617,MUT-0617,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -628,7 +628,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 627,MUT-0627,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 628,MUT-0628,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 629,MUT-0629,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-630,MUT-0630,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,547,false
+630,MUT-0630,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 631,MUT-0631,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 632,MUT-0632,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 633,MUT-0633,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
@@ -641,12 +641,12 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 640,MUT-0640,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 641,MUT-0641,Process,,TRUSTED,TRUSTED,false,false,0,true
 642,MUT-0642,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-643,MUT-0643,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+643,MUT-0643,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,518,false
 644,MUT-0644,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 645,MUT-0645,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 646,MUT-0646,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 647,MUT-0647,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-648,MUT-0648,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,535,false
+648,MUT-0648,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 649,MUT-0649,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 650,MUT-0650,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 651,MUT-0651,Commit,,TRUSTED,TRUSTED,false,false,0,true
@@ -664,7 +664,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 663,MUT-0663,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 664,MUT-0664,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 665,MUT-0665,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
-666,MUT-0666,Environment,BUILD,REJECTED,REJECTED,true,true,532,false
+666,MUT-0666,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 667,MUT-0667,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 668,MUT-0668,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 669,MUT-0669,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
@@ -680,8 +680,8 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 679,MUT-0679,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 680,MUT-0680,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 681,MUT-0681,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
-682,MUT-0682,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
-683,MUT-0683,Process,PROCESS,REJECTED,REJECTED,true,true,533,false
+682,MUT-0682,Network,NETWORK,REJECTED,REJECTED,true,true,517,false
+683,MUT-0683,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 684,MUT-0684,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 685,MUT-0685,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 686,MUT-0686,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -700,7 +700,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 699,MUT-0699,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 700,MUT-0700,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 701,MUT-0701,Artifact,,TRUSTED,TRUSTED,false,false,0,true
-702,MUT-0702,Hash,PROVENANCE,REJECTED,REJECTED,true,true,527,false
+702,MUT-0702,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 703,MUT-0703,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 704,MUT-0704,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 705,MUT-0705,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
@@ -716,13 +716,13 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 715,MUT-0715,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 716,MUT-0716,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 717,MUT-0717,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-718,MUT-0718,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,532,false
+718,MUT-0718,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 719,MUT-0719,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 720,MUT-0720,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 721,MUT-0721,Commit,,TRUSTED,TRUSTED,false,false,0,true
 722,MUT-0722,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 723,MUT-0723,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
-724,MUT-0724,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
+724,MUT-0724,Network,NETWORK,REJECTED,REJECTED,true,true,512,false
 725,MUT-0725,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 726,MUT-0726,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 727,MUT-0727,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -734,7 +734,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 733,MUT-0733,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 734,MUT-0734,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 735,MUT-0735,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
-736,MUT-0736,Environment,BUILD,REJECTED,REJECTED,true,true,522,false
+736,MUT-0736,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 737,MUT-0737,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 738,MUT-0738,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 739,MUT-0739,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
@@ -754,7 +754,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 753,MUT-0753,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 754,MUT-0754,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 755,MUT-0755,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-756,MUT-0756,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,537,false
+756,MUT-0756,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 757,MUT-0757,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 758,MUT-0758,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 759,MUT-0759,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
@@ -767,13 +767,13 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 766,MUT-0766,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 767,MUT-0767,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 768,MUT-0768,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-769,MUT-0769,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+769,MUT-0769,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,521,false
 770,MUT-0770,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 771,MUT-0771,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 772,MUT-0772,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 773,MUT-0773,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 774,MUT-0774,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-775,MUT-0775,SBOM,SBOM,REJECTED,REJECTED,true,true,527,false
+775,MUT-0775,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 776,MUT-0776,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 777,MUT-0777,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 778,MUT-0778,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
@@ -811,9 +811,9 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 810,MUT-0810,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 811,MUT-0811,Evidence Manifest,,TRUSTED,TRUSTED,false,false,0,true
 812,MUT-0812,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-813,MUT-0813,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+813,MUT-0813,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,520,false
 814,MUT-0814,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-815,MUT-0815,Signature,SIGNATURE,REJECTED,REJECTED,true,true,526,false
+815,MUT-0815,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 816,MUT-0816,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 817,MUT-0817,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 818,MUT-0818,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
@@ -829,7 +829,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 828,MUT-0828,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 829,MUT-0829,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 830,MUT-0830,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-831,MUT-0831,SBOM,,TRUSTED,TRUSTED,false,false,527,true
+831,MUT-0831,SBOM,,TRUSTED,TRUSTED,false,false,0,true
 832,MUT-0832,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 833,MUT-0833,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 834,MUT-0834,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
@@ -852,11 +852,11 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 851,MUT-0851,Process,,TRUSTED,TRUSTED,false,false,0,true
 852,MUT-0852,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 853,MUT-0853,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-854,MUT-0854,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,533,false
+854,MUT-0854,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 855,MUT-0855,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 856,MUT-0856,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 857,MUT-0857,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-858,MUT-0858,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+858,MUT-0858,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,522,false
 859,MUT-0859,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 860,MUT-0860,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 861,MUT-0861,Commit,,TRUSTED,TRUSTED,false,false,0,true
@@ -872,7 +872,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 871,MUT-0871,Signature,,TRUSTED,TRUSTED,false,false,0,true
 872,MUT-0872,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 873,MUT-0873,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
-874,MUT-0874,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,513,false
+874,MUT-0874,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 875,MUT-0875,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 876,MUT-0876,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 877,MUT-0877,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
@@ -891,12 +891,12 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 890,MUT-0890,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 891,MUT-0891,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
 892,MUT-0892,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
-893,MUT-0893,Process,PROCESS,REJECTED,REJECTED,true,true,514,false
+893,MUT-0893,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 894,MUT-0894,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 895,MUT-0895,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 896,MUT-0896,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 897,MUT-0897,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-898,MUT-0898,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
+898,MUT-0898,Hash,PROVENANCE,REJECTED,REJECTED,true,true,518,false
 899,MUT-0899,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 900,MUT-0900,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 901,MUT-0901,SBOM,,TRUSTED,TRUSTED,false,false,0,true
@@ -912,7 +912,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 911,MUT-0911,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 912,MUT-0912,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 913,MUT-0913,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-914,MUT-0914,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,524,false
+914,MUT-0914,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 915,MUT-0915,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 916,MUT-0916,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 917,MUT-0917,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
@@ -927,7 +927,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 926,MUT-0926,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 927,MUT-0927,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
 928,MUT-0928,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-929,MUT-0929,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
+929,MUT-0929,SBOM,SBOM,REJECTED,REJECTED,true,true,528,false
 930,MUT-0930,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
 931,MUT-0931,Commit,,TRUSTED,TRUSTED,false,false,0,true
 932,MUT-0932,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
@@ -935,7 +935,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 934,MUT-0934,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
 935,MUT-0935,Process,PROCESS,REJECTED,REJECTED,true,true,0,false
 936,MUT-0936,Timestamp,PROVENANCE,REJECTED,REJECTED,true,true,0,false
-937,MUT-0937,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,737,false
+937,MUT-0937,Evidence Manifest,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 938,MUT-0938,Hash Chain,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 939,MUT-0939,Artifact,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 940,MUT-0940,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
@@ -957,7 +957,7 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 956,MUT-0956,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 957,MUT-0957,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 958,MUT-0958,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
-959,MUT-0959,Commit,SOURCE,WARNING,REJECTED,true,true,515,false
+959,MUT-0959,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
 960,MUT-0960,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 961,MUT-0961,Filesystem,,TRUSTED,TRUSTED,false,false,0,true
 962,MUT-0962,Network,NETWORK,REJECTED,REJECTED,true,true,0,false
@@ -982,10 +982,10 @@ trial_id,mutation_id,category,target_layer,expected,actual,detected,localized,la
 981,MUT-0981,Artifact,,TRUSTED,TRUSTED,false,false,0,true
 982,MUT-0982,Hash,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 983,MUT-0983,Signature,SIGNATURE,REJECTED,REJECTED,true,true,0,false
-984,MUT-0984,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,569,false
+984,MUT-0984,Provenance,PROVENANCE,REJECTED,REJECTED,true,true,0,false
 985,MUT-0985,SBOM,SBOM,REJECTED,REJECTED,true,true,0,false
 986,MUT-0986,Dependency,DEPENDENCIES,REJECTED,REJECTED,true,true,0,false
-987,MUT-0987,Commit,SOURCE,WARNING,REJECTED,true,true,0,false
+987,MUT-0987,Commit,SOURCE,WARNING,REJECTED,true,true,516,false
 988,MUT-0988,Environment,BUILD,REJECTED,REJECTED,true,true,0,false
 989,MUT-0989,Filesystem,FILESYSTEM,REJECTED,REJECTED,true,true,0,false
 990,MUT-0990,Network,NETWORK,REJECTED,REJECTED,true,true,0,false

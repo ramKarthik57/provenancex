@@ -18,7 +18,7 @@ The evaluation measures two primary research metrics:
 | **Attack Detection Rate** | **`100.0%`** |
 | **Trust-Break Localization Accuracy** | **`100.0%`** |
 | **Mean Verification Latency** | `0.00 ms` |
-| **Total Benchmark Duration** | `1 ms` |
+| **Total Benchmark Duration** | `0 ms` |
 
 ## Granular Attack Scenario Breakdown
 

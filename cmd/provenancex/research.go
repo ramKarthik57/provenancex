@@ -6,8 +6,14 @@ import (
 	"path/filepath"
 
 	"github.com/ramKarthik57/provenancex/internal/ablation"
+	"github.com/ramKarthik57/provenancex/internal/blind"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
 	"github.com/spf13/cobra"
+)
+
+var (
+	blindValidationMode bool
+	blindTrialCount     int
 )
 
 var researchCmd = &cobra.Command{
@@ -62,6 +68,23 @@ var researchRunCmd = &cobra.Command{
 	},
 }
 
+var researchValidateCmd = &cobra.Command{
+	Use:   "validate",
+	Short: "Execute blind validation across Development, Validation, and Holdout partitions",
+	Long: `Enforces strict architectural separation between detector and experiment harness.
+The verifier receives unlabelled evidence payloads with zero knowledge of scenario IDs or
+ground truth. Scores are computed only after independent verification concludes.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		harness := blind.NewHarness()
+		report, err := harness.RunBlindBenchmark(blindTrialCount)
+		if err != nil {
+			return fmt.Errorf("blind benchmark failed: %w", err)
+		}
+		fmt.Print(report.FormatTerminal())
+		return nil
+	},
+}
+
 var researchReportCmd = &cobra.Command{
 	Use:   "report",
 	Short: "Display summary of the latest empirical experiment results",
@@ -83,7 +106,11 @@ var researchReportCmd = &cobra.Command{
 }
 
 func init() {
+	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
+	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
+
 	researchCmd.AddCommand(researchRunCmd)
+	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
 	rootCmd.AddCommand(researchCmd)
 }

@@ -4,8 +4,8 @@
   "detectionRatePercent": 100,
   "localizationAccPercent": 100,
   "averageLatencyMs": 0,
-  "totalDurationMs": 1,
-  "executedAt": "2026-09-20T11:45:46.4067331+05:30",
+  "totalDurationMs": 0,
+  "executedAt": "2026-09-20T11:54:39.1782804+05:30",
   "results": [
     {
       "scenarioId": "EXP-01",

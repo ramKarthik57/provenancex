@@ -12,4 +12,4 @@ f1_score,100.00
 false_acceptance_rate_pct,0.00
 false_rejection_rate_pct,0.00
 localization_accuracy_pct,100.00
-mean_latency_micros,22.42
+mean_latency_micros,13.67
