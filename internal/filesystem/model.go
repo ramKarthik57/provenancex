@@ -28,9 +28,11 @@ type Delta struct {
 // Unexpected = Observed - Expected
 // Missing    = Expected - Observed
 type InputEvaluation struct {
-	ExpectedInputs   []string `json:"expectedInputs"`
-	ObservedInputs   []string `json:"observedInputs"`
-	UnexpectedInputs []string `json:"unexpectedInputs"`
-	MissingInputs    []string `json:"missingInputs"`
-	HasDiscrepancy   bool     `json:"hasDiscrepancy"`
+	ExpectedInputs      []string `json:"expectedInputs"`
+	ObservedInputs      []string `json:"observedInputs"`
+	UnexpectedInputs    []string `json:"unexpectedInputs"`
+	MissingInputs       []string `json:"missingInputs"`
+	OutOfBoundaryWrites []string `json:"outOfBoundaryWrites,omitempty"`
+	MonitoredRoots      []string `json:"monitoredRoots,omitempty"`
+	HasDiscrepancy      bool     `json:"hasDiscrepancy"`
 }
