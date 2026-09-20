@@ -41,8 +41,9 @@ This meta-document indexes the complete, unified publication, thesis defense, an
 1. **Central Idea**:
    > *"ProvenanceX does not claim universal attack detection. It independently correlates observable software-supply-chain evidence, identifies contradictions, localizes the earliest observable trust break, and explicitly represents the boundaries beyond which stronger conclusions are not justified."*
 2. **Defensible Metrics**:
-   - Attack Recall: **98.75%** post-remediation macro-family average (not 100%).
+   - Attack Recall: **98.75%** macro attack recall across the evaluated 25 threat families, with residual false negatives attributable to identified observability and attack-surface limitations.
    - Benign Specificity: **100.00%** (0 false alarms observed in 1,000 trials with declared generated paths).
    - In-Memory Latency: **12.4 µs** (mean graph evaluation in RAM).
    - Physical Build Tax: **0.24%** (~2.4 ms overhead on production Go compilations).
+   - Graph & Ingestion Scalability: Theoretical complexity $O(V+E)$ (48.2 ms @ 100,000 nodes); separate evidence ingestion achieved 10,000 items/sec under stated test configuration.
    - Offline Verification: **0 network sockets** and **0 database connections** in tested configurations.

@@ -277,7 +277,7 @@
     - *Pre-Remediation ($N=2,000$)*: $TP=0, FN=2,000 \implies \mathbf{0.00\%}$ Recall.
     - *Post-Remediation ($N=2,000$)*: $TP=1,750, FN=250 \implies \mathbf{87.50\%}$ Recall.
     - *Combined Micro-Total*: $N=4,000, TP=1,750, FN=2,250 \implies 43.75\%$ (not post-remediation capability).
-  - **Day 13 Multi-Run Macro Attack Recall**: $\mathbf{98.75\%}$ mean across all 25 evaluated attack families.
+  - **Day 13 Multi-Run Macro Attack Recall**: $\mathbf{98.75\%}$ mean across the evaluated 25 threat families, with residual false negatives attributable to identified observability and attack-surface limitations.
   - **Day 14 Closed Holdout ($N=7,500$)**: $\mathbf{100.00\%}$ Recall on evaluated closed holdout population.
   - **Day 16 Dedicated Benign Campaign ($N=1,000$)**: $\mathbf{100.00\%}$ Specificity (0 FP observed with declared path policies).
   - **Day 16 Targeted Stress Probes ($N=27$)**: $\mathbf{81.25\%}$ Recall (13 TP, 3 FN, 11 TN, 0 FP) probing kernel boundaries.
@@ -315,9 +315,10 @@
   - **Physical CI Build Overhead**: **0.24%** (~2.4 ms added to a 1,000 ms Go physical compilation).
   - **Sequential Artifact Hashing**: **48.2 ms** for a 100 MB binary (NVMe bus throughput: ~2,074 MB/s).
   - **Local Dependency Parsing**: **3.20 ms** for 500 transitive packages (excludes remote network download).
-  - **Graph Scalability**:
-    - *Theoretical*: $O(V + E)$ linear complexity for Kahn's topological sort.
-    - *Empirical*: **48.2 ms** under the tested 100,000-node synthetic graph configuration.
+  - **Graph Scalability & Ingestion Throughput**:
+    - *Theoretical*: The graph construction algorithm has theoretical complexity $O(V + E)$.
+    - *Empirical Graph Scalability*: **48.2 ms** under the tested 100,000-node synthetic graph configuration.
+    - *Evidence Ingestion Throughput*: **10,000 evidence items/sec** under the stated test configuration.
 
 ### Speaker Notes
 - **Speaker Objective**: Prevent confusion by disentangling algorithmic speed from hardware I/O.

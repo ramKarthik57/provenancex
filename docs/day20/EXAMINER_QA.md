@@ -73,7 +73,7 @@ This document prepares the doctoral/master's candidate for viva voce examination
 **Direct Answer**: Because presenting holdout success as universal security is unscientific. The 100% holdout result is bounded by configured observation paths and Administrator ETW telemetry. Attacks operating outside those physical conditions (e.g., unmonitored directory writes) evade detection.
 
 ### Q19: What does the 98.75% number actually mean?
-**Direct Answer**: 98.75% is the post-remediation *macro attack recall across the 25 evaluated attack families* ($[21 	imes 100\% + 3 	imes 100\% + 1 	imes 68.75\%] / 25$). It represents the unweighted mean family recall, reflecting that 24 families achieve 100% detection while the residual out-of-boundary filesystem family achieves 68.75% bounded recall.
+**Direct Answer**: 98.75% is the post-remediation *macro attack recall across the evaluated 25 threat families* ($[21 \times 100\% + 3 \times 100\% + 1 \times 68.75\%] / 25$). It represents the unweighted mean family recall, reflecting that 24 families achieve 100% detection, with residual false negatives attributable to identified observability and attack-surface limitations (such as untracked external filesystem paths).
 
 ### Q20: Why is Day 13 combined recall only 43.75%?
 **Direct Answer**: 43.75% ($1,750 / 4,000$) is an artifact of pooling 2,000 pre-remediation baseline trials (0% recall) with 2,000 post-remediation trials (87.50% recall). It represents a combined historical test run and must never be cited as post-remediation system capability.
@@ -98,7 +98,7 @@ This document prepares the doctoral/master's candidate for viva voce examination
 **Direct Answer**: It is the empirical wall-clock execution tax added by ProvenanceX runtime telemetry to a standard physical Go compilation (adding ~2.4 ms to a 1,000 ms build baseline), demonstrating that telemetry capture incurs negligible build friction.
 
 ### Q26: How does graph complexity scale?
-**Direct Answer**: Theoretically, Kahn's topological sort and pairwise correlation scale linearly in $O(V + E)$ where $V$ is evidence planes and $E$ is causal dependencies. Empirically, synthetic graph stress tests demonstrated 4.8 µs per node, executing a 100,000-node graph traversal in 48.2 ms without polynomial blowup.
+**Direct Answer**: The graph construction and traversal algorithms have theoretical complexity $O(V + E)$ where $V$ represents evidence planes and $E$ represents causal dependencies. Empirically, the evaluated 100,000-node synthetic graph completed in 48.2 ms, while the separate evidence-ingestion benchmark achieved 10,000 evidence items/sec under the stated test configuration.
 
 ---
 

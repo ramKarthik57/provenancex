@@ -40,9 +40,9 @@ The canonical claim taxonomy is locked as follows:
 
 | Claim ID | Canonical Claim Definition | Formal Audited Status | Bounded Scope & Empirical Standard |
 |:---:|---|:---:|---|
-| **C1** | **Detection capability / bounded recall** | `BOUNDED` | 98.75% post-remediation macro attack recall across 25 threat families. |
+| **C1** | **Detection capability / bounded recall** | `BOUNDED` | 98.75% macro attack recall across the evaluated 25 threat families, with residual false negatives attributable to identified observability and attack-surface limitations. |
 | **C2** | **Detection & build-time latency scope** | `BOUNDED` | In-memory correlation: 12.4 µs mean; Physical build tax: 0.24% (~2.4 ms); 100MB hash: 48.2 ms. |
-| **C3** | **Graph / ingestion scalability** | `VALIDATED` | Theoretical: $O(V+E)$ for specified traversal; Empirical: 48.2 ms under tested 100,000-node setup. |
+| **C3** | **Graph / ingestion scalability** | `VALIDATED` | The graph construction algorithm has theoretical complexity $O(V+E)$. Empirically, the evaluated 100,000-node graph completed in 48.2 ms, while the separate evidence-ingestion benchmark achieved 10,000 evidence items/sec under the stated test configuration. |
 | **C4** | **Trust-graph DAG & lineage localization** | `VALIDATED` | 100% correct localization across the evaluated composed-attack scenarios ($N=750$). |
 | **C5** | **Temporal consistency forensics** | `BOUNDED` | Detects commit backdating & stage inversions; bounded by host monotonic clock resolution. |
 | **C6** | **Binary structural forensics** | `VALIDATED` | Forensic validation of PE/COFF and ELF headers; detects packed/encrypted sections (>7.2 entropy). |

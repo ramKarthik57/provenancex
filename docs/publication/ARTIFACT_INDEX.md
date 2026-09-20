@@ -18,11 +18,11 @@ This document catalogs all primary research artifacts, datasets, algorithms, and
 | docs/publication/ARTIFACT_INDEX.md | Documentation | ARTIFACT_INDEX.md | a2d12ea4efc0efb2c07ed8bb5b938cef053b8c9cec5ac8b55cf40eafbb465d54 |
 | docs/publication/PUBLICATION_PACKAGE.md | Documentation | PUBLICATION_PACKAGE.md | 8726e7e0b988f00db14a8ad45af388cef388c430225bed6fcc1e9d14c6f94133 |
 | docs/day20/CAMERA_READY_FIGURES.md | Documentation | CAMERA_READY_FIGURES.md | badd98a8f562eb8e401b4ee9cf292585a6c41f55faa71ea850fded03e1a5db90 |
-| docs/day20/VIVA_DECK_FINAL.md | Documentation | VIVA_DECK_FINAL.md | c3d1ac658a0248c935c2d51974452483e241de3a55a549cb4728fc9bea278ddb |
-| docs/day20/EXAMINER_QA.md | Documentation | EXAMINER_QA.md | 22ab18350180103041b57a9ff09a188e65fba45df44cc76f774d5996e1f7d2a0 |
+| docs/day20/VIVA_DECK_FINAL.md | Documentation | VIVA_DECK_FINAL.md | d6bb9dcb64c78b2931a947ffcdb1b0146effaca7d949511d4e3a74e5018dd9e6 |
+| docs/day20/EXAMINER_QA.md | Documentation | EXAMINER_QA.md | 1d7304c880e1e257e94a68b92e9c2f488c3c3ccbee499fab950c8269bccd8b3d |
 | docs/day20/LIVE_DEMO.md | Documentation | LIVE_DEMO.md | 0729d410583a8f5b1267b68ce0c700e7682339ba31a0bcd925efa3c62442e7ff |
 | docs/day20/DEMO_FAILURE_PLAN.md | Documentation | DEMO_FAILURE_PLAN.md | 4feaec7fd156d389c787341549900a808874f55098bb280ddf2ed688961dd7fd |
-| docs/day20/FINAL_DEFENSE_PACKAGE.md | Documentation | FINAL_DEFENSE_PACKAGE.md | fdb0fa738c412334096b7a5e503737382b127fd4db3c05e9e0546e57a3a46553 |
+| docs/day20/FINAL_DEFENSE_PACKAGE.md | Documentation | FINAL_DEFENSE_PACKAGE.md | 255e979d6aea14c2cc63df6b5bde2d716901b6b1ba71df0efcc4c770465bdc1e |
 | docs/day20/figures/architecture.svg | Diagram | architecture.svg | 66337555352541cb0aab3c29acb00b0364a53b6fef8114ef116bfdabe5dbfe4f |
 | docs/day20/figures/evidence-model.svg | Diagram | evidence-model.svg | 732c1aba78c178cb1025db3fc8d92c9110b88213c48de43a379dedcb7eee01e7 |
 | docs/day20/figures/correlation.svg | Diagram | correlation.svg | e24612288d33d21ab53cb5e0a415e08a0713b45e6cb47d3fc41ff448a984f4e5 |
@@ -41,7 +41,7 @@ This document catalogs all primary research artifacts, datasets, algorithms, and
 | results/day19/publication_claim_validation.csv | Dataset | publication_claim_validation.csv | e44c2a3d7d5bea34a184bbf4cf5afef22b4292893c464cf451c8d8a353e1ce8b |
 | results/day19/reproducibility_checklist.json | Dataset | reproducibility_checklist.json | 0e769da4c5b9f26c3646b562d2bf1301befbf1a0835f15c317ab3603d0db6862 |
 | results/day20/final_consistency_audit.csv | Dataset | final_consistency_audit.csv | 3287abe7256d95dd114fb81234158c842efa0089e0c099f38ed0fcfd6aac9887 |
-| results/day20/RESEARCH_FREEZE.md | Documentation | RESEARCH_FREEZE.md | 27467c1e59acd40630634cf41fdc4a8ece9695f8681ef046859869578b53142c |
+| results/day20/RESEARCH_FREEZE.md | Documentation | RESEARCH_FREEZE.md | 58759bcb0bfbcc96646b2de4f237258be5ef8d5081f97714931dc34042558e88 |
 
 ## 2. Verification Instructions
 
