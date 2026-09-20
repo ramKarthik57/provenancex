@@ -5,9 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/ramKarthik57/provenancex/internal/artifact"
+	"github.com/ramKarthik57/provenancex/internal/bundle"
 	"github.com/ramKarthik57/provenancex/internal/correlation"
 	"github.com/ramKarthik57/provenancex/internal/decision"
 	"github.com/ramKarthik57/provenancex/internal/dependency"
@@ -27,6 +29,7 @@ var (
 	verifySignatureFile  string
 	verifyPublicKeyFile  string
 	verifyRepoDir        string
+	verifyOffline        bool
 	verifyJSONOutput     bool
 )
 
@@ -48,6 +51,25 @@ explainable, deterministic decision: TRUSTED, WARNING, or REJECTED.`,
 	Args: cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		artifactPath := args[0]
+
+		// Support offline bundle verification directly via verify command
+		if verifyOffline || strings.HasSuffix(artifactPath, ".tar.gz") {
+			res, err := bundle.VerifyOffline(artifactPath)
+			if err != nil {
+				return fmt.Errorf("offline verification error: %w", err)
+			}
+			if verifyJSONOutput {
+				enc := json.NewEncoder(os.Stdout)
+				enc.SetIndent("", "  ")
+				return enc.Encode(res)
+			}
+			printOfflineVerificationResult(res)
+			if res.Verdict == "REJECTED" {
+				os.Exit(1)
+			}
+			return nil
+		}
+
 		meta, err := artifact.Inspect(artifactPath, "")
 		if err != nil {
 			return fmt.Errorf("failed inspecting target artifact %s: %w", artifactPath, err)
@@ -208,6 +230,7 @@ func init() {
 	verifyCmd.Flags().StringVar(&verifySignatureFile, "signature", "", "Path to digital signature file")
 	verifyCmd.Flags().StringVar(&verifyPublicKeyFile, "key", "", "Path to public key file for signature verification")
 	verifyCmd.Flags().StringVar(&verifyRepoDir, "repo", ".", "Path to source Git repository")
+	verifyCmd.Flags().BoolVar(&verifyOffline, "offline", false, "Perform offline cryptographic verification on a portable evidence bundle (.tar.gz)")
 	verifyCmd.Flags().BoolVar(&verifyJSONOutput, "json", false, "Output results as formatted JSON")
 	rootCmd.AddCommand(verifyCmd)
 }
