@@ -1,4 +1,4 @@
-package policy
+﻿package policy
 
 import (
 	"os"
@@ -16,6 +16,7 @@ type Policy struct {
 	Provenance      ProvenancePolicy      `yaml:"provenance" json:"provenance"`
 	Signature       SignaturePolicy       `yaml:"signature" json:"signature"`
 	Network         NetworkPolicy         `yaml:"network" json:"network"`
+	Telemetry       TelemetryPolicy       `yaml:"telemetry" json:"telemetry"`
 	Reproducibility ReproducibilityPolicy `yaml:"reproducibility" json:"reproducibility"`
 }
 
@@ -42,6 +43,11 @@ type SignaturePolicy struct {
 type NetworkPolicy struct {
 	EnforceAllowlist    bool     `yaml:"enforce_allowlist" json:"enforce_allowlist"`
 	AllowedDestinations []string `yaml:"allowed_destinations" json:"allowed_destinations"`
+}
+
+type TelemetryPolicy struct {
+	RequireProcessTelemetry bool `yaml:"require_process_telemetry" json:"require_process_telemetry"`
+	RequireNetworkTelemetry bool `yaml:"require_network_telemetry" json:"require_network_telemetry"`
 }
 
 type ReproducibilityPolicy struct {
@@ -83,6 +89,10 @@ func DefaultPolicy() *Policy {
 		},
 		Network: NetworkPolicy{
 			EnforceAllowlist: true,
+		},
+		Telemetry: TelemetryPolicy{
+			RequireProcessTelemetry: false,
+			RequireNetworkTelemetry: false,
 		},
 	}
 }

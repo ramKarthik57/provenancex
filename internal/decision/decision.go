@@ -1,4 +1,4 @@
-package decision
+﻿package decision
 
 import (
 	"fmt"
@@ -110,19 +110,43 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 		}
 	}
 
-	// 7. Network policy violations
+	// 7. Process Telemetry Policy
+	if pol.Telemetry.RequireProcessTelemetry {
+		if status, ok := corr.LayerStatuses[evidence.LayerProcess]; !ok || status == evidence.StatusUnobserved {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, "Mandatory process telemetry is missing (violates telemetry.require_process_telemetry policy)")
+		}
+	} else {
+		if status, ok := corr.LayerStatuses[evidence.LayerProcess]; !ok || status == evidence.StatusUnobserved {
+			dec.Warnings = append(dec.Warnings, "Process execution telemetry is unobserved: runtime build processes were not tracked")
+		}
+	}
+
+	// 8. Network Telemetry Policy
+	if pol.Telemetry.RequireNetworkTelemetry {
+		if status, ok := corr.LayerStatuses[evidence.LayerNetwork]; !ok || status == evidence.StatusUnobserved {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, "Mandatory network telemetry is missing (violates telemetry.require_network_telemetry policy)")
+		}
+	} else {
+		if status, ok := corr.LayerStatuses[evidence.LayerNetwork]; !ok || status == evidence.StatusUnobserved {
+			dec.Warnings = append(dec.Warnings, "Network telemetry is unobserved: network egress was not audited during build")
+		}
+	}
+
+	// 9. Network policy violations
 	if status, ok := corr.LayerStatuses[evidence.LayerNetwork]; ok && status == evidence.StatusContradicted {
 		dec.Verdict = VerdictRejected
 		dec.Reasons = append(dec.Reasons, "Build attempted unauthorized network communication to unapproved destinations")
 	}
 
-	// 8. Build execution status
+	// 10. Build execution status
 	if status, ok := corr.LayerStatuses[evidence.LayerBuild]; ok && status == evidence.StatusMismatch {
 		dec.Verdict = VerdictRejected
 		dec.Reasons = append(dec.Reasons, "Build command execution failed or exited with non-zero status")
 	}
 
-	// 8. Missing build inputs warning
+	// 11. Missing build inputs warning
 	if len(corr.MissingInputs) > 0 {
 		for _, m := range corr.MissingInputs {
 			dec.Warnings = append(dec.Warnings, fmt.Sprintf("Declared build input was missing during build: %s", m))
