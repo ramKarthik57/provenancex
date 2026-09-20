@@ -8,10 +8,10 @@ import (
 func GenerateReproductionReport(env *EnvironmentMetadata) string {
 	return fmt.Sprintf(`# PROVENANCEX — COMPREHENSIVE REPRODUCIBILITY AUDIT REPORT
 
-**Audit Date:** 2026-09-20  
-**Environment:** %s / %s (%d Logical Cores, Go %s)  
-**Git Commit:** \x60%s\x60 (Branch: \x60%s\x60, Clean Tree: %t)  
-**Historical Baselines Verified:** %d Frozen Files  
+**Audit Date:** 2026-09-20<br>
+**Environment:** %s / %s (%d Logical Cores, Go %s)<br>
+**Git Commit:** \x60%s\x60 (Branch: \x60%s\x60, Clean Tree: %t)<br>
+**Historical Baselines Verified:** %d Frozen Files
 
 ---
 

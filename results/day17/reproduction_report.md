@@ -1,9 +1,9 @@
 # PROVENANCEX — COMPREHENSIVE REPRODUCIBILITY AUDIT REPORT
 
-**Audit Date:** 2026-09-20  
-**Environment:** windows / amd64 (16 Logical Cores, Go go1.23.6)  
-**Git Commit:** \x600a6a3b36975ef7fa4f1ed080d4a991a870c23e23\x60 (Branch: \x60research-validation\x60, Clean Tree: false)  
-**Historical Baselines Verified:** 76 Frozen Files  
+**Audit Date:** 2026-09-20<br>
+**Environment:** windows / amd64 (16 Logical Cores, Go go1.23.6)<br>
+**Git Commit:** \x6017d014db3e8285ab27a8cf30a55c4cef96ac41a7\x60 (Branch: \x60research-validation\x60, Clean Tree: false)<br>
+**Historical Baselines Verified:** 76 Frozen Files
 
 ---
 
