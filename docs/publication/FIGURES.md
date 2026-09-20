@@ -190,7 +190,8 @@ Latency
    0 +----+-------------------+-------------------+-------------+ Node Count
      0   1k                  20k                 50k          100k
 
-Mathematical Growth: Strictly Linear O(V + E). Zero polynomial explosion.
+Theoretical Complexity: Linear O(V + E) for the specified topological traversal.
+Empirical Measurement: 48.2 ms under the tested 100,000-node configuration (zero polynomial explosion).
 ```
 
 ---

@@ -13,7 +13,7 @@ Software supply-chain integrity mechanisms predominantly rely on metadata attest
 
 We present **ProvenanceX**, an independent cross-layer verification and trust-break localization framework for software supply chains. ProvenanceX does not claim to observe every possible build-time attack. Instead, it provides an independent cross-layer verification framework that correlates provenance, dependency, environment, execution, filesystem, network, artifact, and cryptographic evidence; localizes contradictions within an observed evidence directed acyclic graph (DAG); and explicitly identifies where physical observation boundaries prevent stronger conclusions.
 
-Across 19,777 independently audited raw trials spanning 25 adversarial mutation families, 11 unseen attack scenarios, and 3 multi-stage composed attacks, ProvenanceX achieved **98.75% macro attack recall** post-remediation within the evaluated scope (improving from an 80.00% pre-remediation baseline) with **0 false positives observed in a dedicated 1,000-trial benign campaign** when in-tree generated path policies are declared. Causal trust-break localization accurately pinpoints the earliest compromised pipeline layer with 100% precision. Algorithmic in-memory correlation requires a mean of **12.4 µs**, while physical end-to-end build overhead on production Go compilations is bounded at **0.24% (~2.4 ms)**. We formally bound and document four residual empirical blind spots, establishing a realistic, defensible security foundation for modern software distribution.
+Across 19,777 independently audited raw trials spanning 25 adversarial mutation families, 11 unseen attack scenarios, and 3 multi-stage composed attacks, ProvenanceX achieved **98.75% macro attack recall** post-remediation within the evaluated scope (improving from an 80.00% pre-remediation baseline) with **0 false positives observed in a dedicated 1,000-trial benign campaign** when in-tree generated path policies are declared. Causal trust-break localization achieves 100% correct localization across the evaluated composed-attack scenarios. Algorithmic in-memory correlation requires a mean of **12.4 µs**, while physical end-to-end build overhead on production Go compilations is bounded at **0.24% (~2.4 ms)**. We formally bound and document four residual empirical blind spots, establishing a realistic, defensible security foundation for modern software distribution.
 
 ---
 
@@ -232,7 +232,7 @@ The standalone verifier (`provenancex-verifier`) enforces four self-contained ch
 3. **Digital Signature Verification**: Validates Ed25519, ECDSA P-256, or RSA signatures over the artifact using standard library mathematics.
 4. **Attestation Semantics**: Parses in-toto statements, verifying builder ID and materials.
 
-**Air-Gap Guarantee**: The verifier initiates zero network sockets, queries zero remote databases, and operates with zero runtime dependencies.
+**Offline Verification**: In experimental evaluations, the standalone verifier operated with zero network sockets, queried zero remote databases, and executed deterministically with zero external runtime dependencies.
 
 ---
 

@@ -53,20 +53,20 @@ The following 10 publication documents and evaluation datasets were generated in
 
 ---
 
-## 4. Final Research Claim Verification (C1–C10)
+## 4. Final Research Claim Verification (C1–C10 Canonical Mapping)
 
-| Claim ID | Verified Metric | Result | Target / Standard | Status |
-|:---:|---|:---:|:---:|:---:|
-| **C1** | Post-Remediation Macro Attack Recall | **98.75%** | $\ge 98.0\%$ across 25 families | **VERIFIED** |
-| **C2** | Benign False Alarm Rate (Specificity) | **100.00%** | Zero false positives ($N=1,000$) | **VERIFIED** |
-| **C3** | Unseen Attack Generalization | **100.00%** | 11 Novel Scenarios ($N=5,500$) | **VERIFIED** |
-| **C4** | Causal Root-Cause Localization ($L^*$) | **100.00%** | 3 Composed Attacks ($N=750$) | **VERIFIED** |
-| **C5** | In-Memory Decision Latency | **12.4 µs** | Microsecond graph evaluation | **VERIFIED** |
-| **C6** | Physical CI Build Tax Overhead | **0.24%** | $\le 1.0\%$ (~2.4 ms on Go build) | **VERIFIED** |
-| **C7** | Trust Graph Scalability | **$O(V+E)$** | 48.2 ms at 100,000 nodes | **VERIFIED** |
-| **C8** | Air-Gapped Standalone Verifier | **100% Offline** | Zero network sockets / Zero DB | **VERIFIED** |
-| **C9** | Explicit Boundary Documentation | **4 Boundaries** | Bounded privilege & scheduler limits | **VERIFIED** |
-| **C10**| Data Leakage & Overfitting | **Zero Leakage** | Feature disjointness confirmed | **VERIFIED** |
+| Claim ID | Canonical Claim Definition | Verified Empirical & Theoretical Finding | Ground-Truth Standard | Audited Status |
+|:---:|---|---|:---:|:---:|
+| **C1** | **Detection capability / bounded recall** | 98.75% post-remediation macro recall (21 intact + 3 remediated @ 100%, 1 bounded @ 68.75%) | Bounded multi-run macro average | `BOUNDED` |
+| **C2** | **Detection & build-time latency scope** | In-memory correlation: 12.4 µs mean; Physical build tax: 0.24% (~2.4 ms); 100MB hash: 48.2 ms | Rigorous scope disentanglement | `BOUNDED` |
+| **C3** | **Graph / ingestion scalability** | Theoretical: $O(V+E)$ for specified traversal; Empirical: 48.2 ms under tested 100k-node setup | Linear computational scaling | `VALIDATED` |
+| **C4** | **Trust-graph DAG & lineage localization** | 100% correct localization across the evaluated composed-attack scenarios ($N=750$) | Earliest broken layer ($L^*$) | `VALIDATED` |
+| **C5** | **Temporal consistency forensics** | Detects commit backdating and stage inversions; bounded by host monotonic clock resolution | Monotonic ordering verification | `BOUNDED` |
+| **C6** | **Binary structural forensics** | Validates PE/COFF and ELF headers; detects packed/encrypted code (>7.2 Shannon entropy) | Structural binary verification | `VALIDATED` |
+| **C7** | **Standalone air-gapped verification** | Offline Verification: tested verifier operated with 0 network sockets and 0 database dependencies | Air-gapped release gate operation | `VALIDATED` |
+| **C8** | **Runtime telemetry observability** | 100% with Admin Kernel ETW; user-mode polling bounded at >10ms processes & transient file races | Privilege & scheduler boundary | `BOUNDED` |
+| **C9** | **Adversarial generalization** | 100% recall on evaluated 11 unseen scenarios ($N=5,500$) and 3 composed attacks ($N=750$) in workspace | Evaluated benchmark suites | `PARTIALLY_VALIDATED` |
+| **C10**| **Benign operational stability / false alarms** | 100.00% specificity (0 FP across 1,000 trials) when declared in-tree generated paths configured | Policy-declared cleanliness | `BOUNDED` |
 
 ---
 

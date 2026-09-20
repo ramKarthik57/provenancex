@@ -86,7 +86,7 @@
   - Downstream symptom (Signature mismatch at $L_{12}$) obscures root cause ($L_8$ file injection or $L_7$ rogue process).
   - **Topological Localization**: Constructs DAG $G=(V, E)$, computes topological order $\Pi$, and terminates at earliest broken plane:
     $$L^* = \arg\min_{L_k \in \Pi} \{ k \mid \text{State}(L_k) = \text{CONTRADICTED} \}$$
-  - 100% localization accuracy demonstrated on composed attacks ($N=750$).
+  - 100% correct localization across the evaluated composed-attack scenarios ($N=750$).
 - **Visual**: Figure 2 DAG with highlighted red root-cause node.
 - **Speaker Notes**: "Security operations teams do not need 10 alarms saying the binary changed; they need to know that at 14:02:11 an unauthorized helper compiler injected code at Layer 8."
 
@@ -151,9 +151,9 @@
 ## Slide 14: Generalization & Scalability (Day 14)
 - **Bullet Points**:
   - **11 Unseen Attack Scenarios ($N=5,500$)**: 100.00% recall within evaluated boundary.
-  - **3 Composed Multi-Stage Attacks ($N=750$)**: 100.00% localization accuracy.
-  - **Benign Environmental Variability ($N=1,250$)**: 0.00% false alarms.
-  - **Graph Scalability**: Linear $O(V+E)$ scaling up to 100,000 nodes (48.2 ms).
+  - **3 Composed Multi-Stage Attacks ($N=750$)**: 100% correct localization across the evaluated composed-attack scenarios.
+  - **Benign Environmental Variability ($N=1,250$)**: 0.00% false alarms when generated paths are declared.
+  - **Graph Scalability**: Theoretical: $O(V+E)$ for specified traversal; Empirical: 48.2 ms under tested 100,000-node configuration.
 - **Visual**: Figure 5 Scalability Curve.
 - **Speaker Notes**: "The graph engine scales strictly linearly. Even on a massive 100,000-node dependency graph, full topological traversal executes in under 50 milliseconds."
 

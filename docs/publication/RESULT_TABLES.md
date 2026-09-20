@@ -89,29 +89,29 @@ Pre-Remediation Baseline (Day 12) & 80.00\% & 100.00\% & 88.89 & 4 \\
 | Benchmark Suite | Evaluated Dimension | Sample Count ($N$) | Metric Evaluated | Observed Result | Boundary / Condition |
 |---|---|:---:|---|:---:|---|
 | **Novel Attack Holdout** | 11 Unseen Attack Scenarios | 5,500 | Attack Detection Recall | **100.00%** | Within configured workspace boundary |
-| **Composed Multi-Stage**| 3 Multi-Layer Attacks | 750 | Causal Root-Cause Localization | **100.00%** | Identifies earliest broken layer $L^*$ |
-| **Benign Variability** | Dynamic Timestamps & Paths | 1,250 | False Alarm Rate (FAR) | **0.00%** | When generated paths are declared |
+| **Composed Multi-Stage**| 3 Multi-Layer Attacks | 750 | Causal Root-Cause Localization | **100.00%** | 100% correct localization across evaluated composed-attack scenarios |
+| **Benign Variability** | Dynamic Timestamps & Paths | 1,250 | False Alarm Rate (FAR) | **0.00%** | When generated paths are declared in policy |
 | **Artifact Scaling** | Release Binaries (1MB - 1GB) | 50 | Hashing Throughput | **2,074 MB/s** | Sequential NVMe read bandwidth |
 | **Dependency Scaling** | Transitive Packages (10 - 500) | 50 | AST Analysis Latency | **3.20 ms** | Local memory parse, excludes network RTT |
-| **Trust Graph Scaling** | Graph Size (1k - 100k Nodes)| 10 | Algorithmic Traversal | **48.20 ms** | Strictly linear $O(V+E)$ scaling |
+| **Trust Graph Scaling** | Graph Size (1k - 100k Nodes)| 10 | Algorithmic Traversal | **48.20 ms** | Theoretical: $O(V+E)$ traversal; Empirical: 48.2 ms under tested 100k-node setup |
 
 ---
 
-## Table 4: Independent Research Claim Matrix (C1–C10 Status & Evidence)
+## Table 4: Independent Research Claim Matrix (C1–C10 Canonical Mapping & Evidence)
 
 ### Markdown Table
-| Claim ID | Formal Claim Description | Claim Scope | Verified Value | Ground-Truth Evidence Source |
-|:---:|---|---|:---:|---|
-| **C1** | High Attack Recall | Post-Remediation Macro (25 Families) | **98.75%** | `results/day13/confusion_matrix.csv` |
-| **C2** | Zero Benign False Alarms | Dedicated Benign Campaign ($N=1,000$) | **100.00%** | `results/day16/benign_campaign_raw.csv` |
-| **C3** | Generalization to Unseen Attacks | 11 Unseen Attack Variants ($N=5,500$) | **100.00%** | `results/day14/generalization_raw.csv` |
-| **C4** | Causal Trust-Break Localization | Multi-Stage Attacks ($N=750$) | **100.00%** | `results/day14/composed_attacks.csv` |
-| **C5** | Microsecond Decision Latency | In-Memory Graph Correlation | **12.4 µs** | `results/day17/standalone_verifier_audit.csv` |
-| **C6** | Minimal Physical Build Tax | Production Go Compilations | **0.24%** | `results/day15/physical_build_tax.csv` |
-| **C7** | Linear Graph Scalability | Synthetic Graphs (1k to 100k Nodes) | **$O(V+E)$** | `results/day14/graph_scaling.csv` |
-| **C8** | Air-Gapped Offline Verification | Standalone Binary Release Gates | **100% Offline** | `cmd/provenancex-verifier/main.go` |
-| **C9** | Explicit Hardware & OS Limits | Non-Admin & Ephemeral Scenarios | **4 Boundaries** | `docs/RESEARCH_PAPER.md` (Sec 13) |
-| **C10**| Zero Data Leakage / Memorization | Feature Disjointness Audit | **0 Leakage** | `docs/DATA_LEAKAGE_AUDIT.md` |
+| Claim ID | Canonical Claim Definition | Evaluated Scope | Status | Empirical Evidence & Bounded Findings | Ground-Truth Source |
+|:---:|---|---|:---:|---|---|
+| **C1** | **Detection capability / bounded recall** | 25 Attack Families (Post-Remediation) | `BOUNDED` | 98.75% post-remediation macro recall (21 intact + 3 remediated at 100%, 1 bounded at 68.75%) | `results/day13/confusion_matrix.csv` |
+| **C2** | **Detection & build-time latency scope** | Telemetry & Decision Engine | `BOUNDED` | In-memory correlation: 12.4 µs mean; Physical build tax: 0.24% (~2.4 ms on Go build); 100MB NVMe hash: 48.2 ms | `results/day15/physical_build_tax.csv` |
+| **C3** | **Graph / ingestion scalability** | Layer 2 Trust Graph & Dependencies | `VALIDATED` | Theoretical: $O(V+E)$ for specified traversal; Empirical: 48.2 ms under tested 100,000-node setup | `results/day14/graph_scaling.csv` |
+| **C4** | **Trust-graph DAG & lineage localization** | Layer 2 Trust Graph & Causal Lineage | `VALIDATED` | 100% correct localization across the evaluated composed-attack scenarios ($N=750$) | `results/day14/composed_attacks.csv` |
+| **C5** | **Temporal consistency forensics** | Layer 5 Temporal Consistency Analysis | `BOUNDED` | Detects commit backdating & stage inversions; bounded by host monotonic clock resolution | `internal/temporal/temporal_test.go` |
+| **C6** | **Binary structural forensics** | Layer 9 Binary Structural Forensics | `VALIDATED` | Validates PE/COFF and ELF headers; detects packed/encrypted code (>7.2 Shannon entropy) | `internal/forensics/binary_test.go` |
+| **C7** | **Standalone air-gapped verification** | Release Gate Binary (`provenancex-verifier`) | `VALIDATED` | Offline Verification: tested verifier operated with 0 network sockets and 0 database dependencies | `results/day17/standalone_verifier_audit.csv` |
+| **C8** | **Runtime telemetry observability** | Layers 6, 7, 8 (Process, FS, Network) | `BOUNDED` | 100% with Admin Kernel ETW; user-mode polling bounded at >10ms processes & transient file races | `results/day16/process_visibility.csv` |
+| **C9** | **Adversarial generalization** | Adversarial Evaluation Subsystem | `PARTIALLY_VALIDATED` | 100% recall on evaluated 11 unseen scenarios ($N=5,500$) and 3 composed attacks ($N=750$) in workspace | `results/day14/generalization_raw.csv` |
+| **C10**| **Benign operational stability / false alarms** | Policy & Decision Subsystem | `BOUNDED` | 100.00% specificity (0 FP across 1,000 trials) when declared in-tree generated path exemptions configured | `results/day16/benign_campaign_raw.csv` |
 
 ---
 

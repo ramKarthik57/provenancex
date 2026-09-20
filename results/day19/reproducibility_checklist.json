@@ -3,6 +3,18 @@
   "milestone": "Publication Readiness & Artifact Generation",
   "git_branch": "research-validation",
   "evaluation_standard": "ACM / IEEE S&P Artifact Evaluation Level 5",
+  "canonical_claim_taxonomy": {
+    "C1": "Detection capability / bounded recall",
+    "C2": "Detection & build-time latency scope",
+    "C3": "Graph / ingestion scalability",
+    "C4": "Trust-graph DAG & lineage localization",
+    "C5": "Temporal consistency forensics",
+    "C6": "Binary structural forensics",
+    "C7": "Standalone air-gapped verification",
+    "C8": "Runtime telemetry observability",
+    "C9": "Adversarial generalization",
+    "C10": "Benign operational stability / false alarms"
+  },
   "datasets": {
     "frozen_campaigns_count": 7,
     "total_raw_trials": 19777,
@@ -11,7 +23,13 @@
     "benign_specificity_pct": 100.0,
     "unseen_generalization_recall_pct": 100.0,
     "mean_in_memory_latency_micros": 12.4,
-    "physical_build_tax_pct": 0.24
+    "physical_build_tax_pct": 0.24,
+    "composed_attack_localization_eval": "100% correct localization across the evaluated composed-attack scenarios (N=750)",
+    "graph_scalability": {
+      "theoretical": "O(V + E) for specified traversal",
+      "empirical": "48.2 ms under tested 100,000-node configuration"
+    },
+    "air_gapped_verification": "Tested verifier operated without network or database dependencies"
   },
   "artifacts_generated": [
     "docs/RESEARCH_PAPER.md",
