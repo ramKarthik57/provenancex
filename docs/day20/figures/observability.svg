@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad5)"/>
+  
+  <text x="450" y="35" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#0f172a">Observability Boundaries &amp; Hardware/Privilege Surface</text>
+  <text x="450" y="55" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Explicit Characterization of Sensor Capabilities across Privilege Tiers</text>
+
+  <g transform="translate(100, 85)">
+    <rect x="0" y="0" width="700" height="110" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#15803d">1. OBSERVABLE ZONE (Fully Monitored)</text>
+    <text x="25" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Administrator Windows Kernel ETW: 100% process event capture down to sub-ms lifetimes</text>
+    <text x="25" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• In-Workspace Filesystem Mutations: ReadDirectoryChangesW streams &amp; SHA-256 state hashes</text>
+    <text x="25" y="95" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Standard DNS Queries: Shannon entropy &gt;3.8 detects encoded/encrypted tunneling</text>
+  </g>
+
+  <g transform="translate(100, 215)">
+    <rect x="0" y="0" width="700" height="110" rx="8" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#a16207">2. PARTIALLY OBSERVABLE ZONE (Scheduler / Privilege Bounded)</text>
+    <text x="25" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• User-Mode Polling Fallback: Bounded by 15.6 ms OS scheduler quantization (62.5% process catch rate)</text>
+    <text x="25" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Transient In-Flight Files: Operations &lt;1 ms can coalesce in OS I/O buffers (71.4% catch rate)</text>
+    <text x="25" y="95" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Lexical DNS Evasion: Low-entropy dictionary subdomains mimic legitimate CDN traffic</text>
+  </g>
+
+  <g transform="translate(100, 345)">
+    <rect x="0" y="0" width="700" height="110" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <text x="25" y="30" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#b91c1c">3. UNOBSERVABLE ZONE (Formally Out-of-Scope / TCB)</text>
+    <text x="25" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Out-of-Workspace Writes: Operations outside configured paths evade user-mode watchers (ADV-HUNT-01)</text>
+    <text x="25" y="75" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Encrypted DNS: DNS-over-HTTPS (DoH) / TLS (DoT) bypasses local OS DNS parser</text>
+    <text x="25" y="95" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Ring-0 Kernel Compromise: Rootkits hooking ntoskrnl dispatch tables (Kernel is trusted base)</text>
+  </g>
+</svg>

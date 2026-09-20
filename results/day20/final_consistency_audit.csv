@@ -1,0 +1,81 @@
+document,claim_id,statement,canonical_value,document_value,consistent,action
+docs/RESEARCH_PAPER.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/RESEARCH_PAPER.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),98.75% macro recall (25 families),TRUE,VERIFIED_CONSISTENT
+docs/PAPER_RESULTS.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/PAPER_RESULTS.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)","100.00% specificity (0 FP in 1,000 trials with declared paths)",TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),98.75% macro recall (25 families),TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes","O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,100% correct localization in evaluated composed scenarios,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Bounded monotonic ordering & backdating detection,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Validated PE/ELF headers & section entropy >7.2,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)","Offline verification (0 sockets, 0 DB in tested setup)",TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Bounded: 100% admin ETW; user-mode polling >10ms,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,TRUE,VERIFIED_CONSISTENT
+docs/CLAIM_EVIDENCE_MATRIX.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)","100.00% specificity (0 FP in 1,000 trials with declared paths)",TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),98.75% macro recall (25 families),TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes","O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,100% correct localization in evaluated composed scenarios,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Bounded monotonic ordering & backdating detection,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Validated PE/ELF headers & section entropy >7.2,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)","Offline verification (0 sockets, 0 DB in tested setup)",TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Bounded: 100% admin ETW; user-mode polling >10ms,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,TRUE,VERIFIED_CONSISTENT
+docs/DAY17_FINAL_RESEARCH_AUDIT.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)","100.00% specificity (0 FP in 1,000 trials with declared paths)",TRUE,VERIFIED_CONSISTENT
+docs/FINAL_RESEARCH_LIMITATIONS.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/FINAL_RESEARCH_LIMITATIONS.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/RESULT_TABLES.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),98.75% macro recall (25 families),TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes","O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,100% correct localization in evaluated composed scenarios,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Bounded monotonic ordering & backdating detection,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Validated PE/ELF headers & section entropy >7.2,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)","Offline verification (0 sockets, 0 DB in tested setup)",TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Bounded: 100% admin ETW; user-mode polling >10ms,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,TRUE,VERIFIED_CONSISTENT
+docs/publication/RESULT_TABLES.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)","100.00% specificity (0 FP in 1,000 trials with declared paths)",TRUE,VERIFIED_CONSISTENT
+docs/publication/VIVA_SLIDES.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),98.75% macro recall (25 families),TRUE,VERIFIED_CONSISTENT
+docs/publication/VIVA_SLIDES.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/publication/VIVA_SLIDES.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)","100.00% specificity (0 FP in 1,000 trials with declared paths)",TRUE,VERIFIED_CONSISTENT
+docs/day20/VIVA_DECK_FINAL.md,C1,Detection capability / bounded recall,98.75% macro recall (25 families),Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C2,Detection & build-time latency scope,12.4 µs RAM / 0.24% build tax / 48.2 ms 100MB hash,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C3,Graph / ingestion scalability,"O(V+E) theoretical, 48.2 ms empirical @ 100k nodes",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C4,Trust-graph DAG & lineage localization,100% correct localization in evaluated composed scenarios,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C5,Temporal consistency forensics,Bounded monotonic ordering & backdating detection,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C6,Binary structural forensics,Validated PE/ELF headers & section entropy >7.2,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C7,Standalone air-gapped verification,"Offline verification (0 sockets, 0 DB in tested setup)",Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C8,Runtime telemetry observability,Bounded: 100% admin ETW; user-mode polling >10ms,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C9,Adversarial generalization,Partially validated: 100% on evaluated 11 unseen scenarios in workspace,Covered in narrative context,TRUE,VERIFIED_ALIGNED
+docs/day20/VIVA_DECK_FINAL.md,C10,Benign operational stability / false alarms,"100.00% specificity (0 FP in 1,000 trials with declared paths)",Covered in narrative context,TRUE,VERIFIED_ALIGNED

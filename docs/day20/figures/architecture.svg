@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  
+  <text x="450" y="35" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#0f172a">ProvenanceX Complete Architectural Pipeline</text>
+  <text x="450" y="55" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Cross-Layer Evidence Ingestion, Graph Correlation, and Categorical Policy Decision Engine</text>
+
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="240" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="25" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">1. Source &amp; Metadata</text>
+    <text x="120" y="48" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Git Commits (L1) • Dependencies (L2)</text>
+    <text x="120" y="68" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Lockfile (L3) • CycloneDX/SPDX SBOM (L4)</text>
+  </g>
+
+  <g transform="translate(330, 80)">
+    <rect x="0" y="0" width="240" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="25" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">2. Host Execution Telemetry</text>
+    <text x="120" y="48" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Kernel ETW Process Dispatcher (L7)</text>
+    <text x="120" y="68" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">ReadDirectoryChangesW (L8) • DNS UDP (L9)</text>
+  </g>
+
+  <g transform="translate(610, 80)">
+    <rect x="0" y="0" width="240" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="25" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">3. Artifacts &amp; Cryptography</text>
+    <text x="120" y="48" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Target Binaries (L10) • SLSA v1.0 (L11)</text>
+    <text x="120" y="68" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Ed25519 / ECDSA / RSA Signatures (L12)</text>
+  </g>
+
+  <line x1="170" y1="170" x2="450" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="170" x2="450" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="730" y1="170" x2="450" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g transform="translate(250, 215)">
+    <rect x="0" y="0" width="400" height="60" rx="8" fill="#0284c7" stroke="#0369a1" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">Evidence Normalization &amp; Merkle Log</text>
+    <text x="200" y="46" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#e0f2fe">RFC 6962 Append-Only Cryptographic Evidence Chain (H_i)</text>
+  </g>
+
+  <line x1="450" y1="275" x2="450" y2="305" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g transform="translate(200, 310)">
+    <rect x="0" y="0" width="500" height="70" rx="8" fill="#ffffff" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+    <text x="250" y="28" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#4338ca">Trust Graph Formulation: Directed Acyclic Graph G = (V, E)</text>
+    <text x="250" y="50" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Kahn's Topological Sort • Pairwise Correlation Functions C(L_i, L_j) in {True, False}</text>
+  </g>
+
+  <line x1="450" y1="380" x2="450" y2="410" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g transform="translate(200, 415)">
+    <rect x="0" y="0" width="500" height="70" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+    <text x="250" y="28" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#991b1b">Causal Trust-Break Localization Engine</text>
+    <text x="250" y="50" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#b91c1c">Evaluates L* = argmin_{L_k in Pi} { k | State(L_k) = CONTRADICTED } (100% in evaluated composed trials)</text>
+  </g>
+
+  <line x1="450" y1="485" x2="450" y2="515" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g transform="translate(100, 520)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">TRUSTED</text>
+    <text x="100" y="46" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#166534">0 Contradictions • Verified</text>
+  </g>
+
+  <g transform="translate(350, 520)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#a16207">WARNING</text>
+    <text x="100" y="46" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#854d0e">Non-Fatal Policy Drift</text>
+  </g>
+
+  <g transform="translate(600, 520)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+    <text x="100" y="26" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#b91c1c">REJECTED</text>
+    <text x="100" y="46" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#991b1b">Deployment Gate Halted</text>
+  </g>
+</svg>
