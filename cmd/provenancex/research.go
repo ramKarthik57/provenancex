@@ -7,6 +7,7 @@ import (
 
 	"github.com/ramKarthik57/provenancex/internal/ablation"
 	"github.com/ramKarthik57/provenancex/internal/blind"
+	"github.com/ramKarthik57/provenancex/internal/generalization"
 	"github.com/ramKarthik57/provenancex/internal/hostile"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
 	"github.com/ramKarthik57/provenancex/internal/remediation"
@@ -24,6 +25,10 @@ var (
 	remediateRuns           int
 	remediateCasesPerFamily int
 	remediateOutputDir      string
+
+	day14Runs             int
+	day14CasesPerScenario int
+	day14OutputDir        string
 )
 
 var researchCmd = &cobra.Command{
@@ -175,6 +180,44 @@ Produces empirical comparison tables, ablation metrics, and reproducible CSV/JSO
 	},
 }
 
+var researchDay14Cmd = &cobra.Command{
+	Use:   "day14",
+	Short: "Research integrity audit, adversarial generalization & scalability validation (Day 14)",
+	Long: `Executes the full Day 14 research validation suite:
+1. Adversarial generalization across 22 unseen attack variants
+2. Multi-layer composed attack evaluations (2-, 3-, and 4-layer attacks)
+3. Benign variability resilience across 5 operational drift scenarios
+4. Multi-dimensional scalability benchmarks (100MB+ artifacts, 1000 deps, 10000 events, Trust Graph DAG, and concurrent workers)
+5. Exports 12 reproducible scientific datasets for peer-reviewed academic validation.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		runner := generalization.NewCampaignRunner(day14Runs, day14CasesPerScenario, day14OutputDir)
+		report, err := runner.Run()
+		if err != nil {
+			return fmt.Errorf("day 14 campaign failed: %w", err)
+		}
+
+		if err := report.ExportAllDatasets(day14OutputDir); err != nil {
+			return fmt.Errorf("failed exporting Day 14 datasets: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Day 14 empirical datasets exported to %s/\n", day14OutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "raw_trials.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "generalization.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "benign_variability.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "artifact_scaling.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "dependency_scaling.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "evidence_scaling.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "graph_scaling.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "concurrency.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "reproducibility.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "baseline_comparison.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "environment.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day14OutputDir, "experiment_manifest.json"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
@@ -187,10 +230,15 @@ func init() {
 	researchRemediateCmd.Flags().IntVar(&remediateCasesPerFamily, "cases-per-family", 100, "Number of scenario cases evaluated per family per configuration")
 	researchRemediateCmd.Flags().StringVar(&remediateOutputDir, "output", filepath.Join("results", "day13"), "Output directory for exported empirical CSV/JSON datasets")
 
+	researchDay14Cmd.Flags().IntVar(&day14Runs, "runs", 5, "Number of independent campaign runs")
+	researchDay14Cmd.Flags().IntVar(&day14CasesPerScenario, "cases-per-scenario", 50, "Number of scenario cases evaluated per scenario per run")
+	researchDay14Cmd.Flags().StringVar(&day14OutputDir, "output", filepath.Join("results", "day14"), "Output directory for exported empirical CSV/JSON datasets")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
 	researchCmd.AddCommand(researchHuntCmd)
 	researchCmd.AddCommand(researchRemediateCmd)
+	researchCmd.AddCommand(researchDay14Cmd)
 	rootCmd.AddCommand(researchCmd)
 }
