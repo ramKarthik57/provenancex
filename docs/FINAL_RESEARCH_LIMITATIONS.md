@@ -80,3 +80,9 @@ This document details the exact boundary conditions, structural assumptions, and
 
 ## 18. Cross-Layer Causal Correlation vs Single-Layer Heuristics
 - Single-layer heuristics (such as DNS Shannon entropy or process execution speed) are inherently noisy when evaluated in isolation. ProvenanceX relies on cross-layer correlation—requiring corroboration across multiple planes before issuing fatal rejection verdicts, thereby minimizing operational disruption.
+
+---
+
+## 19. Day 17 Audited Observability & Limitation Ledger
+
+The complete Day 17 independent audit (`results/day17/observability_audit.csv`) confirms and formally records all 18 limitations above. In academic publications and industrial security reviews, ProvenanceX must be represented with these exact boundaries. Absolute claims of unassisted 100% detection or zero false positives across arbitrary environments are formally rejected.

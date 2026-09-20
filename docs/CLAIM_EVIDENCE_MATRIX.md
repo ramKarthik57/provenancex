@@ -20,6 +20,7 @@ Following the **Day 16 Observability Hardening & Final Validation**, every claim
 | **Day 14 Validation** | Generalization & Scalability Audit | 7,500 | 100.00% | 100.00% | 100.00 | Verified across 25 novel vectors up to 10K events |
 | **Day 15 Audit** | Independent Benchmark & Scope Audit | 7,500 + Hunts | 100.00%* | 100.00%* | 100.00* | Recomputed Day 14 ($TP+FN+TN+FP=N$); disentangled performance scopes; surfaced 3 kernel/protocol blind spots |
 | **Day 16 Hardening** | Observability Hardening & Bounding | 1,000 Benign + Factorial Hunts | 62.5%–100% | 100.00% | 92.45 | Remediated generated mocks (0% FP); formally bounded ephemeral processes, transient files, and DNS tunneling |
+| **Day 17 Final Audit**| Independent Research Integrity Audit | 19,777 Raw Trials Recomputed | 98.75% / Bounded | 100.00% | 99.37 | Falsified unconditional claims; verified C1-C10 inventory; audited data leakage; verified air-gapped standalone verifier (0 net sockets) |
 
 *\*Note: 100% applies to the closed 7,500-trial Day 14 holdout. In the Day 15 adversarial stress hunt, 3 evasion techniques (`ADV-HUNT-03`, `ADV-HUNT-04`, `ADV-HUNT-05`) successfully bypassed user-mode observation primitives and were systematically investigated and bounded on Day 16.*
 
@@ -116,4 +117,26 @@ Get-FileHash results/day16/*.csv, results/day16/*.json
 # Re-run automated unit and integration tests
 go test -v ./...
 go vet ./...
+
+# Run Day 17 Independent Research Integrity Audit
+.\bin\provenancex.exe research day17 --output results/day17
 ```
+
+---
+
+## 5. Day 17 Audited Research Claim Inventory (C1–C10)
+
+Following the Day 17 independent audit, the 10 major research claims were audited with strict falsification criteria:
+
+| Claim ID | Short Name | Target Subsystem | Audited Status | Operational Scope & Residual Boundary | Empirical Evidence |
+| :---: | :--- | :--- | :---: | :--- | :--- |
+| **C1** | Detection Capability | Decision Engine | `PARTIALLY_VALIDATED` | 98.75% recall post-remediation. Bounded by out-of-boundary paths and sub-10ms ephemeral processes. | `results/day17/confusion_matrix_audit.csv` |
+| **C2** | Detection Latency | Telemetry & Correlator | `BOUNDED` | 12.4 µs in-memory algorithmic speed. Real build overhead is 0.24% (~2.4 ms). Large artifact hashing is disk-bound (48.2 ms for 100MB). | `results/day17/benchmark_scope_audit.csv` |
+| **C3** | Graph Scalability | Layer 2 Trust Graph | `VALIDATED` | Scales linearly up to 1,000 artifacts, 500 dependencies, 10,000 evidence nodes (4.8 µs per node, <24MB RAM). | `results/day15/graph_benchmark.csv` |
+| **C4** | DAG & Localization | Trust Graph Lineage | `VALIDATED` | 100% acyclic DAG verification; isolates lowest broken topological layer. | `results/day14/raw_trials.csv` |
+| **C5** | Temporal Forensics | Temporal Analyzer | `BOUNDED` | Validates monotonic timestamps; bounded by sub-ms clock drift across distributed uncoordinated runners. | `internal/temporal/temporal_test.go` |
+| **C6** | Binary Forensics | Structural Forensics | `VALIDATED` | Validates PE/ELF headers, section entropy (>7.2 Shannon), and authenticode signature stripping. | `internal/forensics/binary_test.go` |
+| **C7** | Standalone Verifier | provenancex-verifier | `VALIDATED` | 100% tamper detection across bit-flips, forged signatures, and altered provenance with zero network sockets. | `results/day17/offline_verifier_audit.csv` |
+| **C8** | Runtime Telemetry | Host Telemetry | `BOUNDED` | 100% event capture requires Admin Kernel ETW; user-mode polling misses sub-10ms ephemeral processes. | `results/day17/observability_audit.csv` |
+| **C9** | Attack Generalization| Adversarial Mutation | `PARTIALLY_VALIDATED` | 100% recall on 11 unseen scenarios and 3 composed attacks; bounded by out-of-boundary file activity. | `results/day14/raw_trials.csv` |
+| **C10**| Benign Stability | Policy Engine | `BOUNDED` | 0 false positives across 1,000 trials when declared in-tree generated path exemptions are configured. | `results/day16/benign_campaign.csv` |

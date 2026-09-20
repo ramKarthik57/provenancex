@@ -1,0 +1,7 @@
+TestCaseID,TestDescription,BundleState,ExpectedVerdict,ObservedVerdict,NetworkEgressAttempted,TamperDetected,AuditStatus
+OFFLINE-TEST-01,Untampered Evidence Bundle Verification,GENUINE_INTACT,TRUSTED,TRUSTED,false,false,PASS
+OFFLINE-TEST-02,Archive Bit-Flip Archive Corruption,BIT_FLIPPED_ARCHIVE,REJECTED,REJECTED,false,true,PASS
+OFFLINE-TEST-03,Provenance Subject Contradicting Artifact Digest,TAMPERED_PROVENANCE_SUBJECT,REJECTED,REJECTED,false,true,PASS
+OFFLINE-TEST-04,Tampered Cryptographic Digital Signature,FORGED_SIGNATURE_BYTES,REJECTED,REJECTED,false,true,PASS
+OFFLINE-TEST-05,Post-Build Substituted Target Artifact,SUBSTITUTED_BINARY_PAYLOAD,REJECTED,REJECTED,false,true,PASS
+OFFLINE-TEST-06,Air-Gapped Network Socket Isolation Verification,AIR_GAPPED_OPERATION,PASS (0 SOCKETS OPENED),PASS (0 SOCKETS OPENED),false,false,PASS

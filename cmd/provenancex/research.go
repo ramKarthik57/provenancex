@@ -9,6 +9,7 @@ import (
 	"github.com/ramKarthik57/provenancex/internal/audit"
 	"github.com/ramKarthik57/provenancex/internal/blind"
 	"github.com/ramKarthik57/provenancex/internal/day16"
+	"github.com/ramKarthik57/provenancex/internal/day17"
 	"github.com/ramKarthik57/provenancex/internal/generalization"
 	"github.com/ramKarthik57/provenancex/internal/hostile"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
@@ -36,6 +37,7 @@ var (
 	day15RawDay14Path string
 
 	day16OutputDir string
+	day17OutputDir string
 )
 
 var researchCmd = &cobra.Command{
@@ -311,6 +313,45 @@ var researchDay16Cmd = &cobra.Command{
 	},
 }
 
+var researchDay17Cmd = &cobra.Command{
+	Use:   "day17",
+	Short: "Independent final research audit, claim falsification & publication readiness (Day 17)",
+	Long: `Executes the full Day 17 research integrity audit suite:
+1. Recomputes all historical confusion matrices across Day 12 through Day 16 from raw trials
+2. Audits claims C1-C10 and strictly enforces non-absolute empirical boundaries
+3. Disentangles algorithmic in-memory microbenchmarks from end-to-end build overhead
+4. Audits runtime telemetry observability across kernel vs user-mode privilege tiers
+5. Audits standalone air-gapped evidence bundle verifier against simulated tampering
+6. Performs static and architectural data leakage and ground-truth decoupling audit
+7. Compiles the publication readiness scorecard and reproducibility audit report
+8. Exports complete audit datasets and SHA-256 integrity ledger to results/day17/.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		runner := day17.NewDay17AuditRunner(day17OutputDir)
+		report, err := runner.Run()
+		if err != nil {
+			return fmt.Errorf("day 17 audit failed: %w", err)
+		}
+
+		if err := report.ExportAll(day17OutputDir); err != nil {
+			return fmt.Errorf("failed exporting Day 17 audit package: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Day 17 empirical research audit package exported to %s/\n", day17OutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "confusion_matrix_audit.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "claim_inventory.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "benchmark_scope_audit.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "observability_audit.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "offline_verifier_audit.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "final_scorecard.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "reproducibility_environment.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "data_leakage_audit.md"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "reproduction_report.md"))
+		fmt.Printf("  - %s\n", filepath.Join(day17OutputDir, "dataset_hashes.txt"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
@@ -332,6 +373,8 @@ func init() {
 
 	researchDay16Cmd.Flags().StringVar(&day16OutputDir, "output", filepath.Join("results", "day16"), "Output directory for exported empirical datasets")
 
+	researchDay17Cmd.Flags().StringVar(&day17OutputDir, "output", filepath.Join("results", "day17"), "Output directory for exported Day 17 empirical audit datasets")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
@@ -340,5 +383,6 @@ func init() {
 	researchCmd.AddCommand(researchDay14Cmd)
 	researchCmd.AddCommand(researchDay15Cmd)
 	researchCmd.AddCommand(researchDay16Cmd)
+	researchCmd.AddCommand(researchDay17Cmd)
 	rootCmd.AddCommand(researchCmd)
 }
