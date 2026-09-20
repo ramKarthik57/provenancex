@@ -19,21 +19,44 @@ var (
 	ErrGitNotFound = errors.New("git executable not found in PATH")
 )
 
+// CommitSignatureStatus classifies the cryptographic status of a commit
+type CommitSignatureStatus string
+
+const (
+	CommitSignatureSignedAndValid   CommitSignatureStatus = "SIGNED_AND_VALID"
+	CommitSignatureSignedUntrusted  CommitSignatureStatus = "SIGNED_BUT_UNTRUSTED"
+	CommitSignatureInvalid          CommitSignatureStatus = "SIGNATURE_INVALID"
+	CommitSignatureUnsigned         CommitSignatureStatus = "UNSIGNED"
+	CommitSignatureIdentityMismatch CommitSignatureStatus = "IDENTITY_MISMATCH"
+	CommitSignatureUnverified       CommitSignatureStatus = "UNVERIFIED"
+)
+
+// CommitSignatureInfo encapsulates cryptographic signature evidence for a commit
+type CommitSignatureInfo struct {
+	Status         CommitSignatureStatus `json:"status"`
+	SignerKeyID    string                `json:"signerKeyId,omitempty"`
+	SignerIdentity string                `json:"signerIdentity,omitempty"`
+	Committer      string                `json:"committer,omitempty"`
+	CommitterEmail string                `json:"committerEmail,omitempty"`
+	Error          string                `json:"error,omitempty"`
+}
+
 // State represents the integrity status of a Git source repository
 type State struct {
-	RepoURL         string    `json:"repoUrl,omitempty"`
-	Branch          string    `json:"branch"`
-	CommitSHA       string    `json:"commitSha"`
-	ParentCommitSHA string    `json:"parentCommitSha,omitempty"`
-	TreeSHA         string    `json:"treeSha"`
-	Author          string    `json:"author"`
-	AuthorEmail     string    `json:"authorEmail"`
-	CommitTimestamp time.Time `json:"commitTimestamp"`
-	IsClean         bool      `json:"isClean"`
-	ModifiedFiles   []string  `json:"modifiedFiles"`
-	UntrackedFiles  []string  `json:"untrackedFiles"`
-	StagedFiles     []string  `json:"stagedFiles"`
-	Submodules      []string  `json:"submodules,omitempty"`
+	RepoURL         string               `json:"repoUrl,omitempty"`
+	Branch          string               `json:"branch"`
+	CommitSHA       string               `json:"commitSha"`
+	ParentCommitSHA string               `json:"parentCommitSha,omitempty"`
+	TreeSHA         string               `json:"treeSha"`
+	Author          string               `json:"author"`
+	AuthorEmail     string               `json:"authorEmail"`
+	CommitTimestamp time.Time            `json:"commitTimestamp"`
+	IsClean         bool                 `json:"isClean"`
+	ModifiedFiles   []string             `json:"modifiedFiles"`
+	UntrackedFiles  []string             `json:"untrackedFiles"`
+	StagedFiles     []string             `json:"stagedFiles"`
+	Submodules      []string             `json:"submodules,omitempty"`
+	SignatureInfo   *CommitSignatureInfo `json:"signatureInfo,omitempty"`
 }
 
 // Collector inspects Git repository state
@@ -106,6 +129,36 @@ func (c *Collector) Collect(ctx context.Context, targetDir string) (*State, erro
 			if ts, parseErr := strconv.ParseInt(strings.TrimSpace(timestampStr), 10, 64); parseErr == nil {
 				state.CommitTimestamp = time.Unix(ts, 0).UTC()
 			}
+		}
+
+		// Cryptographic commit signature verification
+		sigCode, _ := c.runGit(ctx, absDir, "log", "-1", "--format=%G?")
+		sigCode = strings.TrimSpace(sigCode)
+		signerName, _ := c.runGit(ctx, absDir, "log", "-1", "--format=%GS")
+		signerKey, _ := c.runGit(ctx, absDir, "log", "-1", "--format=%GK")
+		committer, _ := c.runGit(ctx, absDir, "log", "-1", "--format=%cn")
+		committerEmail, _ := c.runGit(ctx, absDir, "log", "-1", "--format=%ce")
+
+		sigStatus := CommitSignatureUnverified
+		switch sigCode {
+		case "G":
+			sigStatus = CommitSignatureSignedAndValid
+		case "B":
+			sigStatus = CommitSignatureInvalid
+		case "U":
+			sigStatus = CommitSignatureSignedUntrusted
+		case "N", "":
+			sigStatus = CommitSignatureUnsigned
+		default:
+			sigStatus = CommitSignatureInvalid
+		}
+
+		state.SignatureInfo = &CommitSignatureInfo{
+			Status:         sigStatus,
+			SignerKeyID:    strings.TrimSpace(signerKey),
+			SignerIdentity: strings.TrimSpace(signerName),
+			Committer:      strings.TrimSpace(committer),
+			CommitterEmail: strings.TrimSpace(committerEmail),
 		}
 	}
 

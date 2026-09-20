@@ -1,4 +1,4 @@
-﻿package decision
+package decision
 
 import (
 	"fmt"
@@ -8,6 +8,7 @@ import (
 	"github.com/ramKarthik57/provenancex/internal/evidence"
 	"github.com/ramKarthik57/provenancex/internal/localization"
 	"github.com/ramKarthik57/provenancex/internal/policy"
+	"github.com/ramKarthik57/provenancex/internal/repository"
 )
 
 // Verdict defines the deterministic security verdict
@@ -82,6 +83,45 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 			dec.Warnings = append(dec.Warnings, "Repository working tree is dirty with uncommitted changes")
 			if dec.Verdict == VerdictTrusted {
 				dec.Verdict = VerdictWarning
+			}
+		}
+	}
+
+	// 3a. Cryptographic commit signing policy
+	if pol.Repository.RequireSignedCommits {
+		if corr.Input == nil || corr.Input.Repository == nil || corr.Input.Repository.SignatureInfo == nil ||
+			corr.Input.Repository.SignatureInfo.Status == repository.CommitSignatureUnsigned ||
+			corr.Input.Repository.SignatureInfo.Status == repository.CommitSignatureUnverified {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, "Commit is unsigned or lacks verified signature (violates repository.require_signed_commits policy)")
+		} else if corr.Input.Repository.SignatureInfo.Status == repository.CommitSignatureInvalid {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, "Commit cryptographic signature is invalid or corrupted (violates repository.require_signed_commits policy)")
+		} else if corr.Input.Repository.SignatureInfo.Status == repository.CommitSignatureSignedUntrusted {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, fmt.Sprintf("Commit signer %s is untrusted or missing from trusted_signers (violates repository.trusted_signers policy)", corr.Input.Repository.SignatureInfo.SignerIdentity))
+		} else if corr.Input.Repository.SignatureInfo.Status == repository.CommitSignatureIdentityMismatch {
+			dec.Verdict = VerdictRejected
+			dec.Reasons = append(dec.Reasons, fmt.Sprintf("Commit author '%s' does not match cryptographic signer '%s' (violates commit identity integrity)", corr.Input.Repository.Author, corr.Input.Repository.SignatureInfo.SignerIdentity))
+		} else if len(pol.Repository.TrustedSigners) > 0 {
+			trusted := false
+			for _, ts := range pol.Repository.TrustedSigners {
+				if corr.Input.Repository.SignatureInfo.SignerIdentity == ts || corr.Input.Repository.SignatureInfo.SignerKeyID == ts {
+					trusted = true
+					break
+				}
+			}
+			if !trusted {
+				dec.Verdict = VerdictRejected
+				dec.Reasons = append(dec.Reasons, fmt.Sprintf("Commit signer '%s' (key %s) is not in repository.trusted_signers list", corr.Input.Repository.SignatureInfo.SignerIdentity, corr.Input.Repository.SignatureInfo.SignerKeyID))
+			}
+		}
+
+		if pol.Repository.EnforceAuthorMatch && corr.Input != nil && corr.Input.Repository != nil && corr.Input.Repository.SignatureInfo != nil {
+			sigInfo := corr.Input.Repository.SignatureInfo
+			if sigInfo.Committer != "" && sigInfo.Committer != corr.Input.Repository.Author {
+				dec.Verdict = VerdictRejected
+				dec.Reasons = append(dec.Reasons, fmt.Sprintf("Author '%s' does not match committer '%s' (violates repository.enforce_author_match policy)", corr.Input.Repository.Author, sigInfo.Committer))
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿package policy
+package policy
 
 import (
 	"os"
@@ -21,8 +21,11 @@ type Policy struct {
 }
 
 type RepositoryPolicy struct {
-	RequireCleanState bool     `yaml:"require_clean_state" json:"require_clean_state"`
-	AllowedBranches   []string `yaml:"allowed_branches" json:"allowed_branches"`
+	RequireCleanState    bool     `yaml:"require_clean_state" json:"require_clean_state"`
+	AllowedBranches      []string `yaml:"allowed_branches" json:"allowed_branches"`
+	RequireSignedCommits bool     `yaml:"require_signed_commits" json:"require_signed_commits"`
+	TrustedSigners       []string `yaml:"trusted_signers" json:"trusted_signers"`
+	EnforceAuthorMatch   bool     `yaml:"enforce_author_match" json:"enforce_author_match"`
 }
 
 type DependenciesPolicy struct {
@@ -74,8 +77,11 @@ func DefaultPolicy() *Policy {
 		Name:        "default-policy",
 		Description: "Baseline supply-chain integrity policy",
 		Repository: RepositoryPolicy{
-			RequireCleanState: true,
-			AllowedBranches:   []string{"main", "master"},
+			RequireCleanState:    true,
+			AllowedBranches:      []string{"main", "master"},
+			RequireSignedCommits: false,
+			TrustedSigners:       []string{},
+			EnforceAuthorMatch:   false,
 		},
 		Dependencies: DependenciesPolicy{
 			RequireLockfile:   true,

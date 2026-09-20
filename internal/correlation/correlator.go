@@ -48,6 +48,7 @@ type Contradiction struct {
 // Result summarizes cross-layer evidence correlation
 type Result struct {
 	Timestamp        time.Time                          `json:"timestamp"`
+	Input            *CorrelationInput                  `json:"input,omitempty"`
 	IsConsistent     bool                               `json:"isConsistent"`
 	LayerStatuses    map[evidence.Layer]evidence.Status `json:"layerStatuses"`
 	Contradictions   []*Contradiction                   `json:"contradictions"`
@@ -88,6 +89,37 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 			log.Append(evidence.LayerSource, evidence.CategoryDirect, evidence.StatusMismatch,
 				"git.workingTree", "clean", "dirty",
 				fmt.Sprintf("Uncommitted or modified files: %v", append(input.Repository.ModifiedFiles, input.Repository.UntrackedFiles...)),
+				"internal/repository")
+		}
+
+		if input.Repository.SignatureInfo != nil {
+			switch input.Repository.SignatureInfo.Status {
+			case repository.CommitSignatureInvalid:
+				layerStatuses[evidence.LayerSource] = evidence.StatusContradicted
+				isConsistent = false
+				contradictions = append(contradictions, &Contradiction{
+					Layer1:      evidence.LayerSource,
+					Layer2:      evidence.LayerSignature,
+					Subject:     "git.commitSignature",
+					Claim1:      "valid cryptographic signature",
+					Claim2:      "signature verification failed",
+					Description: "Git commit signature is cryptographically invalid or corrupted",
+				})
+			case repository.CommitSignatureIdentityMismatch:
+				layerStatuses[evidence.LayerSource] = evidence.StatusContradicted
+				isConsistent = false
+				contradictions = append(contradictions, &Contradiction{
+					Layer1:      evidence.LayerSource,
+					Layer2:      evidence.LayerSignature,
+					Subject:     "git.commitIdentity",
+					Claim1:      input.Repository.Author,
+					Claim2:      input.Repository.SignatureInfo.SignerIdentity,
+					Description: fmt.Sprintf("Commit author '%s' does not match signer identity '%s'", input.Repository.Author, input.Repository.SignatureInfo.SignerIdentity),
+				})
+			}
+			log.Append(evidence.LayerSource, evidence.CategoryDirect, layerStatuses[evidence.LayerSource],
+				"git.signature", string(input.Repository.SignatureInfo.Status), string(input.Repository.SignatureInfo.Status),
+				fmt.Sprintf("Signer: %s, Key: %s", input.Repository.SignatureInfo.SignerIdentity, input.Repository.SignatureInfo.SignerKeyID),
 				"internal/repository")
 		}
 	} else {
@@ -215,6 +247,22 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 		unexpectedInputs = input.InputEvaluation.UnexpectedInputs
 		missingInputs = input.InputEvaluation.MissingInputs
 
+		if len(input.InputEvaluation.OutOfBoundaryWrites) > 0 {
+			for _, oob := range input.InputEvaluation.OutOfBoundaryWrites {
+				unexpectedInputs = append(unexpectedInputs, oob)
+				contradictions = append(contradictions, &Contradiction{
+					Layer1:      evidence.LayerSource,
+					Layer2:      evidence.LayerFilesystem,
+					Subject:     oob,
+					Claim1:      "confined within build workspace boundary",
+					Claim2:      "unauthorized out-of-boundary filesystem mutation",
+					Description: fmt.Sprintf("FILESYSTEM BOUNDARY ESCAPE: Out-of-workspace file modification: %s", oob),
+				})
+			}
+			layerStatuses[evidence.LayerFilesystem] = evidence.StatusContradicted
+			isConsistent = false
+		}
+
 		if len(unexpectedInputs) > 0 {
 			layerStatuses[evidence.LayerFilesystem] = evidence.StatusContradicted
 			isConsistent = false
@@ -230,7 +278,7 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 			}
 		} else if len(missingInputs) > 0 {
 			layerStatuses[evidence.LayerFilesystem] = evidence.StatusMismatch
-		} else {
+		} else if len(input.InputEvaluation.OutOfBoundaryWrites) == 0 {
 			layerStatuses[evidence.LayerFilesystem] = evidence.StatusVerified
 		}
 	} else {
@@ -239,7 +287,24 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 
 	// 7. NETWORK LAYER
 	if input.NetworkAudit != nil {
-		if input.NetworkAudit.IsPolicyCompliant {
+		hasDNSViolation := false
+		if len(input.NetworkAudit.DNSQueries) > 0 {
+			for _, q := range input.NetworkAudit.DNSQueries {
+				if !q.IsAllowed {
+					hasDNSViolation = true
+					contradictions = append(contradictions, &Contradiction{
+						Layer1:      evidence.LayerDependencies,
+						Layer2:      evidence.LayerNetwork,
+						Subject:     q.QueryDomain,
+						Claim1:      "authorized DNS resolver / domain allowlist",
+						Claim2:      q.QueryDomain,
+						Description: fmt.Sprintf("UNAUTHORIZED DNS EXFILTRATION: Query for %s (%s)", q.QueryDomain, q.AlertReason),
+					})
+				}
+			}
+		}
+
+		if input.NetworkAudit.IsPolicyCompliant && !hasDNSViolation {
 			layerStatuses[evidence.LayerNetwork] = evidence.StatusVerified
 		} else {
 			layerStatuses[evidence.LayerNetwork] = evidence.StatusContradicted
@@ -320,6 +385,7 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 
 	return &Result{
 		Timestamp:        time.Now().UTC(),
+		Input:            input,
 		IsConsistent:     isConsistent,
 		LayerStatuses:    layerStatuses,
 		Contradictions:   contradictions,
