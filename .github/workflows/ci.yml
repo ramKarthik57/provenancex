@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, research-validation ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, research-validation ]
 
 jobs:
   backend-checks:
@@ -31,6 +31,7 @@ jobs:
 
       - name: Test CLI Execution
         run: |
+          chmod +x ./bin/provenancex
           ./bin/provenancex --help
           ./bin/provenancex version
 
