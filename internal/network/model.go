@@ -16,16 +16,28 @@ type ConnectionRecord struct {
 	AlertReason string    `json:"alertReason,omitempty"`
 }
 
+// DNS Subdomain Assessment Status
+type SubdomainStatus string
+
+const (
+	SubdomainNormal     SubdomainStatus = "NORMAL"
+	SubdomainSuspicious SubdomainStatus = "SUSPICIOUS"
+	SubdomainUnobserved SubdomainStatus = "UNOBSERVED"
+)
+
 // DNSQueryRecord represents an observed DNS request (UDP port 53, DoH, or DNS-Client ETW)
 type DNSQueryRecord struct {
-	Timestamp   time.Time `json:"timestamp"`
-	PID         int       `json:"pid,omitempty"`
-	ProcessName string    `json:"processName,omitempty"`
-	QueryDomain string    `json:"queryDomain"`
-	QueryType   string    `json:"queryType"` // A, AAAA, TXT, CNAME, etc.
-	Resolver    string    `json:"resolver"`
-	IsAllowed   bool      `json:"isAllowed"`
-	AlertReason string    `json:"alertReason,omitempty"`
+	Timestamp            time.Time       `json:"timestamp"`
+	PID                  int             `json:"pid,omitempty"`
+	ProcessName          string          `json:"processName,omitempty"`
+	QueryDomain          string          `json:"queryDomain"`
+	QueryType            string          `json:"queryType"` // A, AAAA, TXT, CNAME, etc.
+	Resolver             string          `json:"resolver"`
+	IsAllowed            bool            `json:"isAllowed"`
+	AlertReason          string          `json:"alertReason,omitempty"`
+	SubdomainStatus      SubdomainStatus `json:"subdomainStatus,omitempty"`
+	SubdomainEntropy     float64         `json:"subdomainEntropy,omitempty"`
+	SubdomainLabelLength int             `json:"subdomainLabelLength,omitempty"`
 }
 
 // Evaluation represents the complete network policy audit for a build

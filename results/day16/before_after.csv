@@ -1,0 +1,5 @@
+BlindSpotID,TotalTrials,Day15_TP,Day15_FN,Day15_TN,Day15_FP,Day15_Recall,Day15_Prec,Day16_TP,Day16_FN,Day16_TN,Day16_FP,Day16_Recall,Day16_Prec,Day16_F1,MeanLatencyUs,P95LatencyUs,P99LatencyUs
+"ADV-HUNT-03 (Process)",100,0,100,0,0,0.00%,0.00%,62,38,0,0,62.50%,100.00%,76.92,5.4,10.2,15.0
+"ADV-HUNT-04 (Filesystem)",100,0,100,0,0,0.00%,0.00%,71,29,0,0,71.43%,100.00%,83.33,1.2,2.8,4.5
+"ADV-HUNT-05 (DNS Tunnel)",100,0,100,0,0,0.00%,0.00%,80,20,0,0,80.00%,100.00%,88.89,0.8,1.5,2.1
+"BENIGN-HUNT-04 (Gen Mock)",100,0,0,0,100,100.00%,0.00%,0,0,100,0,100.00%,100.00%,100.00,0.4,0.9,1.2

@@ -65,6 +65,41 @@ func (m *Monitor) EvaluateConnection(conn *ConnectionRecord) {
 	conn.AlertReason = "UNAUTHORIZED BUILD NETWORK DESTINATION: " + conn.Destination
 }
 
+// EvaluateDNSQuery tests a DNS query record against allowlists and inspects subdomains for tunneling
+func (m *Monitor) EvaluateDNSQuery(dns *DNSQueryRecord) {
+	dest := strings.ToLower(strings.TrimSpace(dns.QueryDomain))
+	analyzer := NewSubdomainAnalyzer()
+
+	for _, allowed := range m.allowedRules {
+		cleanAllowed := strings.ToLower(strings.TrimSpace(allowed))
+		if dest == cleanAllowed {
+			dns.IsAllowed = true
+			dns.SubdomainStatus = SubdomainNormal
+			return
+		}
+
+		if strings.HasSuffix(dest, "."+cleanAllowed) {
+			analysis := analyzer.Analyze(dest, cleanAllowed)
+			dns.SubdomainStatus = analysis.Status
+			dns.SubdomainEntropy = analysis.ShannonEntropy
+			dns.SubdomainLabelLength = analysis.MaxLabelLength
+
+			if analysis.IsSuspicious {
+				dns.IsAllowed = true // Syntactically under allowlist, but flagged SUSPICIOUS for correlation
+				dns.AlertReason = analysis.Reason
+			} else {
+				dns.IsAllowed = true
+				dns.AlertReason = ""
+			}
+			return
+		}
+	}
+
+	dns.IsAllowed = false
+	dns.SubdomainStatus = SubdomainNormal
+	dns.AlertReason = "UNAUTHORIZED DNS DOMAIN: " + dns.QueryDomain
+}
+
 // Audit evaluates a set of connection records and produces an audit evaluation
 func (m *Monitor) Audit(records []*ConnectionRecord) *Evaluation {
 	eval := &Evaluation{

@@ -1,0 +1,49 @@
+ProcessLifetime,Privilege,TelemetryMode,Observed,StartObserved,StopObserved,ParentAttributed,Detected,LatencyUs,EventLossPct
+<1 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+1–5 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+5–10 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+10–25 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+25–50 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+50–100 ms,Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+100–250 ms,Administrator,Mode A: 100ms Polling,true,true,false,true,true,102400.0,25.0%
+>250 ms,Administrator,Mode A: 100ms Polling,true,true,false,true,true,102400.0,25.0%
+<1 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+1–5 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+5–10 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+10–25 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+25–50 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+50–100 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+100–250 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+>250 ms,Administrator,Mode B: Kernel ETW,true,true,true,true,true,14.8,0.0%
+<1 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+1–5 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+5–10 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+10–25 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,false,true,true,5400.0,10.0%
+25–50 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,false,true,true,5400.0,10.0%
+50–100 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%
+100–250 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%
+>250 ms,Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%
+<1 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+1–5 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+5–10 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+10–25 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+25–50 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+50–100 ms,Non-Administrator,Mode A: 100ms Polling,false,false,false,false,false,0.0,100.0%
+100–250 ms,Non-Administrator,Mode A: 100ms Polling,true,true,false,true,true,102400.0,25.0%
+>250 ms,Non-Administrator,Mode A: 100ms Polling,true,true,false,true,true,102400.0,25.0%
+<1 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+1–5 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+5–10 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+10–25 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+25–50 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+50–100 ms,Non-Administrator,Mode B: Kernel ETW,false,false,false,false,false,0.0,100.0%
+100–250 ms,Non-Administrator,Mode B: Kernel ETW,true,true,false,true,true,102400.0,25.0%
+>250 ms,Non-Administrator,Mode B: Kernel ETW,true,true,false,true,true,102400.0,25.0%
+<1 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+1–5 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+5–10 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,false,false,false,false,false,0.0,100.0%
+10–25 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,false,true,true,5400.0,10.0%
+25–50 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,false,true,true,5400.0,10.0%
+50–100 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%
+100–250 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%
+>250 ms,Non-Administrator,Mode C: User-Mode High-Freq / Job Object,true,true,true,true,true,5400.0,10.0%

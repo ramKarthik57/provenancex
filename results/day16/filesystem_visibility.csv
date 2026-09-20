@@ -1,0 +1,22 @@
+FileLifetime,TelemetryMode,CreateObserved,WriteObserved,ModifyObserved,DeleteObserved,ProcessAttributed,Detected,LatencyUs,FinalStateObserved,EventObserved
+<1 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+1–5 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+5–10 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+10–50 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+50–100 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+100–500 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+>500 ms,Mode A: Snapshot/Delta,false,false,false,false,false,false,0.0,false,false
+<1 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),false,false,false,false,false,false,0.0,false,false
+1–5 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),false,false,false,false,false,false,0.0,false,false
+5–10 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),true,true,false,true,false,true,1200.0,false,true
+10–50 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),true,true,true,true,false,true,1200.0,false,true
+50–100 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),true,true,true,true,false,true,1200.0,false,true
+100–500 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),true,true,true,true,false,true,1200.0,false,true
+>500 ms,Mode B: User-Mode Change Events (ReadDirectoryChangesW),true,true,true,true,false,true,1200.0,false,true
+<1 ms,Mode C: NTFS USN Journal,true,false,false,true,false,true,420.0,false,true
+1–5 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true
+5–10 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true
+10–50 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true
+50–100 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true
+100–500 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true
+>500 ms,Mode C: NTFS USN Journal,true,true,true,true,false,true,350.0,false,true

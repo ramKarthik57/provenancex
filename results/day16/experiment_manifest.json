@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-20T09:29:08.1996244Z",
+  "campaign": "ProvenanceX Day 16 Observability Hardening \u0026 Blind-Spot Remediation",
+  "gitCommit": "7ff2e45",
+  "branch": "research-validation",
+  "hostOs": "windows/amd64",
+  "goVersion": "go1.23.6",
+  "totalTrials": 1027,
+  "benignTrials": 1000,
+  "attackTrials": 27,
+  "executionTimeS": 0.0146363
+}

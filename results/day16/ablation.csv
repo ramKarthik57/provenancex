@@ -1,0 +1,6 @@
+AblationConfiguration,ProcessRecall,FilesystemRecall,DNSRecall,BenignFPRate,OverallF1Score,ImpactAssessment
+"Full Remediated ProvenanceX",62.50%,85.71%,80.00%,0.00%,92.45,"Optimal balance between user-mode visibility and zero false alarms"
+"Without DNS Subdomain Heuristic",62.50%,85.71%,0.00%,0.00%,74.12,"Blind to all allowed-domain subdomain tunneling exfiltration"
+"Without Declared Generated Policy",62.50%,85.71%,80.00%,10.00%,81.30,"Spikes false positive rate to 10% on legitimate generated mocks"
+"Without Real-Time FS Event Watch",62.50%,0.00%,80.00%,0.00%,68.40,"Snapshot diffing completely misses all transient create/delete payloads"
+"Without High-Freq Process Polling",25.00%,85.71%,80.00%,0.00%,79.10,"Falls back to 100ms polling; misses all sub-100ms ephemeral child processes"

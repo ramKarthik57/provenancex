@@ -8,6 +8,7 @@ import (
 	"github.com/ramKarthik57/provenancex/internal/ablation"
 	"github.com/ramKarthik57/provenancex/internal/audit"
 	"github.com/ramKarthik57/provenancex/internal/blind"
+	"github.com/ramKarthik57/provenancex/internal/day16"
 	"github.com/ramKarthik57/provenancex/internal/generalization"
 	"github.com/ramKarthik57/provenancex/internal/hostile"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
@@ -33,6 +34,8 @@ var (
 
 	day15OutputDir    string
 	day15RawDay14Path string
+
+	day16OutputDir string
 )
 
 var researchCmd = &cobra.Command{
@@ -265,6 +268,49 @@ var researchDay15Cmd = &cobra.Command{
 	},
 }
 
+var researchDay16Cmd = &cobra.Command{
+	Use:   "day16",
+	Short: "Adversarial blind-spot remediation, observability hardening & final validation (Day 16)",
+	Long: `Executes the full Day 16 research suite:
+1. Evaluates ephemeral process observation across 8 lifetimes, 2 privilege tiers, and 3 modes (ADV-HUNT-03)
+2. Evaluates transient filesystem event stream vs final state diffing across 7 lifetimes (ADV-HUNT-04)
+3. Evaluates DNS subdomain tunneling heuristic (Shannon entropy, label length, hex ratio) (ADV-HUNT-05)
+4. Evaluates in-tree generated file policy and provenance handling (BENIGN-HUNT-04)
+5. Executes hostile adversarial re-attacks targeting the remediations themselves
+6. Executes 1,000-trial benign operational campaign measuring false positive rates
+7. Compiles the formal blind spot matrix, before/after results, and performance impact
+8. Exports 14 reproducible scientific datasets and SHA-256 integrity ledger to results/day16/.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		runner := day16.NewDay16CampaignRunner(day16OutputDir)
+		report, err := runner.Run()
+		if err != nil {
+			return fmt.Errorf("day 16 campaign failed: %w", err)
+		}
+
+		if err := report.ExportAllDay16Datasets(day16OutputDir); err != nil {
+			return fmt.Errorf("failed exporting Day 16 datasets: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Day 16 empirical research package exported to %s/\n", day16OutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "blind_spot_matrix.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "before_after.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "process_visibility.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "filesystem_visibility.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "dns_tunneling.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "generated_file_policy.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "adversarial_reattack.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "benign_campaign.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "performance.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "ablation.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "raw_trials.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "environment.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "experiment_manifest.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day16OutputDir, "dataset_hashes.txt"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
@@ -284,6 +330,8 @@ func init() {
 	researchDay15Cmd.Flags().StringVar(&day15OutputDir, "output", filepath.Join("results", "day15"), "Output directory for exported empirical audit datasets")
 	researchDay15Cmd.Flags().StringVar(&day15RawDay14Path, "day14-raw", filepath.Join("results", "day14", "raw_trials.csv"), "Path to primary Day 14 raw_trials.csv")
 
+	researchDay16Cmd.Flags().StringVar(&day16OutputDir, "output", filepath.Join("results", "day16"), "Output directory for exported empirical datasets")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
@@ -291,5 +339,6 @@ func init() {
 	researchCmd.AddCommand(researchRemediateCmd)
 	researchCmd.AddCommand(researchDay14Cmd)
 	researchCmd.AddCommand(researchDay15Cmd)
+	researchCmd.AddCommand(researchDay16Cmd)
 	rootCmd.AddCommand(researchCmd)
 }

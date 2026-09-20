@@ -2,11 +2,14 @@ package decision
 
 import (
 	"fmt"
+	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/ramKarthik57/provenancex/internal/correlation"
 	"github.com/ramKarthik57/provenancex/internal/evidence"
 	"github.com/ramKarthik57/provenancex/internal/localization"
+	"github.com/ramKarthik57/provenancex/internal/network"
 	"github.com/ramKarthik57/provenancex/internal/policy"
 	"github.com/ramKarthik57/provenancex/internal/repository"
 )
@@ -75,8 +78,36 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 	// 3. Repository clean state policy
 	if pol.Repository.RequireCleanState {
 		if status, ok := corr.LayerStatuses[evidence.LayerSource]; ok && status == evidence.StatusMismatch {
-			dec.Verdict = VerdictRejected
-			dec.Reasons = append(dec.Reasons, "Repository working tree is dirty with uncommitted changes (violates require_clean_state policy)")
+			isExemptGenerated := false
+			if pol.Repository.AllowDeclaredGenerated && len(pol.Repository.DeclaredGeneratedPaths) > 0 &&
+				corr.Input != nil && corr.Input.Repository != nil &&
+				len(corr.Input.Repository.ModifiedFiles) == 0 && len(corr.Input.Repository.UntrackedFiles) > 0 {
+
+				allMatch := true
+				for _, untracked := range corr.Input.Repository.UntrackedFiles {
+					matched := false
+					for _, pattern := range pol.Repository.DeclaredGeneratedPaths {
+						if matchPathPattern(pattern, untracked) {
+							matched = true
+							break
+						}
+					}
+					if !matched {
+						allMatch = false
+						break
+					}
+				}
+				if allMatch {
+					isExemptGenerated = true
+				}
+			}
+
+			if isExemptGenerated {
+				dec.Warnings = append(dec.Warnings, "Repository contains declared in-tree build generated files matching policy exemptions")
+			} else {
+				dec.Verdict = VerdictRejected
+				dec.Reasons = append(dec.Reasons, "Repository working tree is dirty with uncommitted changes (violates require_clean_state policy)")
+			}
 		}
 	} else {
 		if status, ok := corr.LayerStatuses[evidence.LayerSource]; ok && status == evidence.StatusMismatch {
@@ -174,10 +205,32 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 		}
 	}
 
-	// 9. Network policy violations
+	// 9. Network policy violations & DNS Tunneling
 	if status, ok := corr.LayerStatuses[evidence.LayerNetwork]; ok && status == evidence.StatusContradicted {
 		dec.Verdict = VerdictRejected
 		dec.Reasons = append(dec.Reasons, "Build attempted unauthorized network communication to unapproved destinations")
+	}
+
+	if corr.Input != nil && corr.Input.NetworkAudit != nil {
+		for _, dns := range corr.Input.NetworkAudit.DNSQueries {
+			if dns.SubdomainStatus == network.SubdomainSuspicious {
+				// Cross-layer correlation: if build also has suspicious processes or unapproved file mutations,
+				// escalate to fatal REJECTED. Otherwise, render WARNING.
+				hasCorrelatedAnomaly := dec.Verdict == VerdictRejected ||
+					len(corr.UnexpectedInputs) > 0 ||
+					(corr.Input.ProcessTree != nil && corr.Input.ProcessTree.SuspiciousCount > 0)
+
+				if hasCorrelatedAnomaly {
+					dec.Verdict = VerdictRejected
+					dec.Reasons = append(dec.Reasons, fmt.Sprintf("Suspicious DNS subdomain tunneling correlated with unauthorized execution: %s (%s)", dns.QueryDomain, dns.AlertReason))
+				} else {
+					dec.Warnings = append(dec.Warnings, fmt.Sprintf("Suspicious DNS subdomain query pattern: %s (%s)", dns.QueryDomain, dns.AlertReason))
+					if dec.Verdict == VerdictTrusted {
+						dec.Verdict = VerdictWarning
+					}
+				}
+			}
+		}
 	}
 
 	// 10. Build execution status
@@ -201,4 +254,39 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 	}
 
 	return dec
+}
+
+// matchPathPattern checks whether a target file matches a glob or prefix pattern
+func matchPathPattern(pattern, target string) bool {
+	normPat := strings.ReplaceAll(pattern, "\\", "/")
+	normTgt := strings.ReplaceAll(target, "\\", "/")
+
+	if normPat == normTgt {
+		return true
+	}
+
+	if matched, _ := filepath.Match(normPat, normTgt); matched {
+		return true
+	}
+
+	if matched, _ := filepath.Match(normPat, filepath.Base(normTgt)); matched {
+		return true
+	}
+
+	if strings.HasSuffix(normPat, "/*") {
+		dir := strings.TrimSuffix(normPat, "/*")
+		if strings.HasPrefix(normTgt, dir+"/") {
+			return true
+		}
+	}
+
+	// Substring wildcard e.g. "*mock*"
+	if strings.HasPrefix(normPat, "*") && strings.HasSuffix(normPat, "*") {
+		sub := strings.Trim(normPat, "*")
+		if strings.Contains(filepath.Base(normTgt), sub) {
+			return true
+		}
+	}
+
+	return false
 }

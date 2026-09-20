@@ -1,0 +1,1028 @@
+TrialID,ExperimentFamily,ScenarioOrVector,ExpectedVerdict,ObservedVerdict,IsDetected,IsFalsePositive,LatencyUs
+1,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+2,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+3,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+4,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+5,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+6,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+7,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+8,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+9,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+10,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+11,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+12,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+13,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+14,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+15,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+16,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+17,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+18,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+19,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+20,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+21,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+22,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+23,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+24,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+25,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+26,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+27,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+28,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+29,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+30,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+31,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+32,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+33,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+34,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+35,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+36,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,530.5
+37,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+38,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+39,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+40,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+41,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+42,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+43,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+44,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+45,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+46,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+47,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+48,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+49,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+50,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+51,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+52,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+53,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+54,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+55,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+56,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+57,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+58,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+59,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+60,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+61,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+62,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+63,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+64,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+65,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+66,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+67,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+68,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+69,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+70,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+71,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+72,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+73,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,509.4
+74,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+75,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+76,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+77,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+78,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+79,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+80,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+81,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+82,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+83,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+84,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+85,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+86,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+87,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+88,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+89,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+90,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+91,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+92,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+93,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+94,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+95,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+96,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+97,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+98,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+99,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+100,BENIGN_CAMPAIGN,"Standard Go Clean Build",TRUSTED,TRUSTED,true,false,0.0
+101,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+102,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+103,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+104,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+105,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+106,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+107,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+108,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+109,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,522.1
+110,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+111,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+112,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+113,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+114,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+115,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+116,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+117,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+118,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+119,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+120,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+121,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+122,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+123,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+124,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+125,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+126,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+127,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+128,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+129,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+130,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+131,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+132,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+133,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+134,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+135,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+136,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+137,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+138,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+139,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+140,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+141,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,510.4
+142,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+143,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+144,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+145,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+146,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+147,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+148,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+149,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+150,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+151,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+152,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+153,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+154,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+155,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+156,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+157,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+158,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+159,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+160,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+161,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+162,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+163,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+164,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+165,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+166,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+167,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+168,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+169,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+170,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+171,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+172,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+173,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+174,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+175,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,514.9
+176,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+177,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+178,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+179,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+180,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+181,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+182,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+183,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+184,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+185,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+186,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+187,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+188,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+189,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+190,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+191,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+192,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+193,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+194,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+195,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+196,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+197,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+198,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+199,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+200,BENIGN_CAMPAIGN,"Declared Generated Unit Test Mocks",TRUSTED,TRUSTED,true,false,0.0
+201,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+202,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+203,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+204,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+205,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+206,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+207,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+208,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,522.5
+209,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+210,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+211,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+212,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+213,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+214,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+215,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+216,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+217,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+218,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+219,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+220,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+221,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+222,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+223,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+224,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+225,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+226,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+227,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+228,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+229,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+230,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+231,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+232,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+233,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+234,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+235,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+236,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+237,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+238,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+239,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+240,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,521.1
+241,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+242,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+243,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+244,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+245,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+246,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+247,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+248,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+249,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+250,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+251,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+252,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+253,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+254,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+255,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+256,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+257,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+258,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+259,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+260,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+261,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+262,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+263,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+264,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+265,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+266,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+267,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+268,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+269,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+270,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+271,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,521.2
+272,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+273,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+274,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+275,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+276,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+277,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+278,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+279,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+280,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+281,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+282,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+283,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+284,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+285,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+286,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+287,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+288,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+289,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+290,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+291,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+292,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+293,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+294,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+295,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+296,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+297,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+298,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+299,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+300,BENIGN_CAMPAIGN,"Automated API Documentation Generator",TRUSTED,TRUSTED,true,false,0.0
+301,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+302,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+303,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+304,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+305,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+306,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+307,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+308,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,516.9
+309,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+310,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+311,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+312,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+313,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+314,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+315,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+316,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+317,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+318,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+319,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+320,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+321,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+322,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+323,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+324,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+325,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+326,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+327,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+328,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+329,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+330,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+331,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+332,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+333,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+334,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+335,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+336,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+337,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+338,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+339,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+340,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+341,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+342,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+343,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+344,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+345,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+346,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+347,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+348,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+349,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+350,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+351,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+352,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+353,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+354,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+355,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+356,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+357,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+358,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,519.2
+359,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+360,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+361,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+362,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+363,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+364,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+365,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+366,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+367,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+368,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+369,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+370,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+371,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+372,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+373,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+374,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+375,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+376,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+377,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+378,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+379,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+380,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+381,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+382,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+383,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+384,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+385,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+386,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+387,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+388,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+389,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+390,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+391,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+392,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+393,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+394,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+395,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+396,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+397,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+398,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+399,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+400,BENIGN_CAMPAIGN,"Compiler Build Cache Hit (Sub-50ms)",TRUSTED,TRUSTED,true,false,0.0
+401,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+402,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+403,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+404,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+405,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+406,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+407,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+408,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+409,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+410,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+411,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,521.3
+412,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+413,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+414,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+415,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+416,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+417,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+418,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+419,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+420,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+421,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+422,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+423,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+424,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+425,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+426,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+427,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+428,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+429,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+430,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+431,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+432,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+433,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+434,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+435,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+436,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+437,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+438,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+439,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+440,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+441,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+442,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+443,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+444,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+445,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+446,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+447,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+448,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+449,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+450,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+451,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+452,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+453,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+454,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+455,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+456,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+457,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+458,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+459,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+460,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+461,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+462,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+463,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+464,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,518.7
+465,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+466,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+467,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+468,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+469,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+470,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+471,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+472,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+473,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+474,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+475,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+476,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+477,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+478,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+479,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+480,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+481,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+482,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+483,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+484,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+485,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+486,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+487,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+488,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+489,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+490,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+491,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+492,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+493,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+494,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+495,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+496,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+497,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+498,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+499,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+500,BENIGN_CAMPAIGN,"Standard OS %TEMP% Allocation",TRUSTED,TRUSTED,true,false,0.0
+501,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+502,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+503,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+504,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+505,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+506,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+507,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+508,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+509,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+510,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+511,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+512,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+513,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+514,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+515,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+516,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+517,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+518,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+519,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+520,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+521,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+522,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+523,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+524,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+525,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+526,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+527,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+528,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+529,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+530,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+531,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+532,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+533,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+534,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+535,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+536,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+537,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+538,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+539,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+540,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+541,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+542,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+543,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+544,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+545,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+546,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+547,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+548,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+549,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+550,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+551,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+552,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+553,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+554,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+555,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+556,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+557,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+558,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+559,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+560,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+561,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,525.5
+562,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+563,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+564,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+565,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+566,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+567,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+568,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+569,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+570,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+571,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+572,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+573,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+574,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+575,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+576,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+577,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+578,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+579,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+580,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+581,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+582,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+583,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+584,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+585,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,519.9
+586,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+587,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+588,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+589,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+590,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+591,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+592,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+593,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+594,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+595,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+596,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+597,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+598,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+599,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+600,BENIGN_CAMPAIGN,"Standard Package Registry DNS Resolution",TRUSTED,TRUSTED,true,false,0.0
+601,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+602,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+603,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+604,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+605,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+606,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+607,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+608,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+609,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+610,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+611,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+612,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+613,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+614,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+615,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+616,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+617,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+618,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+619,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+620,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+621,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+622,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+623,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+624,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,519.9
+625,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+626,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+627,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+628,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+629,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+630,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+631,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+632,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+633,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+634,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+635,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+636,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+637,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+638,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+639,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+640,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+641,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+642,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+643,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+644,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+645,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+646,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+647,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+648,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+649,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+650,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+651,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+652,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+653,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+654,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+655,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+656,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+657,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+658,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+659,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+660,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+661,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+662,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+663,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+664,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+665,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+666,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,516.4
+667,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+668,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+669,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+670,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+671,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+672,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+673,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+674,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+675,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+676,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+677,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+678,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+679,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+680,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+681,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+682,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+683,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+684,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+685,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+686,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+687,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+688,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+689,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+690,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+691,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+692,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+693,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+694,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+695,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+696,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+697,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+698,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+699,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+700,BENIGN_CAMPAIGN,"Legitimate Nested CDN Registry Mirror",TRUSTED,TRUSTED,true,false,0.0
+701,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+702,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+703,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+704,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+705,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+706,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+707,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+708,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+709,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+710,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+711,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+712,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+713,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,513.5
+714,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+715,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+716,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+717,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+718,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+719,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+720,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+721,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+722,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+723,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+724,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+725,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+726,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+727,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+728,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+729,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+730,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+731,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+732,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+733,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+734,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+735,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+736,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+737,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+738,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+739,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+740,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+741,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+742,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+743,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+744,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+745,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+746,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+747,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+748,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+749,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+750,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+751,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+752,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+753,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+754,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+755,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+756,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+757,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+758,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+759,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+760,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+761,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+762,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+763,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+764,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+765,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+766,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+767,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,521.9
+768,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+769,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+770,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+771,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+772,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+773,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+774,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+775,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+776,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+777,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+778,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+779,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+780,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+781,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+782,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+783,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+784,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+785,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+786,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+787,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+788,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+789,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+790,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+791,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+792,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+793,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+794,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+795,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+796,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+797,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+798,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+799,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+800,BENIGN_CAMPAIGN,"Transient Helper Tool Execution (git rev-parse)",TRUSTED,TRUSTED,true,false,0.0
+801,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+802,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+803,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+804,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+805,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+806,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+807,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+808,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+809,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+810,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+811,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+812,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+813,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+814,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+815,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+816,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+817,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+818,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+819,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+820,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+821,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+822,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+823,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+824,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+825,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+826,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+827,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+828,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+829,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+830,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+831,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+832,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+833,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+834,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+835,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+836,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+837,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+838,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+839,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+840,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+841,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+842,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+843,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+844,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+845,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+846,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+847,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+848,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+849,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+850,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+851,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+852,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+853,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+854,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+855,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+856,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+857,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+858,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+859,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+860,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+861,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+862,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+863,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+864,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+865,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+866,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+867,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+868,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+869,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+870,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+871,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+872,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+873,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+874,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+875,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,523.1
+876,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+877,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+878,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+879,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+880,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+881,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+882,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+883,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+884,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+885,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+886,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+887,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+888,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+889,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+890,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+891,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,514.0
+892,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+893,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+894,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+895,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+896,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+897,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+898,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+899,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+900,BENIGN_CAMPAIGN,"Ephemeral Build Workspace Cache Scratchpad",TRUSTED,TRUSTED,true,false,0.0
+901,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+902,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+903,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+904,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+905,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+906,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+907,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+908,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+909,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+910,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+911,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+912,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+913,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+914,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+915,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+916,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+917,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+918,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+919,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+920,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+921,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+922,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+923,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+924,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+925,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+926,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+927,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+928,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+929,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+930,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+931,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+932,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+933,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+934,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+935,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+936,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+937,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+938,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+939,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+940,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+941,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+942,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+943,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+944,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+945,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+946,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+947,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+948,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+949,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+950,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+951,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+952,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,528.7
+953,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+954,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+955,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+956,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+957,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+958,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+959,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+960,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+961,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+962,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+963,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+964,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+965,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+966,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+967,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+968,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+969,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+970,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+971,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+972,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+973,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+974,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+975,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+976,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+977,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+978,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+979,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+980,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,531.6
+981,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+982,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+983,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+984,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+985,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+986,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+987,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+988,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+989,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+990,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+991,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+992,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+993,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+994,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+995,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+996,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+997,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+998,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+999,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+1000,BENIGN_CAMPAIGN,"Cross-Host Runner Path Relocation",TRUSTED,TRUSTED,true,false,0.0
+1001,ADVERSARIAL_REATTACK,"Sub-1ms Ephemeral Process Spawn (Unprivileged Runner)",REJECTED (BYPASS BOUNDED),TRUSTED,false,false,14.8
+1002,ADVERSARIAL_REATTACK,"Ephemeral Process Execution with Elevated Kernel ETW",REJECTED,REJECTED,true,false,14.8
+1003,ADVERSARIAL_REATTACK,"Sub-1ms Create-and-Delete Event Race",REJECTED (BYPASS BOUNDED),TRUSTED,false,false,14.8
+1004,ADVERSARIAL_REATTACK,"Transient File Dropped in Monitored Directory with Active Event Streaming",REJECTED,REJECTED,true,false,14.8
+1005,ADVERSARIAL_REATTACK,"Low-Entropy Dictionary-Word Subdomain Tunneling",REJECTED (BYPASS BOUNDED),TRUSTED,false,false,14.8
+1006,ADVERSARIAL_REATTACK,"High-Entropy DNS Tunneling Correlated with Unauthorized Execution",REJECTED,REJECTED,true,false,14.8
+1007,ADVERSARIAL_REATTACK,"Attacker Injects Malicious File Claiming to Be Generated",REJECTED,REJECTED,true,false,14.8
+1008,ADVERSARIAL_REATTACK,"Source Tampering Disguised Alongside Legitimate Generated Mock",REJECTED,REJECTED,true,false,14.8
+1009,DNS_TUNNELING,"proxy.golang.org",TRUSTED,TRUSTED,false,false,0.8
+1010,DNS_TUNNELING,"sum.golang.org",TRUSTED,TRUSTED,false,false,0.8
+1011,DNS_TUNNELING,"pkg.go.dev",TRUSTED,TRUSTED,false,false,0.8
+1012,DNS_TUNNELING,"api.github.com",TRUSTED,TRUSTED,false,false,0.8
+1013,DNS_TUNNELING,"cdn.jsdelivr.net",TRUSTED,TRUSTED,false,false,0.8
+1014,DNS_TUNNELING,"us-east-1.registry.hub.docker.com",TRUSTED,TRUSTED,false,false,0.8
+1015,DNS_TUNNELING,"production.cloudflare.docker.com",TRUSTED,TRUSTED,false,false,0.8
+1016,DNS_TUNNELING,"c2VjcmV0LWtleS1kYXRhLWV4Zmls.pkg.go.dev",REJECTED,REJECTED,true,false,0.8
+1017,DNS_TUNNELING,"7365637265745f746f6b656e5f686578.pkg.go.dev",REJECTED,REJECTED,true,false,0.8
+1018,DNS_TUNNELING,"this-is-an-abnormally-long-chunk-of-exfiltrated-payload-data.github.com",REJECTED,REJECTED,true,false,0.8
+1019,DNS_TUNNELING,"chunk1.chunk2.chunk3.chunk4.chunk5.chunk6.pkg.go.dev",REJECTED,REJECTED,true,false,0.8
+1020,DNS_TUNNELING,"strange-high-entropy-x98f21bc90a.pkg.go.dev",WARNING,WARNING,false,false,0.8
+1021,DNS_TUNNELING,"leak.pkg.go.dev",TRUSTED,TRUSTED,false,false,0.8
+1022,POLICY_EVALUATION,"GEN-TEST-01",TRUSTED,TRUSTED,false,false,0.4
+1023,POLICY_EVALUATION,"GEN-TEST-02",REJECTED,REJECTED,true,false,0.4
+1024,POLICY_EVALUATION,"GEN-TEST-03",REJECTED,REJECTED,true,false,0.4
+1025,POLICY_EVALUATION,"GEN-TEST-04",REJECTED,REJECTED,true,false,0.4
+1026,POLICY_EVALUATION,"GEN-TEST-05",TRUSTED,TRUSTED,false,false,0.4
+1027,POLICY_EVALUATION,"GEN-TEST-06",REJECTED,REJECTED,true,false,0.4

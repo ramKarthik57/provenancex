@@ -1,0 +1,7 @@
+Subsystem,MetricName,Day15Baseline,Day16Remediated,DeltaAbsolute,DeltaPercent,Unit,EngineeringCost
+"Decision & Correlation Engine","Mean In-Memory Decision Latency",23.90,24.80,0.90,+3.77%,"µs / decision","Sub-microsecond Shannon entropy calculation and declared path pattern matching"
+"Network Telemetry","DNS Subdomain Heuristic Analysis Latency",0.00,0.80,0.80,+100.0%,"µs / query","Character distribution counting and Shannon entropy calculation over domain labels"
+"Policy Engine","Declared Generated Path Evaluation",0.00,0.40,0.40,+100.0%,"µs / file","Glob pattern matching against declared in-tree build intermediate whitelist"
+"CI Build Toolchain","Real End-to-End Build Overhead",0.22,0.24,0.02,+9.09%,"% build penalty","Negligible <0.02% latency difference on physical Go service compilations"
+"Memory Footprint","Heap Allocations per Verification",4120.00,4380.00,260.00,+6.31%,"bytes / trial","Stores DNS heuristic analysis result and declared path matching records"
+"Host Telemetry Agent","Background CPU Overhead",0.30,0.35,0.05,+16.67%,"% single core","Lightweight user-mode directory notification event loop and DNS auditing"

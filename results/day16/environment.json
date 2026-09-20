@@ -1,0 +1,7 @@
+{
+  "arch": "amd64",
+  "go_version": "go1.23.6",
+  "num_cpu": "16",
+  "os": "windows",
+  "tool_version": "0.1.0-dev"
+}
