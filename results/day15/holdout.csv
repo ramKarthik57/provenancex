@@ -1,0 +1,4 @@
+Partition,TotalCases,AttackCases,BenignCases,TruePositives,FalseNegatives,TrueNegatives,FalsePositives,RecallPct,PrecisionPct,F1Score
+70% Development Partition,5250,4374,876,4374,0,876,0,100.00,100.00,100.00
+15% Validation Partition,1125,937,188,937,0,188,0,100.00,100.00,100.00
+15% Final Independent Holdout,1125,937,188,937,0,188,0,100.00,100.00,100.00

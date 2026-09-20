@@ -1,0 +1,26 @@
+NodeScale,ScaleLabel,Stage,Scope,MeanMicros,MedianMicros,P95Micros,P99Micros,ThroughputNodesSec
+100,100 Nodes,1. Node & Edge Insertion (O(1)),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Nodes,2. Contradiction State Lookup (O(N)),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Nodes,3. Single-Path Traversal (O(V+E)),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Nodes,4. Full Reachability Analysis (DFS),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Nodes,5. Graph Serialization (JSON),DAG Traversal Subsystem Benchmark,205.8,5.0,511.0,511.0,485908.6
+1000,1000 Nodes,1. Node & Edge Insertion (O(1)),DAG Traversal Subsystem Benchmark,308.4,511.0,515.0,515.0,3242542.2
+1000,1000 Nodes,2. Contradiction State Lookup (O(N)),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,1000000000.0
+1000,1000 Nodes,3. Single-Path Traversal (O(V+E)),DAG Traversal Subsystem Benchmark,1455.2,1533.0,1644.0,1644.0,687190.8
+1000,1000 Nodes,4. Full Reachability Analysis (DFS),DAG Traversal Subsystem Benchmark,1.0,1.0,1.0,1.0,1000000000.0
+1000,1000 Nodes,5. Graph Serialization (JSON),DAG Traversal Subsystem Benchmark,1146.2,1034.0,1614.0,1614.0,872448.1
+5000,5000 Nodes,1. Node & Edge Insertion (O(1)),DAG Traversal Subsystem Benchmark,953.6,1029.0,1502.0,1502.0,5243288.6
+5000,5000 Nodes,2. Contradiction State Lookup (O(N)),DAG Traversal Subsystem Benchmark,603.6,513.0,1504.0,1504.0,8283631.5
+5000,5000 Nodes,3. Single-Path Traversal (O(V+E)),DAG Traversal Subsystem Benchmark,33369.2,33053.0,34071.0,34071.0,149838.8
+5000,5000 Nodes,4. Full Reachability Analysis (DFS),DAG Traversal Subsystem Benchmark,300.8,1.0,999.0,999.0,16622340.4
+5000,5000 Nodes,5. Graph Serialization (JSON),DAG Traversal Subsystem Benchmark,6426.6,6012.0,7646.0,7646.0,778016.4
+10000,10000 Nodes,1. Node & Edge Insertion (O(1)),DAG Traversal Subsystem Benchmark,4410.2,4506.0,4823.0,4823.0,2267470.9
+10000,10000 Nodes,2. Contradiction State Lookup (O(N)),DAG Traversal Subsystem Benchmark,603.4,1000.0,1008.0,1008.0,16572754.4
+10000,10000 Nodes,3. Single-Path Traversal (O(V+E)),DAG Traversal Subsystem Benchmark,155337.6,154924.0,158807.0,158807.0,64375.9
+10000,10000 Nodes,4. Full Reachability Analysis (DFS),DAG Traversal Subsystem Benchmark,402.8,1.0,1007.0,1007.0,24826216.5
+10000,10000 Nodes,5. Graph Serialization (JSON),DAG Traversal Subsystem Benchmark,13783.4,13108.0,15621.0,15621.0,725510.4
+50000,50000 Nodes,1. Node & Edge Insertion (O(1)),DAG Traversal Subsystem Benchmark,19027.4,20327.0,20982.0,20982.0,2627789.4
+50000,50000 Nodes,2. Contradiction State Lookup (O(N)),DAG Traversal Subsystem Benchmark,3254.0,2998.0,4629.0,4629.0,15365703.7
+50000,50000 Nodes,3. Single-Path Traversal (O(V+E)),DAG Traversal Subsystem Benchmark,4359778.4,4350423.0,4964206.0,4964206.0,11468.5
+50000,50000 Nodes,4. Full Reachability Analysis (DFS),DAG Traversal Subsystem Benchmark,3063.6,2523.0,4317.0,4317.0,16320668.5
+50000,50000 Nodes,5. Graph Serialization (JSON),DAG Traversal Subsystem Benchmark,5.0,5.0,5.0,5.0,10000000000.0

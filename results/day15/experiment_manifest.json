@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-20T08:16:33.1031033Z",
+  "git_commit": "360f038",
+  "os": "windows",
+  "architecture": "amd64",
+  "go_version": "go1.23.6",
+  "audit_scope": "Independent Benchmark Audit, Performance Disentanglement \u0026 Claim Hardening",
+  "total_audited_trials": 7500,
+  "configuration_hash": "143b72519474fd8d",
+  "research_integrity_notice": "Day 15 Independent Audit: Microbenchmarks disentangled from end-to-end overhead; false negatives/positives documented explicitly."
+}

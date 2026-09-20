@@ -1,0 +1,7 @@
+AttackID,TargetLayer,AttackVector,EvasionTechnique,ObservedVerdict,ExpectedVerdict,IsDetected,EarliestLayerCaught,RootCauseLimitation
+ADV-HUNT-01,SOURCE,Uncommitted Backdoor File Injection,Drop extra backdoor in source tree without committing,REJECTED,REJECTED,true,SOURCE,Clean working tree policy flags untracked files
+ADV-HUNT-02,DEPENDENCIES,Compatible Transitive Semantic Substitution,Semantic version compatibility bypasses unit test suite,REJECTED,REJECTED,true,DEPENDENCIES,Cryptographic lockfile pins exact resolved versions
+ADV-HUNT-03,PROCESS,Sub-10ms Process Injection (Unprivileged Polling Fallback),"Subprocess spawns, exfiltrates memory, and exits between polling ticks",TRUSTED,REJECTED,false,NONE (MISSED),Requires Windows Administrator elevation for Kernel ETW session
+ADV-HUNT-04,FILESYSTEM,Rapid Create-and-Delete Transient Payload,"Payload dropped to disk, executed via cmdline, and unlinked prior to snapshot",TRUSTED,REJECTED,false,NONE (MISSED),Requires kernel filesystem minifilter driver (FLTMGR) or USN change journal parsing
+ADV-HUNT-05,NETWORK,Allowed-Domain Subdomain DNS Data Tunneling,Exfiltrate secrets encoded in subdomains of whitelisted domain names,TRUSTED,REJECTED,false,NONE (MISSED),Domain suffix match allows subdomain multiplexing; requires entropy analysis or full DNS payload inspection
+ADV-HUNT-06,PROVENANCE,Provenance Subject Hash Forgery,Attestation envelope signed with valid key but claims hash of unbuilt artifact,REJECTED,REJECTED,true,ARTIFACT,Cross-layer provenance verification enforces subject digest matching

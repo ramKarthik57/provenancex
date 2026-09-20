@@ -1,0 +1,36 @@
+InputScale,ScaleLabel,Stage,Scope,MeanMicros,MedianMicros,P95Micros,P99Micros,ThroughputPkgsSec
+10,10 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,10000000.0
+10,10 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,10000000.0
+10,10 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,10000000.0
+10,10 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,10000000.0
+10,10 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,2500000.0
+50,50 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,50000000.0
+50,50 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,50000000.0
+50,50 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,50000000.0
+50,50 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,50000000.0
+50,50 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,12500000.0
+100,100 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,100.9,1.0,1000.0,1000.0,991080.3
+100,100 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,100000000.0
+100,100 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,103.9,4.0,1003.0,1003.0,962463.9
+500,500 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,500000000.0
+500,500 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,500000000.0
+500,500 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,500000000.0
+500,500 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,500000000.0
+500,500 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,4.0,4.0,4.0,4.0,125000000.0
+1000,1000 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,1000000000.0
+1000,1000 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,100.8,1.0,999.0,999.0,9920634.9
+1000,1000 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,1000000000.0
+1000,1000 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,1000000000.0
+1000,1000 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,103.8,4.0,1002.0,1002.0,9633911.4
+5000,5000 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,5000000000.0
+5000,5000 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,104.5,1.0,1036.0,1036.0,47846890.0
+5000,5000 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,204.3,1.0,1035.0,1035.0,24473813.0
+5000,5000 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,151.8,1.0,1005.0,1005.0,32938076.4
+5000,5000 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,461.6,256.0,1039.0,1039.0,10831889.1
+10000,10000 Dependencies,1. Dependency Manifest/Lockfile Parsing,In-Memory Subsystem Benchmark,1.0,1.0,1.0,1.0,10000000000.0
+10000,10000 Dependencies,2. Dependency Graph Node Insertion & Indexing,In-Memory Subsystem Benchmark,518.4,290.5,1328.0,1328.0,19290123.5
+10000,10000 Dependencies,3. Graph Traversal & Version Pinning Verification,In-Memory Subsystem Benchmark,100.8,1.0,999.0,999.0,99206349.2
+10000,10000 Dependencies,4. Cycle Detection (DFS Traversal),In-Memory Subsystem Benchmark,403.2,1.0,1020.0,1020.0,24801587.3
+10000,10000 Dependencies,FULL DEPENDENCY ANALYSIS PIPELINE,Complete In-Memory Dependency Pipeline,1023.4,1016.0,2013.0,2013.0,9771350.4

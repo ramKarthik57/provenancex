@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/ramKarthik57/provenancex/internal/ablation"
+	"github.com/ramKarthik57/provenancex/internal/audit"
 	"github.com/ramKarthik57/provenancex/internal/blind"
 	"github.com/ramKarthik57/provenancex/internal/generalization"
 	"github.com/ramKarthik57/provenancex/internal/hostile"
@@ -29,6 +30,9 @@ var (
 	day14Runs             int
 	day14CasesPerScenario int
 	day14OutputDir        string
+
+	day15OutputDir    string
+	day15RawDay14Path string
 )
 
 var researchCmd = &cobra.Command{
@@ -218,6 +222,49 @@ var researchDay14Cmd = &cobra.Command{
 	},
 }
 
+var researchDay15Cmd = &cobra.Command{
+	Use:   "day15",
+	Short: "Independent benchmark audit, performance validation & research claim hardening (Day 15)",
+	Long: `Executes the full Day 15 independent research audit:
+1. Recomputes all Day 14 metrics directly from raw_trials.csv verifying TP+FN+TN+FP=N
+2. Decomposes in-memory microbenchmarks into granular pipeline stages
+3. Measures realistic end-to-end build overhead on physical disk projects
+4. Validates disk-backed artifact streaming vs in-memory cryptographic upper bounds
+5. Stress-tests frozen detector with adversarial false-negative and benign false-positive hunts
+6. Exports 15 reproducible scientific audit datasets and SHA-256 integrity ledger to results/day15/.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		runner := audit.NewAuditCampaignRunner(day15OutputDir, day15RawDay14Path)
+		report, err := runner.Run()
+		if err != nil {
+			return fmt.Errorf("day 15 audit failed: %w", err)
+		}
+
+		if err := report.ExportAllDay15Datasets(day15OutputDir); err != nil {
+			return fmt.Errorf("failed exporting Day 15 datasets: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Day 15 empirical audit package exported to %s/\n", day15OutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "raw_trials.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "recomputed_metrics.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "performance_summary.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "end_to_end.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "holdout.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "false_negative_hunt.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "false_positive_hunt.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "artifact_benchmark.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "dependency_benchmark.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "evidence_benchmark.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "graph_benchmark.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "concurrency_benchmark.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "randomness_audit.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "environment.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "experiment_manifest.json"))
+		fmt.Printf("  - %s\n", filepath.Join(day15OutputDir, "dataset_hashes.txt"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
@@ -234,11 +281,15 @@ func init() {
 	researchDay14Cmd.Flags().IntVar(&day14CasesPerScenario, "cases-per-scenario", 50, "Number of scenario cases evaluated per scenario per run")
 	researchDay14Cmd.Flags().StringVar(&day14OutputDir, "output", filepath.Join("results", "day14"), "Output directory for exported empirical CSV/JSON datasets")
 
+	researchDay15Cmd.Flags().StringVar(&day15OutputDir, "output", filepath.Join("results", "day15"), "Output directory for exported empirical audit datasets")
+	researchDay15Cmd.Flags().StringVar(&day15RawDay14Path, "day14-raw", filepath.Join("results", "day14", "raw_trials.csv"), "Path to primary Day 14 raw_trials.csv")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
 	researchCmd.AddCommand(researchHuntCmd)
 	researchCmd.AddCommand(researchRemediateCmd)
 	researchCmd.AddCommand(researchDay14Cmd)
+	researchCmd.AddCommand(researchDay15Cmd)
 	rootCmd.AddCommand(researchCmd)
 }
