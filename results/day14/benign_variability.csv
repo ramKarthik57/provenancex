@@ -1,0 +1,6 @@
+ScenarioID,Category,SubCategory,Trials,TrueNegatives,FalsePositives,SpecificityPct,PrecisionPct,MeanLatencyMicros
+BENIGN-VAR-01,BENIGN_VARIABILITY,Compiler: Harmless Minor Patch Update,250,250,0,100.00,100.00,26.3
+BENIGN-VAR-02,BENIGN_VARIABILITY,Dependency: Harmless Lockfile Formatting,250,250,0,100.00,100.00,33.1
+BENIGN-VAR-03,BENIGN_VARIABILITY,Execution: Cache Hit Normalization,250,250,0,100.00,100.00,21.9
+BENIGN-VAR-04,BENIGN_VARIABILITY,Environment: Path Relocation,250,250,0,100.00,100.00,24.7
+BENIGN-VAR-05,BENIGN_VARIABILITY,Source: Harmless Metadata Update,250,250,0,100.00,100.00,20.3

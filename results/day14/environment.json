@@ -1,0 +1,10 @@
+{
+  "arch": "amd64",
+  "elevation": "",
+  "go_version": "go1.23.6",
+  "num_cpu": 16,
+  "os": "windows",
+  "telemetry_active": "Windows Kernel ETW + DNS-Client Provider + Expanded Filesystem",
+  "timestamp": "2026-09-20T07:10:07Z",
+  "working_directory": "results/day14"
+}

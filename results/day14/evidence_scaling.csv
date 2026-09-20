@@ -1,0 +1,6 @@
+EventCount,ProcessEvents,FilesystemEvents,NetworkEvents,CorrelationLatencyMicros,ThroughputEventsPerSec,AllocatedMemoryKB
+100,33,33,34,100,1000000.0,63
+500,166,166,168,12,41666666.7,62
+1000,333,333,334,12,83333333.3,62
+5000,1666,1666,1668,50,100000000.0,62
+10000,3333,3333,3334,12,833333333.3,63

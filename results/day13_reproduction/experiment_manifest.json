@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-20T07:01:01.4428801Z",
+  "gitCommit": "fe70712",
+  "osVersion": "windows/amd64",
+  "goVersion": "go1.23.6",
+  "architecture": "amd64",
+  "isElevated": false,
+  "runs": 5,
+  "casesPerFamily": 100,
+  "telemetryActive": "Windows ETW + DNS-Client Provider + Expanded Filesystem",
+  "configurationHash": "15a57b6313032677",
+  "experimentNotice": "Controlled, blinded re-evaluation of Day 12 empirical blind spots."
+}

@@ -1,0 +1,6 @@
+NodeCount,EdgeCount,BuildLatencyMicros,RootCauseQueryMicros,ReachabilityCheckMicros,SubtreeExtractMicros
+100,99,1,1,1,0
+500,499,1,1,1001,500
+1000,999,1,1,1998,999
+5000,4999,2912,1,35486,17743
+10000,9999,3787,1,164311,82155

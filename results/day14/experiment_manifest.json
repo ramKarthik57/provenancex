@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-20T07:10:07.5053941Z",
+  "git_commit": "9b782d8",
+  "os": "windows",
+  "architecture": "amd64",
+  "go_version": "go1.23.6",
+  "runs": 5,
+  "cases_per_scenario": 50,
+  "total_scenarios": 30,
+  "total_evaluated_trials": 7500,
+  "configuration_hash": "fc1ab124938d3378",
+  "experiment_notice": "Day 14 Adversarial Generalization \u0026 Multi-Dimension Scalability Validation Suite."
+}

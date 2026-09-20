@@ -1,0 +1,7 @@
+Configuration,RecallPct,PrecisionPct,F1Score,IdentifiedGaps,Note
+Full Remediated (All 4 Enabled),98.75,100.00,99.37,1,Unconfigured external directories require kernel minifilter
+Ablation 1: Cryptographic Commit Disabled,93.75,100.00,96.77,2,Git author spoofing drops to 0.00% recall
+Ablation 2: Windows ETW Disabled (Polling Only),93.75,100.00,96.77,2,Processes <10ms drop to 0.00% recall
+Ablation 3: Expanded Filesystem Disabled,95.00,100.00,97.44,2,Writes to %TEMP% drop to 0.00% recall
+Ablation 4: DNS Telemetry Disabled,93.75,100.00,96.77,2,DNS TXT exfiltration drops to 0.00% recall
+Pre-Remediation Baseline (Day 12),80.00,100.00,88.89,4,Original Day 12 empirical baseline

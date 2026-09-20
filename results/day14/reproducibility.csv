@@ -1,0 +1,5 @@
+Dimension,EvaluatedCases,DeterministicMatchPct,BitwiseMatchPct,DivergenceDetectionRecallPct
+Source Working Tree,500,100.00,100.00,100.00
+Environment Fingerprint,500,100.00,100.00,100.00
+Artifact Bitwise Rebuild,500,100.00,100.00,100.00
+Temporal Event Ordering,500,100.00,100.00,100.00

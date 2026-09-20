@@ -1,0 +1,9 @@
+{
+  "arch": "amd64",
+  "dns_provider": "Microsoft-Windows-DNS-Client",
+  "etw_provider": "Microsoft-Windows-Kernel-Process",
+  "go_version": "go1.23.6",
+  "is_elevated": false,
+  "num_cpu": 16,
+  "os": "windows"
+}

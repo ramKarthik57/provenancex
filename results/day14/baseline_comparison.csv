@@ -1,0 +1,4 @@
+Milestone,EvaluatedTrials,AttackFamilies,BenignFamilies,OverallRecallPct,PrecisionPct,F1Score,MeanLatencyMicros,DemonstratedBlindSpots,KeyArchitecturalAdvance
+Day 12 Baseline (Blind Spot Discovery),6250,20,5,80.00,100.00,88.89,12.5,4,Adversarial mutation matrix uncovered 4 systematic blind spots
+Day 13 Post-Remediation Benchmark,6250,20,5,98.75,100.00,99.37,14.8,1,"Windows ETW process tracing, commit signatures, expanded temp filesystem, DNS telemetry"
+Day 14 Generalization & Scalability Validation,7500,25,5,100.00,100.00,100.00,23.9,1,"22 unseen variants, 3 composed multi-layer chains, benign drift resilience, 100MB+ / 1K deps / 10K events scaling"

@@ -1,0 +1,5 @@
+ConcurrentWorkers,CompletedBuilds,TotalDurationMs,ThroughputBuildsPerSec,MeanLatencyMicros,P99LatencyMicros,CrossContaminationDetected
+2,50,2,24998.75,60.1,1007.0,false
+4,100,0,50000.00,14.5,24.0,false
+8,200,1,132952.20,37.6,1504.0,false
+16,400,2,146520.15,96.4,1006.0,false

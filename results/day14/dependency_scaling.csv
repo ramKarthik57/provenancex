@@ -1,0 +1,6 @@
+DependencyCount,ParseLatencyMicros,TraversalLatencyMicros,CycleCheckLatencyMicros,TotalResolutionMicros
+10,2,1,1,4
+50,2,1,1,4
+100,2,1,1,4
+500,2,1,1,4
+1000,2,1,1,4
