@@ -116,6 +116,12 @@ func (e *Engine) Decide(corr *correlation.Result, pol *policy.Policy) *Decision 
 		dec.Reasons = append(dec.Reasons, "Build attempted unauthorized network communication to unapproved destinations")
 	}
 
+	// 8. Build execution status
+	if status, ok := corr.LayerStatuses[evidence.LayerBuild]; ok && status == evidence.StatusMismatch {
+		dec.Verdict = VerdictRejected
+		dec.Reasons = append(dec.Reasons, "Build command execution failed or exited with non-zero status")
+	}
+
 	// 8. Missing build inputs warning
 	if len(corr.MissingInputs) > 0 {
 		for _, m := range corr.MissingInputs {

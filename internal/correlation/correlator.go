@@ -84,6 +84,7 @@ func (c *Correlator) Correlate(input *CorrelationInput) *Result {
 				"internal/repository")
 		} else {
 			layerStatuses[evidence.LayerSource] = evidence.StatusMismatch
+			isConsistent = false
 			log.Append(evidence.LayerSource, evidence.CategoryDirect, evidence.StatusMismatch,
 				"git.workingTree", "clean", "dirty",
 				fmt.Sprintf("Uncommitted or modified files: %v", append(input.Repository.ModifiedFiles, input.Repository.UntrackedFiles...)),
