@@ -13,9 +13,9 @@ import (
 )
 
 var (
-	sbomFormat     string
-	sbomOutputJSON bool
-	sbomOutputFile string
+	sbomFormat       string
+	sbomOutputJSON   bool
+	sbomOutputFile   string
 	sbomValidateFile string
 )
 

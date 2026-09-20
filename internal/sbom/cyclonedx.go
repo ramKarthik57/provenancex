@@ -12,18 +12,18 @@ import (
 
 // CycloneDX JSON structs
 type cdxDoc struct {
-	BOMFormat    string       `json:"bomFormat"`
-	SpecVersion  string       `json:"specVersion"`
-	SerialNumber string       `json:"serialNumber,omitempty"`
-	Version      int          `json:"version"`
-	Metadata     cdxMetadata  `json:"metadata"`
-	Components   []cdxComp    `json:"components"`
+	BOMFormat    string      `json:"bomFormat"`
+	SpecVersion  string      `json:"specVersion"`
+	SerialNumber string      `json:"serialNumber,omitempty"`
+	Version      int         `json:"version"`
+	Metadata     cdxMetadata `json:"metadata"`
+	Components   []cdxComp   `json:"components"`
 }
 
 type cdxMetadata struct {
-	Timestamp string      `json:"timestamp"`
-	Tools     []cdxTool   `json:"tools,omitempty"`
-	Component *cdxComp    `json:"component,omitempty"`
+	Timestamp string    `json:"timestamp"`
+	Tools     []cdxTool `json:"tools,omitempty"`
+	Component *cdxComp  `json:"component,omitempty"`
 }
 
 type cdxTool struct {

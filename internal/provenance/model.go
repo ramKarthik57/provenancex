@@ -4,11 +4,11 @@ import "time"
 
 // In-toto and SLSA specification constants
 const (
-	InTotoStatementV1     = "https://in-toto.io/Statement/v1"
-	SLSAProvenanceV1      = "https://slsa.dev/provenance/v1"
-	SLSAProvenanceV02     = "https://slsa.dev/provenance/v0.2"
-	GenericBuildType      = "https://provenancex.dev/build/v1"
-	DefaultBuilderID      = "https://provenancex.dev/builder/isolated-runner@v1"
+	InTotoStatementV1 = "https://in-toto.io/Statement/v1"
+	SLSAProvenanceV1  = "https://slsa.dev/provenance/v1"
+	SLSAProvenanceV02 = "https://slsa.dev/provenance/v0.2"
+	GenericBuildType  = "https://provenancex.dev/build/v1"
+	DefaultBuilderID  = "https://provenancex.dev/builder/isolated-runner@v1"
 )
 
 // Subject describes an artifact identified by cryptographic digest
@@ -45,8 +45,8 @@ type RunDetails struct {
 }
 
 type BuilderMetadata struct {
-	ID                  string            `json:"id"`
-	Version             map[string]string `json:"version,omitempty"`
+	ID                  string               `json:"id"`
+	Version             map[string]string    `json:"version,omitempty"`
 	BuilderDependencies []ResourceDescriptor `json:"builderDependencies,omitempty"`
 }
 
@@ -66,9 +66,9 @@ type InTotoStatement struct {
 
 // Contradiction records a specific trust break where provenance claims conflict with reality
 type Contradiction struct {
-	Field       string `json:"field"`       // e.g. "subject.digest.sha256", "material.commit"
-	Claimed     string `json:"claimed"`     // claimed by provenance
-	Observed    string `json:"observed"`    // verified from actual artifact/repository
+	Field       string `json:"field"`    // e.g. "subject.digest.sha256", "material.commit"
+	Claimed     string `json:"claimed"`  // claimed by provenance
+	Observed    string `json:"observed"` // verified from actual artifact/repository
 	Description string `json:"description"`
 }
 

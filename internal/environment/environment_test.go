@@ -29,9 +29,9 @@ func TestSecretRedaction(t *testing.T) {
 
 	// Test benign keys
 	benignPairs := map[string]string{
-		"PATH":    "/usr/bin:/bin",
-		"LANG":    "en_US.UTF-8",
-		"USER":    "buildbot",
+		"PATH":     "/usr/bin:/bin",
+		"LANG":     "en_US.UTF-8",
+		"USER":     "buildbot",
 		"NODE_ENV": "production",
 	}
 

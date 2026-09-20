@@ -20,7 +20,7 @@ type Component struct {
 	Name        string            `json:"name"`
 	Version     string            `json:"version"`
 	PURL        string            `json:"purl,omitempty"`
-	Type        string            `json:"type"` // e.g. "library", "application", "container"
+	Type        string            `json:"type"`             // e.g. "library", "application", "container"
 	Hashes      map[string]string `json:"hashes,omitempty"` // algorithm -> hex digest
 	License     string            `json:"license,omitempty"`
 	Supplier    string            `json:"supplier,omitempty"`

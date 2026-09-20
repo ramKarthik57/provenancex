@@ -18,10 +18,10 @@ type ConnectionRecord struct {
 
 // Evaluation represents the complete network policy audit for a build
 type Evaluation struct {
-	TotalConnections int                 `json:"totalConnections"`
-	AllowedCount     int                 `json:"allowedCount"`
-	ViolationCount   int                 `json:"violationCount"`
-	Connections      []*ConnectionRecord `json:"connections"`
-	Violations       []*ConnectionRecord `json:"violations"`
-	IsPolicyCompliant bool               `json:"isPolicyCompliant"`
+	TotalConnections  int                 `json:"totalConnections"`
+	AllowedCount      int                 `json:"allowedCount"`
+	ViolationCount    int                 `json:"violationCount"`
+	Connections       []*ConnectionRecord `json:"connections"`
+	Violations        []*ConnectionRecord `json:"violations"`
+	IsPolicyCompliant bool                `json:"isPolicyCompliant"`
 }

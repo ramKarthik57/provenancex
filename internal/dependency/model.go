@@ -28,11 +28,11 @@ type Dependency struct {
 type MismatchType string
 
 const (
-	MismatchVersionDrift       MismatchType = "VERSION_DRIFT"
-	MismatchMissingLockfile    MismatchType = "MISSING_LOCKFILE"
-	MismatchUndeclared         MismatchType = "UNDECLARED_DEPENDENCY"
-	MismatchHashMismatch       MismatchType = "HASH_MISMATCH"
-	MismatchUntrustedRegistry  MismatchType = "UNTRUSTED_REGISTRY"
+	MismatchVersionDrift        MismatchType = "VERSION_DRIFT"
+	MismatchMissingLockfile     MismatchType = "MISSING_LOCKFILE"
+	MismatchUndeclared          MismatchType = "UNDECLARED_DEPENDENCY"
+	MismatchHashMismatch        MismatchType = "HASH_MISMATCH"
+	MismatchUntrustedRegistry   MismatchType = "UNTRUSTED_REGISTRY"
 	MismatchLockfileDiscrepancy MismatchType = "LOCKFILE_DISCREPANCY"
 )
 
@@ -49,13 +49,13 @@ type Mismatch struct {
 
 // Report contains full dependency intelligence and analysis for a workspace
 type Report struct {
-	Timestamp      time.Time     `json:"timestamp"`
-	Directory      string        `json:"directory"`
-	Ecosystems     []Ecosystem   `json:"ecosystems"`
-	DirectCount    int           `json:"directCount"`
-	TotalCount     int           `json:"totalCount"`
-	Dependencies   []*Dependency `json:"dependencies"`
-	Mismatches     []*Mismatch   `json:"mismatches"`
-	HasLockfile    bool          `json:"hasLockfile"`
-	IsConsistent   bool          `json:"isConsistent"`
+	Timestamp    time.Time     `json:"timestamp"`
+	Directory    string        `json:"directory"`
+	Ecosystems   []Ecosystem   `json:"ecosystems"`
+	DirectCount  int           `json:"directCount"`
+	TotalCount   int           `json:"totalCount"`
+	Dependencies []*Dependency `json:"dependencies"`
+	Mismatches   []*Mismatch   `json:"mismatches"`
+	HasLockfile  bool          `json:"hasLockfile"`
+	IsConsistent bool          `json:"isConsistent"`
 }

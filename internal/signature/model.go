@@ -26,10 +26,10 @@ const (
 
 // VerificationResult summarizes the cryptographic validation of an artifact or attestation
 type VerificationResult struct {
-	Valid          bool      `json:"valid"`
-	Algorithm      Algorithm `json:"algorithm"`
-	KeyID          string    `json:"keyId,omitempty"`
-	SignedAt       time.Time `json:"signedAt,omitempty"`
-	Error          string    `json:"error,omitempty"`
-	Distinction    string    `json:"distinction"` // Always "SIGNATURE"
+	Valid       bool      `json:"valid"`
+	Algorithm   Algorithm `json:"algorithm"`
+	KeyID       string    `json:"keyId,omitempty"`
+	SignedAt    time.Time `json:"signedAt,omitempty"`
+	Error       string    `json:"error,omitempty"`
+	Distinction string    `json:"distinction"` // Always "SIGNATURE"
 }

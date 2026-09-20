@@ -19,8 +19,8 @@ type ProcessNode struct {
 
 // Tree represents the hierarchical tree of processes spawned during a build
 type Tree struct {
-	Root           *ProcessNode   `json:"root"`
-	TotalProcesses int            `json:"totalProcesses"`
-	SuspiciousCount int           `json:"suspiciousCount"`
-	Processes      []*ProcessNode `json:"processes"`
+	Root            *ProcessNode   `json:"root"`
+	TotalProcesses  int            `json:"totalProcesses"`
+	SuspiciousCount int            `json:"suspiciousCount"`
+	Processes       []*ProcessNode `json:"processes"`
 }

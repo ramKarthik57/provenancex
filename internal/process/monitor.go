@@ -85,9 +85,9 @@ func (m *Monitor) BuildTree(nodes []*ProcessNode) *Tree {
 
 	return &Tree{
 		Root:            root,
-		TotalProcesses: len(nodes),
+		TotalProcesses:  len(nodes),
 		SuspiciousCount: suspiciousCount,
-		Processes:      nodes,
+		Processes:       nodes,
 	}
 }
 

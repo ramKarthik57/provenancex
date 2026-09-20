@@ -11,13 +11,13 @@ import (
 )
 
 type spdxDoc struct {
-	SPDXVersion       string          `json:"spdxVersion"`
-	DataLicense       string          `json:"dataLicense"`
-	SPDXID            string          `json:"SPDXID"`
-	Name              string          `json:"name"`
-	DocumentNamespace string          `json:"documentNamespace"`
-	CreationInfo      spdxCreation    `json:"creationInfo"`
-	Packages          []spdxPackage   `json:"packages"`
+	SPDXVersion       string        `json:"spdxVersion"`
+	DataLicense       string        `json:"dataLicense"`
+	SPDXID            string        `json:"SPDXID"`
+	Name              string        `json:"name"`
+	DocumentNamespace string        `json:"documentNamespace"`
+	CreationInfo      spdxCreation  `json:"creationInfo"`
+	Packages          []spdxPackage `json:"packages"`
 }
 
 type spdxCreation struct {
@@ -27,12 +27,12 @@ type spdxCreation struct {
 }
 
 type spdxPackage struct {
-	SPDXID           string           `json:"SPDXID"`
-	Name             string           `json:"name"`
-	VersionInfo      string           `json:"versionInfo"`
-	DownloadLocation string           `json:"downloadLocation"`
-	Checksums        []spdxChecksum   `json:"checksums,omitempty"`
-	ExternalRefs     []spdxExternalRef`json:"externalRefs,omitempty"`
+	SPDXID           string            `json:"SPDXID"`
+	Name             string            `json:"name"`
+	VersionInfo      string            `json:"versionInfo"`
+	DownloadLocation string            `json:"downloadLocation"`
+	Checksums        []spdxChecksum    `json:"checksums,omitempty"`
+	ExternalRefs     []spdxExternalRef `json:"externalRefs,omitempty"`
 }
 
 type spdxChecksum struct {

@@ -25,13 +25,13 @@ var PipelineOrder = []evidence.Layer{
 
 // TrustBreakReport identifies the earliest inconsistent layer in the build pipeline
 type TrustBreakReport struct {
-	HasTrustBreak     bool             `json:"hasTrustBreak"`
-	EarliestLayer     evidence.Layer   `json:"earliestLayer,omitempty"`
-	LayerIndex        int              `json:"layerIndex"`
-	Status            evidence.Status  `json:"status,omitempty"`
-	Reason            string           `json:"reason,omitempty"`
-	SupportingEvidence []string        `json:"supportingEvidence"`
-	CausalChain       []evidence.Layer `json:"causalChain"`
+	HasTrustBreak      bool             `json:"hasTrustBreak"`
+	EarliestLayer      evidence.Layer   `json:"earliestLayer,omitempty"`
+	LayerIndex         int              `json:"layerIndex"`
+	Status             evidence.Status  `json:"status,omitempty"`
+	Reason             string           `json:"reason,omitempty"`
+	SupportingEvidence []string         `json:"supportingEvidence"`
+	CausalChain        []evidence.Layer `json:"causalChain"`
 }
 
 // Localizer pinpoints where supply-chain trust collapses

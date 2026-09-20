@@ -8,14 +8,14 @@ import (
 
 // Policy defines the configurable rules governing supply-chain trust decisions
 type Policy struct {
-	Version      string             `yaml:"version" json:"version"`
-	Name         string             `yaml:"name" json:"name"`
-	Description  string             `yaml:"description" json:"description"`
-	Repository   RepositoryPolicy   `yaml:"repository" json:"repository"`
-	Dependencies DependenciesPolicy `yaml:"dependencies" json:"dependencies"`
-	Provenance   ProvenancePolicy   `yaml:"provenance" json:"provenance"`
-	Signature    SignaturePolicy    `yaml:"signature" json:"signature"`
-	Network      NetworkPolicy      `yaml:"network" json:"network"`
+	Version         string                `yaml:"version" json:"version"`
+	Name            string                `yaml:"name" json:"name"`
+	Description     string                `yaml:"description" json:"description"`
+	Repository      RepositoryPolicy      `yaml:"repository" json:"repository"`
+	Dependencies    DependenciesPolicy    `yaml:"dependencies" json:"dependencies"`
+	Provenance      ProvenancePolicy      `yaml:"provenance" json:"provenance"`
+	Signature       SignaturePolicy       `yaml:"signature" json:"signature"`
+	Network         NetworkPolicy         `yaml:"network" json:"network"`
 	Reproducibility ReproducibilityPolicy `yaml:"reproducibility" json:"reproducibility"`
 }
 
