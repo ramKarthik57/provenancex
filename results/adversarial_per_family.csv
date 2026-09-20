@@ -1,0 +1,26 @@
+Family,Type,N,TP,FN,TN,FP,RecallPct,PrecisionPct,BlindSpot,ObservationBoundary,MeanLatencyMicros
+Source: Stealth Uncommitted Code,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),13.5
+Source: Commit Author/Email Spoofing,ATTACK,250,0,250,0,0,0.00,0.00,YES,Commit author metadata spoofing; clean workspace tree passes git status without GPG signature policy,4.1
+Dependency: Compatible Semver Substitution,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),16.2
+Dependency: Unapproved Mirror Registry,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),10.2
+Lockfile: Missing/Stripped Hash Integrity,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),4.1
+Process: Short-Lived Subprocess (Polling Evasion),ATTACK,250,0,250,0,0,0.00,0.00,YES,Process lifespan < 10ms; polling interval window evasion (evades Get-Process / snapshot polling),18.3
+Process: Renamed Binary Execution (svchost/python),ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),12.2
+Filesystem: Boundary Escape (/tmp or %TEMP%),ATTACK,250,0,250,0,0,0.00,0.00,YES,Write target outside workspace root (%TEMP% or /tmp); unobserved by workspace delta,6.1
+Filesystem: Payload Swap (Preserved Size/Time),ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),12.8
+Network: Ephemeral UDP/DNS Exfiltration,ATTACK,250,0,250,0,0,0.00,0.00,YES,DNS TXT query without TCP socket connection; unobserved by TCP socket table,10.1
+Network: Allowed CDN Subdomain Multiplexing,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),12.4
+Artifact: Post-Build Binary Swap,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),10.2
+Artifact: Appended Trailing Overlay Payload,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),14.1
+SBOM: Stealth Transitive Component Omission,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),13.6
+Provenance: Stale Attestation Replay Attack,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),12.2
+Provenance: Intermediate Digest Masking,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),16.0
+Signature: Foreign Key from Untrusted Store,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),6.1
+Temporal: Impossible Causality Inversion,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),24.0
+Composed: Dual-Layer Source + Dependency Attack,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),0.0
+Composed: Triple-Layer Process + Network + Binary,ATTACK,250,250,0,0,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),12.0
+Benign: Compiler Patch Version Bump (go1.23.5->6),BENIGN,250,0,0,250,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),0.0
+Benign: Build Workspace Path Relocation,BENIGN,250,0,0,250,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),23.1
+Benign: Synchronized Lockfile Version Bump,BENIGN,250,0,0,250,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),17.6
+Benign: Reordered JSON/SBOM Attribute Keys,BENIGN,250,0,0,250,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),4.0
+Benign: Incremental Build with Object Cache Hit,BENIGN,250,0,0,250,0,100.00,100.00,No,Within Monitored Boundary (Fully Observed by ProvenanceX Multi-Layer Correlator),17.2

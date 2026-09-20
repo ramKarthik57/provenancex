@@ -1,4 +1,4 @@
-﻿package main
+package main
 
 import (
 	"context"
@@ -7,6 +7,7 @@ import (
 
 	"github.com/ramKarthik57/provenancex/internal/ablation"
 	"github.com/ramKarthik57/provenancex/internal/blind"
+	"github.com/ramKarthik57/provenancex/internal/hostile"
 	"github.com/ramKarthik57/provenancex/internal/mutation"
 	"github.com/spf13/cobra"
 )
@@ -14,6 +15,10 @@ import (
 var (
 	blindValidationMode bool
 	blindTrialCount     int
+
+	huntRuns           int
+	huntCasesPerFamily int
+	huntOutputDir      string
 )
 
 var researchCmd = &cobra.Command{
@@ -105,12 +110,43 @@ var researchReportCmd = &cobra.Command{
 	},
 }
 
+var researchHuntCmd = &cobra.Command{
+	Use:   "hunt",
+	Short: "Adversarial mutation generalization and false-negative blind-spot discovery",
+	Long: `Executes multi-run adversarial evaluation across 25 hostile and benign mutation families.
+Deliberately tests observation boundaries (e.g. short-lived processes under polling, filesystem
+boundary escapes, DNS TXT exfiltration, author spoofing) to measure empirical false negatives
+and document real architectural blind spots.`,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		campaign := hostile.NewAdversarialCampaign(huntRuns, huntCasesPerFamily, huntOutputDir)
+		report, err := campaign.Run()
+		if err != nil {
+			return fmt.Errorf("adversarial campaign failed: %w", err)
+		}
+
+		if err := report.ExportCSVs(huntOutputDir); err != nil {
+			return fmt.Errorf("failed exporting adversarial campaign CSVs: %w", err)
+		}
+
+		fmt.Print(report.FormatTerminal())
+		fmt.Printf("✓ Empirical datasets exported to %s/\n", huntOutputDir)
+		fmt.Printf("  - %s\n", filepath.Join(huntOutputDir, "adversarial_campaign_raw.csv"))
+		fmt.Printf("  - %s\n", filepath.Join(huntOutputDir, "adversarial_per_family.csv"))
+		return nil
+	},
+}
+
 func init() {
 	researchValidateCmd.Flags().BoolVar(&blindValidationMode, "blind", true, "Execute with zero ground-truth leakage")
 	researchValidateCmd.Flags().IntVar(&blindTrialCount, "trials", 1000, "Total number of blind trials")
 
+	researchHuntCmd.Flags().IntVar(&huntRuns, "runs", 5, "Number of independent campaign runs")
+	researchHuntCmd.Flags().IntVar(&huntCasesPerFamily, "cases-per-family", 50, "Number of scenario cases evaluated per family per run")
+	researchHuntCmd.Flags().StringVar(&huntOutputDir, "output", "results", "Output directory for exported empirical CSV datasets")
+
 	researchCmd.AddCommand(researchRunCmd)
 	researchCmd.AddCommand(researchValidateCmd)
 	researchCmd.AddCommand(researchReportCmd)
+	researchCmd.AddCommand(researchHuntCmd)
 	rootCmd.AddCommand(researchCmd)
 }
